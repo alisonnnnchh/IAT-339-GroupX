@@ -1,0 +1,34 @@
+@font-face {
+	font-family: 'RouDeco';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/RousseauDeco.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Lato';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Lato';
+	font-weight: italic;
+	font-style: normal;
+	src: url('../fonts/Lato-Italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Lato';
+	font-weight: bold;
+	font-style: normal;
+	src: url('../fonts/Lato-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Lato';
+	font-weight: lighter;
+	font-style: normal;
+	src: url('../fonts/Lato-Light.ttf') format('truetype');
+}
