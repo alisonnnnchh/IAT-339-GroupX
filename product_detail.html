@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8">
-    <title>Style Guide for Vintage Maze</title>
+    <title>Product Category</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- this one is important-->
 
@@ -42,18 +42,82 @@
         </section>
     </nav>
 
+    <section class="main-body" id="main-info">
 
-    <section id="main-section"> </section>
-    <section id="sub-section"> </section>
-    <section id="comment"> </section>
+        <div class="static-info">
+            <div class="static-info-textbox">
+                <h3 class="heading-rig-25"> Sub-section title </h3>
 
-    <section id="footer">
+                <div class="blist">
+                    <ul class="size-blist">
+                        <li><a href="product_categories.html" class="selected-blist">Clothes</a></li>
+                        <li><a href="product_categories.html" class="selected-blist">Home Deco</a></li>
+                        <li><a href="product_categories.html" class="selected-blist">Toys</a></li>
+                        <li><a href="product_categories.html" class="selected-blist">Accessories</a></li>
+                    </ul>
+                </div>
 
-        (Copyright Lisence)Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                <h3 class="body-lato-light"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. D </h3>
+
+                <h3 class="body-lato-light"> Price </h3>
+
+
+                <button class="button button-nav"><a href="checkout1.html">Add To Cart</a></button>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="main-body" id="gallery">
+
+        <div class="item-img">
+            <img src="img/sample-img-200.jpg" alt="room view">
+            <img src="img/sample-img-500.jpg" alt="room view">
+            <img src="img/sample-img-650.jpg" alt="room view">
+
+        </div>
+
+    </section>
+
+
+
+
+    <section class="main-body" id="comment">
+
+        <div class="comment-input-form">
+            <label for="comment-section" class="body-lato-bold"> Comment </label>
+            <form>
+
+                <!--   <input type="text" id="new_name" name="name_input" value="" tabindex="1" required="required" placeholder="Your Name"> 
+           -->
+                <textarea name="comment" id="comment" rows="2" tabindex="2" required="required" placeholder="Leave a Comment!"></textarea>
+
+
+                <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID">
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+
+
 
 
     </section>
 
+
+
+    <section class="main-body" id="footer">
+
+        <div class="footer">
+            <h3 class="body-lato-light"> (Copyright Lisence)Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
+
+        </div>
+
+
+    </section>
 
 
 </body>
