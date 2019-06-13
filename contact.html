@@ -5,7 +5,8 @@
 
     <meta charset="utf-8">
     <title>Contact - Vintage Maze</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- this one is important-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this one is important-->
 
     <link href="css/main.css" rel="stylesheet">
     <link href="css/font.css" rel="stylesheet">
@@ -16,16 +17,39 @@
 </head>
 
 <body>
-    <section>
+    <nav>
+        <section class="main-nav-bar" id="main-nav-bar">
+            <button class="dropbtn-product">
+                <h3><a href="index.html"> Vintage Maze </a></h3>
+            </button>
+
+            <div class="dropdown-p">
+                <button class="dropbtn-product"><a href="product_categories.html">Collection</a></button>
+
+                <div class="hover-list">
+                    <a href="product_categories.html">Toys</a>
+                    <a href="product_categories.html">Home Deco</a>
+                    <a href="product_categories.html">Clothes</a>
+                    <a href="product_categories.html">Accessories</a>
+                </div>
+            </div>
+
+            <button class="dropbtn-product"><a href="about.html">About</a></button>
+            <button class="dropbtn-product"><a href="contact.html">Contact Us</a></button>
+            <button class="dropbtn-product">
+                <a href="#"><img src="img/shop_icon.png" class="icon-img"></a>
+            </button>
+        </section>
+    </nav>
+
+
+    <section class="main-body">
         <h1>Contact Us</h1>
         <div class='group-2'>
             <div class='size-1of2'>
-                <section>
+                <section class="main-body">
                     <h2>Location</h2>
-                    <p><strong>Address:</strong>
-
-                        13123 Wayside Way,
-                        Burnaby, BC V7X 3S2</p>
+                    <p><strong>Address:</strong> 13123 Wayside Way, Burnaby, BC V7X 3S2</p>
 
                     <p><strong>Phone</strong>: 604 604 2709</p>
 
@@ -34,7 +58,7 @@
                     <img src="img/sourcing-map.png" alt="Map of Places Sourced" class="img-wire">
                 </section>
 
-                <section>
+                <section class="main-body">
                     <h2>Hours</h2>
                     <table>
                         <tr>
@@ -96,7 +120,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="main-body">
         <h1>Newsletter</h1>
         <div class="email-input-form">
             <form>
@@ -105,6 +129,16 @@
                 <input type="submit" value="Submit" onclick="alert('You have successfully signed up for newsletters!')">
             </form>
         </div>
+    </section>
+
+    <section class="main-body" id="footer">
+
+        <div class="footer">
+            (Copyright Lisence)Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+        </div>
+
+
     </section>
 
 </body>
