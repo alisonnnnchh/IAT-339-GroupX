@@ -13,7 +13,7 @@ body {
 section:not([id]) {
     margin: 1em 1em;
     padding: 0.5em 0;
-    border-bottom: 1px solid #333;
+    /* border-bottom: 1px solid #333; */
 }
 
 section h3 {
@@ -392,6 +392,39 @@ li {
     background-color: #B9D2D6;
     color: #484830;
 }
+
+/* Checkout navigation styling */
+
+.nav-checkout {
+    background-color: #FDDCAC;
+    padding: 0.5em;
+}
+
+nav.nav-checkout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+ul.nav-checkout {
+    display: inline;
+    list-style: none;
+    text-align: center;
+    max-width: 100%;
+}
+
+ul.nav-checkout li {
+    display: inline-block;
+    float: right;
+}
+
+.nav-checkout-logo {
+    max-height: 3em;
+}
+
+
 
 /* color swatches /////////////////////////////*/
 
