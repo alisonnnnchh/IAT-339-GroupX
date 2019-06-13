@@ -198,12 +198,64 @@ h3{
 }
 
 
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+
+.first-bullet{
+  list-style-type: none;
+}
+
+.blist{
+  list-style-position: inside;
+}
+
+.nlist{
+  list-style-position: outside;
+}
+
+li{
+  padding:0.3em;
+  color: #fda934;
+}
+
+.nav-vintage{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  /*top: 0;*/
+}
+
+.nav-current{
+    display: inline-block;
+    color: white;
+    background-color: #486060;
+    padding: 0.25rem 0.25rem;
+    text-decoration: none;
+    transition: background-color 0.5s ease-out;
+}
+
 /*///area of possible changes for menu bar//////////////////////////////////////////////*/
 /*///area of possible changes for menu bar//////////////////////////////////////////////*/
 /*///area of possible changes for menu bar//////////////////////////////////////////////*/
 /*///area of possible changes for menu bar//////////////////////////////////////////////*/
 
 /*sections ////////*/
+/* things on every page///////////////////////////////////////////*/
+.footer{
+  background-color: black;
+  color:white;
+  display:inline-block;
+  width:100%;
+  padding:20px;
+  position:static;
+  bottom:0px;
+}
+
+/* home page///////////////////////////////////////////*/
+
 .slideshow{
   width:100%;
   height:550px;
@@ -269,14 +321,7 @@ h3{
   margin:5px;
 }
 
-.footer{
-  background-color: red;
-  display:inline-block;
-  width:100%;
-  padding:20px;
-  position:static;
-  bottom:0px;
-}
+/* product category page///////////////////////////////////////////*/
 
 .header-category{
   position:static;
@@ -308,7 +353,6 @@ h3{
 }
 
 .category-page-columns{
-
 }
 
 .category-page-left{
@@ -323,6 +367,25 @@ h3{
   padding:10px;
 }
 
+/* product detail page///////////////////////////////////////////*/
+
+.static-info{
+  background-color:#FDE9CA;
+  padding:10px;
+}
+
+.static-info-textbox{
+  background: rgba(256,256,256,0.3);
+  max-width:500px;
+  padding:5em;
+}
+
+
+.static-info-textbox h3, .static-info-textbox button {
+  padding:0.5em;
+  text-align: left;
+
+}
 
 /* ///////////////////////////////////////////*/
 /* ///////////////////////////////////////////*/
@@ -331,6 +394,70 @@ h3{
 button{
   margin-bottom: 0;
 }
+
+/* Styling for the navigation button ///////////////////////////*/
+.button-nav, .head-nav, .button-text {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+
+  border: 0px;
+  font-family: 'Lato', sans-serif;
+  font-size:12px;
+  color: black;
+  background-color: #fddcac;
+  border-radius: 0.25em;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.button-nav:hover, .button-nav:focus{
+  background-color: #53929B;
+}
+
+.button-nav:hover a, .button-nav:focus a{
+  color:#fde9ca;
+}
+
+.head-nav:hover, .head-nav:focus{
+  background-color: #B9D2D6;
+}
+
+
+.submit-button,.button-icon{
+  display: inline-block;
+  color: white;
+  border-color:none;
+  border-radius: 0.5em;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+
+.button-text{
+   background-color: #53929B;
+
+}
+
+.button-text a{
+   color:white;
+}
+
+.button-icon:hover, .button-icon:focus {
+   background-color: #fddcac;
+   transform: scale(1.1); 
+
+}
+
+.button-text:hover, .button-text:focus {
+  background-color: #fde9ca;
+}
+
+.button-text:hover a, .button-text:focus a{
+  color:#422C0E;
+}
+
 
 /* Dropdown Button Navigation */
 
@@ -406,5 +533,55 @@ button{
 
 
 
-/* add new................*/
+/* Email ///// /////////*/
+.comment-input-form{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px 50px;
+    width: 100%;
+    text-align: center;
+}
+
+label{
+  padding:10px;
+  font-size:13px;
+}
+
+
+input[type=text], select{
+  width: 100px;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: 1px solid #53929b;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea{
+  width: 60%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: 1px solid #53929b;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+
+input[type=submit] {
+
+  width: 70px;
+  background-color: #53929b;
+  color: white;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+input[type=submit]:hover {
+  background-color: #fddcac;
+}
 
