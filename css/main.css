@@ -3,168 +3,178 @@
   Default styling for the style guide 
 */
 body {
-  font-family: 'Lato', sans-serif;
-  font-size: 1rem;
-  padding:2rem;
-  font-weight: lighter;
-  margin-bottom: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    padding: 2rem;
+    font-weight: lighter;
+    margin-bottom: 0;
 }
 
 section:not([id]) {
-  margin: 1em 1em;
-  padding: 0.5em 0;
-  border-top: 1px solid #333;
+    margin: 1em 1em;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #333;
 }
 
 section h3 {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 section p {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 section code {
-  background-color: #EEE;
-  padding: 0.2em 0.75em;
+    background-color: #EEE;
+    padding: 0.2em 0.75em;
 }
 
-.icon-img{
-  width:100%;
-  position: center;
+.icon-img {
+    width: 100%;
+    position: center;
 }
 
 
-a{
+a {
     text-decoration: none;
     color: #484830;
 }
 
-.img-wire{
-  width:100%;
+.img-wire {
+    width: 100%;
 }
 
-.icon-120{
-  width:120px;
-  height:120px;
-  padding: 0.25em 0.5em;
+.icon-120 {
+    width: 120px;
+    height: 120px;
+    padding: 0.25em 0.5em;
 }
 
-.icon-76{
-  width:76px;
-  height:76px;
+.icon-76 {
+    width: 76px;
+    height: 76px;
     padding: 0.2em 0.4em;
 }
 
-.icon-60{
-  width:60px;
-  height:60px;
+.icon-60 {
+    width: 60px;
+    height: 60px;
     padding: 0.2em 0.3em;
 }
 
-.icon-32{
-  width:32px;
-  height:32px;
+.icon-32 {
+    width: 32px;
+    height: 32px;
     padding: 0.15em 0.2em;
 }
 
-.icon-20{
-  width:20px;
-  height:20px;
+.icon-20 {
+    width: 20px;
+    height: 20px;
     padding: 0.10em 0.15em;
 }
 
-form{
-  float:center;
+form {
+    float: center;
 }
 
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
 
-button{
-  border-radius: 4px;
-  margin-bottom: 0;
+button {
+    border-radius: 4px;
+    margin-bottom: 0;
 
 }
 
 /* Styling for the navigation button ///////////////////////////*/
-.button-nav, .head-nav, .button-text {
-  display: inline-block;
-  padding: 0.5em 0.75em;
+.button-nav,
+.head-nav,
+.button-text {
+    display: inline-block;
+    padding: 0.5em 0.75em;
 
-  border: 0px;
-  font-family: 'Lato', sans-serif;
-  font-size:15px;
-  color: black;
-  background-color: #fddcac;
-  border-radius: 0.25em;
-  text-decoration: none;
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
+    border: 0px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: black;
+    background-color: #fddcac;
+    border-radius: 0.25em;
+    text-decoration: none;
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
 }
 
-.button-nav:hover, .button-nav:focus{
-  background-color: #53929B;
+.button-nav:hover,
+.button-nav:focus {
+    background-color: #53929B;
 }
 
-.button-nav:hover a, .button-nav:focus a{
-  color:#fde9ca;
+.button-nav:hover a,
+.button-nav:focus a {
+    color: #fde9ca;
 }
 
-.head-nav:hover, .head-nav:focus{
-  background-color: #B9D2D6;
-}
-
-
-.submit-button,.button-icon{
-  display: inline-block;
-  color: white;
-  border-color:none;
-  border-radius: 0.5em;
-  text-decoration: none;
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.2s ease-out;
+.head-nav:hover,
+.head-nav:focus {
+    background-color: #B9D2D6;
 }
 
 
-.button-text{
-   background-color: #53929B;
+.submit-button,
+.button-icon {
+    display: inline-block;
+    color: white;
+    border-color: none;
+    border-radius: 0.5em;
+    text-decoration: none;
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.2s ease-out;
+}
+
+
+.button-text {
+    background-color: #53929B;
 
 }
 
-.button-text a{
-   color:white;
+.button-text a {
+    color: white;
 }
 
-.button-icon:hover, .button-icon:focus {
-   background-color: #fddcac;
-   transform: scale(1.1); 
+.button-icon:hover,
+.button-icon:focus {
+    background-color: #fddcac;
+    transform: scale(1.1);
 
 }
 
-.button-text:hover, .button-text:focus {
-  background-color: #fde9ca;
+.button-text:hover,
+.button-text:focus {
+    background-color: #fde9ca;
 }
 
-.button-text:hover a, .button-text:focus a{
-  color:#422C0E;
+.button-text:hover a,
+.button-text:focus a {
+    color: #422C0E;
 }
 
 
 /* In-text-link //////////////////////////////////////////////*/
-.in-text-link{
-  color: #53929b;
+.in-text-link {
+    color: #53929b;
 }
 
-.in-text-link:hover, .in-text-link:focus{
-  text-decoration: underline;
+.in-text-link:hover,
+.in-text-link:focus {
+    text-decoration: underline;
 }
 
 /*///////////////////////////////////////////////////////////////*/
 
 
-.email-input-form{
+.email-input-form {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
@@ -172,38 +182,39 @@ button{
     text-align: center;
 }
 
-label{
-  padding:40px 40px;
-  font-size:13px;
+label {
+    padding: 40px 40px;
+    font-size: 13px;
 }
 
 
-input[type=text], select{
+input[type=text],
+select {
 
-  width: 90%;
-  padding: 10px 10px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #53929b;
-  border-radius: 4px;
-  box-sizing: border-box;
+    width: 90%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #53929b;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 input[type=submit] {
 
-  width: 70px;
-  background-color: #53929b;
-  color: white;
-  padding: 10px 10px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  display: inline-block;
+    width: 70px;
+    background-color: #53929b;
+    color: white;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
 }
 
 input[type=submit]:hover {
-  background-color: #fddcac;
+    background-color: #fddcac;
 }
 
 /* //////////////////////////////////////////////*/
@@ -211,42 +222,42 @@ input[type=submit]:hover {
 /* 
   TEXT ELEMENTS -------------------
 */
-h2{
-  font-family: 'Righteous', cursive;
+h2 {
+    font-family: 'Righteous', cursive;
 }
 
-h3{
-  font-family: 'Lato', sans-serif;
+h3 {
+    font-family: 'Lato', sans-serif;
 }
 
 .heading-bun-48 {
-  font-family: 'Bungee Shade', cursive;
-  font-size: 3rem;
-  margin-bottom: 0;
-  color: #484830;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 3rem;
+    margin-bottom: 0;
+    color: #484830;
 }
 
 .heading-bun-36 {
-  font-family: 'Bungee Shade', cursive;
-  font-size: 2.25rem;
-  margin-bottom: 0;
-  color: #484830;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 2.25rem;
+    margin-bottom: 0;
+    color: #484830;
 }
 
 .heading-rig-25 {
-  font-family: 'Righteous', cursive;
-  font-size: 1.6rem;
-  margin-bottom: 0;
+    font-family: 'Righteous', cursive;
+    font-size: 1.6rem;
+    margin-bottom: 0;
 }
 
 .body-lato-bold {
-  font-family: 'Lato', sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0;
 }
 
-.body-lato-regular{
+.body-lato-regular {
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
     font-weight: lighter;
@@ -254,17 +265,17 @@ h3{
 }
 
 .body-lato-light {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.8rem;
-  font-weight : lighter;
-  margin-bottom: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    margin-bottom: 0;
 }
 
 .body-lato-small {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.8rem;
-  font-weight: bold;
-  margin-bottom: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 0;
 }
 
 
@@ -274,32 +285,33 @@ h3{
 */
 
 
-.first-bullet{
-  list-style-type: none;
+.first-bullet {
+    list-style-type: none;
 }
 
-.blist{
-  list-style-position: inside;
+.blist {
+    list-style-position: inside;
 }
 
-.nlist{
-  list-style-position: outside;
+.nlist {
+    list-style-position: outside;
 }
 
-li{
-  padding:0.3em;
-  color: #fda934;
+li {
+    padding: 0.3em;
+    color: #fda934;
 }
 
-.nav-vintage{
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
-  /*top: 0;*/
+.nav-vintage {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+    /*top: 0;*/
 }
 
-.nav-current{
+.nav-current {
     display: inline-block;
     color: white;
     background-color: #486060;
@@ -312,98 +324,97 @@ li{
 
 /* Dropdown Button Navigation */
 .dropbtn-info {
-  background-color: #4CAF50;
-  color: #484830;
-  padding: 2rem;
-  font-size: 20px;
-  border: none;
+    background-color: #4CAF50;
+    color: #484830;
+    padding: 2rem;
+    font-size: 20px;
+    border: none;
 }
 
 .dropbtn-product {
-  background-color: #fddcac;
-  color: #484830;
-  padding: 0.7rem;
-  font-size: 20px;
-  border: none;
-  min-width: 160px;
+    background-color: #fddcac;
+    color: #484830;
+    padding: 0.7rem;
+    font-size: 20px;
+    border: none;
+    min-width: 160px;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown-p {
-  position: sticky;
-  display: inline-block;
-  color: #484830;
+    position: sticky;
+    display: inline-block;
+    color: #484830;
 }
 
-.dropdown-p a{
-  color: #484830;
+.dropdown-p a {
+    color: #484830;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .hover-list {
-  display: none;
-  background-color: #F7E5B5;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+    display: none;
+    background-color: #F7E5B5;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 /* Links inside the dropdown */
 .hover-list a {
-  color: #484830;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    color: #484830;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
 /* Change color of dropdown links on hover */
 .hover-list a:hover {
-  background-color: #fda934 ; /* #EF9181 */
-    color:#F7E5B5;
+    background-color: #fda934;
+    /* #EF9181 */
+    color: #F7E5B5;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown-p:hover .hover-list {
-  display: block;
+    display: block;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown-p:hover .dropbtn-product {
-  background-color: #B9D2D6;
-  color: #484830;
+    background-color: #B9D2D6;
+    color: #484830;
 }
 
 /* color swatches /////////////////////////////*/
 
-.swatch-Y{
-  background-color:#fddcac;
+.swatch-Y {
+    background-color: #fddcac;
 }
 
-.swatch-R{
-  background-color:#fda934;
+.swatch-R {
+    background-color: #fda934;
 }
 
-.swatch-R1{
-  background-color:#fde9ca; 
+.swatch-R1 {
+    background-color: #fde9ca;
 }
 
-.swatch-G{
-  background-color:#53929b;
+.swatch-G {
+    background-color: #53929b;
 }
 
-.swatch-G2{
-  background-color:#B9D2D6;
+.swatch-G2 {
+    background-color: #B9D2D6;
 }
 
-.swatch-B{
-  background-color:#422C0E;
-  color:#fde9ca;
+.swatch-B {
+    background-color: #422C0E;
+    color: #fde9ca;
 }
 
-.swatch-D{
-  background-color:#162628;
-   color:#fde9ca;
+.swatch-D {
+    background-color: #162628;
+    color: #fde9ca;
 }
 
 /* Product List /////////////////////////////*/
-
-
