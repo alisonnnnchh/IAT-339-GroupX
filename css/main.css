@@ -183,7 +183,8 @@ button {
 }
 
 label {
-    padding: 40px 40px;
+    /* padding: 40px 40px;*/
+    display: block;
     font-size: 13px;
 }
 
@@ -210,11 +211,12 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    display: inline-block;
+    display: block;
 }
 
 input[type=submit]:hover {
     background-color: #fddcac;
+    display: block;
 }
 
 /* //////////////////////////////////////////////*/
@@ -222,6 +224,12 @@ input[type=submit]:hover {
 /* 
   TEXT ELEMENTS -------------------
 */
+
+h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 2rem;
+}
+
 h2 {
     font-family: 'Righteous', cursive;
 }

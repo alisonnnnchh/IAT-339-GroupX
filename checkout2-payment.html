@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Checkout - Vintage Maze</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- this one is important-->
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/font.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Emilys+Candy|Gugi|Righteous|Stardos+Stencil&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>Step 2 of 3: Payment</h1>
+    <div class='group-2'>
+        <div class='size-1of2'>
+            <h2>Credit Card Information</h2>
+
+            <form action="checkout3-review.html">
+                <label for="ccnum">Credit Card Number</label>
+                <input name="ccnum" id="ccnum" type="text">
+                <label for="expiration">Expiration(MM/YY)</label>
+                <input name="expiration" id="expiration" type="text">
+                <label for="cvc">CVC</label>
+                <input name="cvc" id="cvc" type="text">
+                <label for="chname">Card Holder Name</label>
+                <input name="chname" id="chname" type="text">
+                <label for="address">Address</label>
+                <input name="address" id="address" type="text">
+                <label for="city">City</label>
+                <input name="city" id="city" type="text">
+                <label for="state">Province/State</label>
+                <input name="state" id="state" type="text">
+                <label for="country">Country</label>
+                <input name="country" id="country" type="text">
+                <label for="zip">Zip Code</label>
+                <input name="zip" id="zip" type="text">
+
+                <input type="submit" value="Next">
+            </form>
+        </div>
+
+        <div class='size-1of2 order-summary'>
+            <h2>Order Summary</h2>
+            <table>
+                <tr>
+                    <td>Chair</td>
+                    <td>x1</td>
+                    <td>$18.00 CAD</td>
+                </tr>
+                <tr>
+                    <td>Table</td>
+                    <td>x1</td>
+                    <td>$18.00 CAD</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3>Subtotal</h3>
+                    </td>
+                    <td>$36.00 CAD</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3>Shipping</h3>
+                    </td>
+                    <td>$16.00 CAD</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3>Taxes</h3>
+                    </td>
+                    <td>$0.00 CAD</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3>Subtotal</h3>
+                    </td>
+                    <td>$52.00 CAD</td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
