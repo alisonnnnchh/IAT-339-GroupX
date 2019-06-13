@@ -1,0 +1,64 @@
+*,*::after,*::before{          /*applied on everything existed before and after*/
+	box-sizing:border-box;
+}
+
+.main-nav-bar{
+    display:flex;
+    flex-wrap:row wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+	  position: sticky;
+
+	  top:0;
+	  right:0;
+	  left:0;
+	  background-color:black;
+}
+
+.slideshow{
+    display:flex;
+    flex-wrap:row wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.slide-textbox{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.headline-box{
+    display:flex;
+    flex-wrap:row wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
+}
+
+.new-collection{
+    display:flex;
+    flex-wrap:row wrap;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items:center;
+    align-content: center;
+}
+
+.image-college{
+    display:flex;
+    flex-wrap:row wrap;
+    flex-direction: row;
+
+    justify-content: space-around;
+    align-items:center;
+    align-content: center;
+}
+
+
+
+

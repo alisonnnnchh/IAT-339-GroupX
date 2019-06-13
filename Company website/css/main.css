@@ -1,0 +1,362 @@
+/* unchange part //////////////////////// */
+/* unchange part //////////////////////// */
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: lighter;
+  margin: 0;
+
+}
+
+
+section h3 {
+  margin: 0;
+}
+
+section p {
+  margin: 0;
+}
+
+
+form{
+  float:center;
+}
+
+button{
+  margin-bottom: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #484830;
+}
+
+li{
+ list-style: none;
+  color: #fda934;
+}
+
+ul{
+  list-style: none;
+  left:0%;
+}
+
+
+/* icon setting*/
+
+.icon-img{
+  width:100%;
+  position: center; 
+  width:20px;
+  height:20px;
+  filter: invert(100%);
+}
+
+.img-wire{
+  width:100%;
+}
+
+.icon-120{
+  width:120px;
+  height:120px;
+  padding: 0.25em 0.5em;
+}
+
+.icon-76{
+  width:76px;
+  height:76px;
+    padding: 0.2em 0.4em;
+}
+
+.icon-60{
+  width:60px;
+  height:60px;
+    padding: 0.2em 0.3em;
+}
+
+.icon-32{
+  width:32px;
+  height:32px;
+    padding: 0.15em 0.2em;
+}
+
+.icon-20{
+  width:20px;
+  height:20px;
+    padding: 0.10em 0.15em;
+}
+
+/* In-text-link /////////*/
+.in-text-link{
+  color: #53929b;
+}
+
+.in-text-link:hover, .in-text-link:focus{
+  text-decoration: underline;
+}
+
+/* Email ///// /////////*/
+.email-input-form{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+label{
+  padding:40px 40px;
+  font-size:13px;
+}
+
+
+input[type=text], select{
+
+  width: 90%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #53929b;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+
+  width: 70px;
+  background-color: #53929b;
+  color: white;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+input[type=submit]:hover {
+  background-color: #fddcac;
+}
+
+
+/* TEXT ELEMENTS -------------------*/
+
+h2{
+  font-family: 'Righteous', cursive;
+}
+
+h3{
+  font-family: 'Lato', sans-serif;
+}
+
+.heading-bun-48 {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 3rem;
+  margin-bottom: 0;
+  color: #484830;
+}
+
+.heading-bun-36 {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 2.25rem;
+  margin-bottom: 0;
+  color: #484830;
+}
+
+.heading-rig-25 {
+  font-family: 'Righteous', cursive;
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
+
+.body-lato-bold {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.body-lato-regular{
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+
+.body-lato-light {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
+  font-weight : lighter;
+  margin-bottom: 0;
+}
+
+.body-lato-small {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+
+/*///area of possible changes for menu bar//////////////////////////////////////////////*/
+/*///area of possible changes for menu bar//////////////////////////////////////////////*/
+/*///area of possible changes for menu bar//////////////////////////////////////////////*/
+/*///area of possible changes for menu bar//////////////////////////////////////////////*/
+
+/*sections ////////*/
+.slideshow{
+  width:100%;
+  height:550px;
+  background-color: pink;
+
+  padding:1em 1em;
+}
+
+.slide-textbox{
+  width:600px;
+  padding:5em;
+  align-content: center;
+}
+
+.slide-textbox h3, .slide-textbox button {
+  padding:0.5em;
+  text-align: center;
+
+}
+
+.headline-box{
+  width:100%;
+  background-color: yellow;
+
+  padding:1em 25%;
+
+  text-align: center;
+}
+
+.headline-box h3{
+  margin:10px;
+
+}
+
+.new-collection{
+  width:100%;
+  background-color: rgba(0,0,256,0.2);
+  padding:3em;
+  text-align: center;
+}
+
+.image-college{
+  width:100%;
+  padding:1em;
+}
+
+.group-3{
+  margin:10px;
+  padding:10px;
+  width:100%;
+}
+
+.size-1of3{
+  background-color: white;
+  display:inline-block;
+  margin:20px;
+  width:300px;
+  height:300px;
+  padding:200px 40px 10px 40px;
+}
+
+.size-1of3 h3, .size-1of3 button{
+  margin:5px;
+}
+
+.footer{
+  background-color: red;
+  display:inline-block;
+  width:100%;
+  padding:20px;
+}
+
+/* ///////////////////////////////////////////*/
+/* ///////////////////////////////////////////*/
+/* ///////////////////////////////////////////*/
+
+button{
+  margin-bottom: 0;
+}
+
+/* Dropdown Button Navigation */
+
+.dropbtn-info {
+  background-color: #4CAF50;
+  color: #484830;
+  font-size: 20px;
+  border: none;
+}
+
+.dropbtn-product {
+  background-color: black; #fddcac;
+  color: #484830;
+  padding: 0.7rem;
+  font-size: 20px;
+  border: none;
+}
+
+.dropdown-p {
+  display: inline-block;
+  color: #484830;
+}
+
+.dropdown-p a{
+  color: #484830;
+}
+
+.main-service{
+   background-color: #B9D2D6;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.hover-list {
+  display: none;
+  background-color: #F7E5B5;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.category-list{
+  display:none;
+}
+
+/* Links inside the dropdown */
+.hover-list a {
+  color: #484830;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.hover-list a:hover {
+  background-color: #fda934 ; /* #EF9181 */
+    color:#F7E5B5;
+}
+
+.dropdown-p:hover .hover-list {
+  display: block;
+  z-index: 3;
+}
+
+.hover-list:hover .category-list {
+  display: block;
+  z-index: 3;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown-p:hover .dropbtn-product {
+  background-color: #B9D2D6;
+  color: #484830;
+}
+
+
+
+/* add new................*/
+
