@@ -5,6 +5,59 @@
     box-sizing: border-box;
 }
 
+<<<<<<< Updated upstream
+=======
+/* main navigation //////////////////////////////*/
+
+
+    .new-menu-500px{
+        display:none;
+    }
+
+@media all and (max-width: 600px) {
+    .original-menu{
+        display:none;
+    }
+    .new-menu-500px{
+        display:inline;
+        width:100%;
+    }
+}
+
+/* main sections //////////////////////////////*/
+
+.slideshow {
+    display: flex;
+    flex-wrap: row wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.slide-textbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.headline-box {
+    display: flex;
+    flex-wrap: row wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.new-collection {
+    display: flex;
+    flex-wrap: row wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+>>>>>>> Stashed changes
 
 /* did not change ////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////*/

@@ -5,6 +5,61 @@ body {
     margin: 0;
 }
 
+h1 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 3rem;
+    margin-bottom: 0;
+    color: #484830;
+}
+
+
+/*
+.heading-bun-48 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 3rem;
+    margin-bottom: 0;
+    color: #484830;
+}
+*/
+
+h2 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 2.25rem;
+    margin-bottom: 0;
+    color: #484830;
+}
+
+
+/*.heading-bun-36 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 2.25rem;
+    margin-bottom: 0;
+    color: #484830;
+}*/
+
+h3 {
+    font-family: 'Righteous', cursive;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+
+
+/*
+.heading-rig-25 {
+    font-family: 'Righteous', cursive;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+*/
+
+h6 {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.625rem;
+    font-weight: lighter;
+    margin: 0;
+}
+
+
 section h3 {
     margin: 0;
 }
