@@ -89,6 +89,15 @@ button{
 
 }
 
+.button-nav-img{
+  border:none;
+}
+
+.button-nav-img:hover{
+     transform: scale(1.1); 
+}
+
+
 /* Styling for the navigation button ///////////////////////////*/
 .button-nav, .head-nav, .button-text {
   display: inline-block;
