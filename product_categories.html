@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8">
-    <title>Style Guide for Vintage Maze</title>
+    <title>Shop - Vintage Maze</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- this one is important-->
 
@@ -17,38 +17,63 @@
 </head>
 
 <body>
-    <nav>
+    <nav class='original-menu'>
         <section class="main-nav-bar" id="main-nav-bar">
-            <button class="dropbtn-product">
-                <h3><a href="index.html"> Vintage Maze </a></h3>
-            </button>
 
-            <div class="dropdown-p">
-                <button class="dropbtn-product"><a href="product_categories.html">Collection</a></button>
+          <div>
+                <button class="dropbtn-product"><a href="product_categories.html">SHOP</a></button>
+                <button class="dropbtn-product"><a href="about.html">ABOUT</a></button>
+                <button class="dropbtn-product"><a href="contact.html">CONTACT</a></button>
+          </div>              
+          
+          <button class="button-nav-img"><a href="index.html"><img src="img/vintage-maze-logo.png" class="icon-img-logo"></a></button>
 
-                <div class="hover-list">
-                    <a href="product_categories.html">Toys</a>
-                    <a href="product_categories.html">Home Deco</a>
-                    <a href="product_categories.html">Clothes</a>
-                    <a href="product_categories.html">Accessories</a>
-                </div>
-            </div>
+          <div>
+                <button class="dropbtn-product"><a href="cart.html"><img src="img/shop_icon.png" class="icon-img"></a></button>
+                <button class="dropbtn-product"><a href="https://www.facebook.com/vintagemaze/"><img src="img/fb-icon.png" class="icon-img"></a></button>
+                <button class="dropbtn-product"><a href="http://instagram.com/vintage_maze"><img src="img/ig-icon.png" class="icon-img"></a></button>
 
-            <button class="dropbtn-product"><a href="about.html">About</a></button>
-            <button class="dropbtn-product"><a href="contact.html">Contact Us</a></button>
-            <button class="dropbtn-product">
-                <a href="cart.html"><img src="img/shop_icon.png" class="icon-img"></a>
-            </button>
+          </div>    
+
         </section>
     </nav>
 
+    <nav class="new-menu-500px">
+        <section class="main-nav-bar" id="main-nav-bar"> 
+
+           <div class="dropdown-p">
+              <button class="dropbtn-product"> <img src="img/menu-icon.png" class="icon-img"></button>
+                  <div class="hover-list">
+                      <a href="product_categories.html" class="main-service">Whole Collection</a> 
+                      <a href="#" class="main-service">Feature Products</a> 
+                      <a href="about.html" class="main-service">About</a> 
+                      <a href="contact.html" class="main-service">Contact Us</a> 
+
+                  </div>
+
+            </div>
+
+            <div class="dropdown-p">
+                <button class="button-nav-img"><a href="index.html"><img src="img/vintage-maze-logo.png" class="icon-img-logo-500px"></a></button>
+            </div>
+
+            <div class="dropdown-p">
+               <button class="dropbtn-product"><a href="cart.html"><img src="img/shop_icon.png" class="icon-img"></a></button>
+            </div>
+
+        </section>
+    </nav>
+
+<!-- ----------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------------------- -->
 
     <section class="main-body" id="header">
 
         <div class='header-category'>
             <div class='header-title'>
-                <h3 class="heading-bun-48"> Production Collection </h3>
-                <h3 class="body-lato-light"> (Short Intro) Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
+                <h2> Production Collection </h2>
+                <br>
+                <p> (Short Intro) Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </div>
 
             <div class='header-img'>
@@ -61,75 +86,111 @@
 
     <section class="main-body category-page-columns" id="search">
 
-        <div class="dropdown-p category-page-left">
-            <a href="product_categories.html">On Sale</a>
-            <a href="product_categories.html">Filter Collection</a>
+      <div class="group-4">
+          <div class="size-1of4">
 
-            <div class="hover-list category-list">
-                <a href="#toys">Toys</a>
-                <a href="#home">Home Deco</a>
-                <a href="#cloth">Clothes</a>
-                <a href="#accessories">Accessories</a>
-            </div>
+                  <div class="dropdown-p">
+                      <a href="product_categories.html">Shop What's Hot</a>
+                  </div>
 
-        </div>
+                  <div class="dropdown-p">
+                      <a href="product_categories.html">Shop By Category</a>
 
-        <div class="new-collection">
+                      <div class="hover-list">
+                          <a href="#filter-section">Toys</a>
+                          <a href="#home">Home Deco</a>
+                          <a href="#cloth">Clothes</a>
+                          <a href="#accessories">Sale</a>
+                      </div>
+                  </div>
 
-            <div class="image-college">
-                <div class='group-3'>
-                    <div class='size-1of3'>
-                        <h3 class="body-lato-light"> Title </h3>
-                        <button class="button button-nav"><a href="product_detail.html">Default Button</a></button>
-                    </div>
+          </div>
 
-                    <div class='size-1of3'>
-                        <h3 class="body-lato-light"> Title </h3>
-                        <button class="button button-nav"><a href="product_detail.html">Default Button</a></button>
-                    </div>
+          <div class="size-3of4" id="filter-section">
+              <h4> New Collection </h4>
 
-                    <div class='size-1of3'>
-                        <h3 class="body-lato-light"> Title </h3>
-                        <button class="button button-nav"><a href="product_detail.html">Default Button</a></button>
-                    </div>
+              <div class="image-college">
 
-                    <div class='size-1of3'>
-                        <h3 class="body-lato-light"> Title </h3>
-                        <button class="button button-nav"><a href="product_detail.html">Default Button</a></button>
-                    </div>
+                      <figure class="reveal-text" id="toy-item">
+                          <img src="img/product-sample2.jpg" class="products-img">
+                          <figcaption>
+                              <p>Rose Table Lamp (toy)</p>
+                              <button class="product-form-button"><a href="product_detail.html">More Info</a></button>
+                          </figcaption>
 
-                    <div class='size-1of3'>
-                        <h3 class="body-lato-light"> Title </h3>
-                        <button class="button button-nav"><a href="product_detail.html">Default Button</a></button>
-                    </div>
+                      </figure>
 
-                    <div class='size-1of3'>
-                        <h3 class="body-lato-light"> Title </h3>
-                        <button class="button button-nav"><a href="product_detail.html">Default Button</a></button>
-                    </div>
+                      <figure class="reveal-text" id="home-item">
+                          <img src="img/product-sample2.jpg" class="products-img">
+                          <figcaption>
+                              <p>Rose Table Lamp (home)</p>
+                              <button class="product-form-button"><a href="product_detail.html">More Info</a></button>
+                          </figcaption>
 
-                </div>
-            </div>
+                      </figure>
 
-            <button class="body-lato-small"><a href="product_categories.html"> NEXT </a> </button>
+                      <figure class="reveal-text" id="cloth-item">
+                          <img src="img/product-sample2.jpg" class="products-img">
+                          <figcaption>
+                              <p>Rose Table Lamp (cloth)</p>
+                              <button class="product-form-button"><a href="product_detail.html">More Info</a></button>
+                          </figcaption>
 
-        </div>
+                      </figure>
 
+                      <figure class="reveal-text" id="acc-item">
+                          <img src="img/product-sample2.jpg" class="products-img">
+                          <figcaption>
+                              <p>Rose Table Lamp (access)</p>
+                              <button class="product-form-button"><a href="product_detail.html">More Info</a></button>
+                          </figcaption>
+
+                      </figure> 
+
+                      <figure class="reveal-text" id="toy-item">
+                          <img src="img/product-sample2.jpg" class="products-img">
+                          <figcaption>
+                              <p>Rose Table Lamp(toy)</p>
+                              <button class="product-form-button"><a href="product_detail.html">More Info</a></button>
+                          </figcaption>
+
+                      </figure>       
+               </div>
+
+               <button class="button-nav"><a href="product_categories.html"><b>+ View More +</b></a></button> 
+          </div>     
+
+      </div>
 
     </section>
 
 
 
+ <!-- ----------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------------------- -->
 
 
     <section class="main-body" id="footer">
 
         <div class="footer">
-            (Copyright Lisence)Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+             <div class="email-input-form">
+                 <form>
+                     <label for="news_email"><h3> Fear of missing out? </h3></label>
+                     <br>
+                     
+                     <label for="news_info"> Be the first to know about the latest deals, style updates & more!</label>
+                     <label for="news_info"> Sign up and be the first to know!</label>
+                     <br>
+                     <input type="text" id="news-email" name="email_input" placeholder="Email Address">
+                     <input type="submit" value="JOIN">
+                </form>
+            </div>
+
+            <h6> © 2019 Vintage Maze Inc. All rights reserved.</h6>
 
         </div>
-
-
+        
     </section>
 
 

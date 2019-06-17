@@ -32,3 +32,10 @@
 	font-style: normal;
 	src: url('../fonts/Lato-Light.ttf') format('truetype');
 }
+
+@font-face {
+	font-family: 'Canto';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../font/DFKai71.ttf') format('truetype');
+}

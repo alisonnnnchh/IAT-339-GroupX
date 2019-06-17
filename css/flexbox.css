@@ -5,8 +5,6 @@
     box-sizing: border-box;
 }
 
-<<<<<<< Updated upstream
-=======
 /* main navigation //////////////////////////////*/
 
     .original-menu{
@@ -17,7 +15,7 @@
         display:none;
     }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 650px) {
     .original-menu{
         display:none;
     }
@@ -31,7 +29,7 @@
 
 .slideshow {
     display: flex;
-    flex-wrap: row wrap;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
 }
@@ -45,7 +43,7 @@
 
 .headline-box {
     display: flex;
-    flex-wrap: row wrap;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -54,13 +52,12 @@
 
 .new-collection {
     display: flex;
-    flex-wrap: row wrap;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
->>>>>>> Stashed changes
 
 /* did not change ////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////*/
@@ -71,24 +68,53 @@
 
 ul {
     display: inline-flex;
-    flex-wrap: row;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: flex-start;
-    flex: 1 1 auto;
+
+    justify-content: center;
+    width:100%;
 }
 
-.size-blist a {
-    color: #53929b;
-    font-size: 13px;
-    border-radius: 0.25em;
-    text-decoration: none;
-    -webkit-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out;
+li {
+    list-style-type: disc;
+    margin:0em 1em;
+    padding: 0.1em;
+    color: #fda934;
+}
+
+.first-bullet {
+    list-style-type: none;
+}
+
+@media all and (max-width: 700px) {
+    .first-bullet {
+        list-style-type: disc;
+    }
+}
+
+
+.blist {
+    list-style-position: inside;
+}
+
+.nlist {
+    list-style-position: outside;
+}
+
+.size-blist a{
+  color: #53929b;
+  font-size: 13px;
+  border-radius: 0.25em;
+  padding:0.5em;
+
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
 }
 
 .selected-blist a {
     display: inline-flex;
-    flex-wrap: row;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
 }
@@ -98,6 +124,7 @@ ul {
 .selected-nlist:focus,
 .selected-nlist:hover {
     text-decoration: underline;
+
 }
 
 
@@ -165,6 +192,14 @@ ul {
     justify-content: center;
     align-items: flex-start ;
     align-content: flex-start;
+}
+
+.size-3of4 .image-college {
+
+    justify-content: flex-start;
+    align-content: flex-start;
+
+    padding: 0px;
 }
 
 .image-college figcaption{
@@ -290,15 +325,18 @@ ul {
 
 .group-3,
 .group-2,
+.group-4,
 .group-2of3 {
     display: flex;
-    flex-wrap: row wrap;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: flex-start;
     /* padding: 1em; */
     width: 100%;
     /* text-align: center; */
 }
+
 
 .head-nav {
     display: flex;
@@ -312,11 +350,10 @@ ul {
     /* padding: 50px;*/
     max-width: 33.33%;
     min-width: 33.33%;
-    /* background-color: #fda934;*/
+    /*background-color: #fda934;*/
 }
 
 .size-1of2 {
-    border: 5px black;
     /*padding: 50px;*/
     max-width: 50%;
     min-width: 50%;
@@ -324,24 +361,72 @@ ul {
 }
 
 .size-2of3 {
-    /* padding: 50px;*/
+    padding: 2.5%;
     max-width: 66.67%;
     min-width: 66.67%;
-    /* background-color: #B9D2D6;*/
+    /*background-color: #B9D2D6;*/
 }
 
-@media all and (max-width: 500px) {
+.size-1of4{
+  /*padding:50px;*/
+  max-width:25%;
+  min-width:25%;
+  /*background-color: #fde9ca;*/
+
+}
+
+.size-1of4 div{
+    margin:5px;
+    width:80%;
+}
+
+#search .size-1of4{
+     position:sticky;
+     top:82px;
+     background-color:#fde9ca;
+     z-index:200;
+}
+
+.size-3of4{
+  /*padding:50px;*/
+  max-width:75%;
+  min-width:75%;
+  /*background-color: #fde9ca;*/
+}
+
+@media all and (max-width: 650px) {
     .group-3,
     .group-2,
+    .group-4,
     .group-2of3 {
         flex-direction: column;
     }
+
+    .size-1of4{
+        display:inline-flex;
+        justify-content: space-around;
+        min-width: 100%;
+    }
+
+    #search .size-1of4{
+         position:sticky;
+         top:57px;
+    }
+
+    .size-3of4{
+        margin:5px;
+        display:flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        min-width: 98%;
+    }
+
 }
 
 @media all and (max-width: 600px) {
     .size-blist,
     .selected-blist {
-        list-style-type: none;
         flex-direction: column;
+        align-content: center;
     }
 }
