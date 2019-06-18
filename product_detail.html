@@ -17,37 +17,64 @@
 </head>
 
 <body>
-    <nav>
+    <nav class='original-menu'>
         <section class="main-nav-bar" id="main-nav-bar">
-            <button class="dropbtn-product">
-                <h3><a href="index.html"> Vintage Maze </a></h3>
-            </button>
 
-            <div class="dropdown-p">
-                <button class="dropbtn-product"><a href="product_categories.html">Collection</a></button>
+          <div>
+                <button class="dropbtn-product"><a href="product_categories.html">SHOP</a></button>
+                <button class="dropbtn-product"><a href="about.html">ABOUT</a></button>
+                <button class="dropbtn-product"><a href="contact.html">CONTACT</a></button>
+          </div>              
+          
+          <button class="button-nav-img"><a href="index.html"><img src="img/vintage-maze-logo.png" class="icon-img-logo"></a></button>
 
-                <div class="hover-list">
-                    <a href="product_categories.html">Toys</a>
-                    <a href="product_categories.html">Home Deco</a>
-                    <a href="product_categories.html">Clothes</a>
-                    <a href="product_categories.html">Accessories</a>
-                </div>
-            </div>
+          <div>
+                <button class="dropbtn-product"><a href="cart.html"><img src="img/shop_icon.png" class="icon-img"></a></button>
+                <button class="dropbtn-product"><a href="https://www.facebook.com/vintagemaze/"><img src="img/fb-icon.png" class="icon-img"></a></button>
+                <button class="dropbtn-product"><a href="http://instagram.com/vintage_maze"><img src="img/ig-icon.png" class="icon-img"></a></button>
 
-            <button class="dropbtn-product"><a href="about.html">About</a></button>
-            <button class="dropbtn-product"><a href="contact.html">Contact Us</a></button>
-            <button class="dropbtn-product">
-                <a href="cart.html"><img src="img/shop_icon.png" class="icon-img"></a>
-            </button>
+          </div>    
+
         </section>
     </nav>
+
+    <nav class="new-menu-500px">
+        <section class="main-nav-bar" id="main-nav-bar"> 
+
+           <div class="dropdown-p">
+              <button class="dropbtn-product"> <img src="img/menu-icon.png" class="icon-img"></button>
+                  <div class="hover-list">
+                      <a href="product_categories.html" class="main-service">Whole Collection</a> 
+                      <a href="#" class="main-service">Feature Products</a> 
+                      <a href="about.html" class="main-service">About</a> 
+                      <a href="contact.html" class="main-service">Contact Us</a> 
+
+                  </div>
+
+            </div>
+
+            <div class="dropdown-p">
+                <button class="button-nav-img"><a href="index.html"><img src="img/vintage-maze-logo.png" class="icon-img-logo-500px"></a></button>
+            </div>
+
+            <div class="dropdown-p">
+               <button class="dropbtn-product"><a href="cart.html"><img src="img/shop_icon.png" class="icon-img"></a></button>
+            </div>
+
+        </section>
+    </nav>
+
+<!-- ----------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------------------- -->
+
 
     <section class="main-body" id="main-info">
 
         <div class="static-info">
             <div class="static-info-textbox">
-                <h3 class="heading-rig-25"> Sub-section title </h3>
+                <h3> Sub-section title </h3>
 
+<!--
                 <div class="blist">
                     <ul class="size-blist">
                         <li><a href="product_categories.html" class="selected-blist">Clothes</a></li>
@@ -56,14 +83,24 @@
                         <li><a href="product_categories.html" class="selected-blist">Accessories</a></li>
                     </ul>
                 </div>
+-->
 
 
-                <h3 class="body-lato-light"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. D </h3>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
-                <h3 class="body-lato-light"> Price </h3>
+                <form>
+                <h4> Color: </h4>
+                      <select name="color-select">
+                        <option value="yellow">Yellow</option>
+                        <option value="red">Red</option>
+                        <option value="skyblue" selected>Sky Blue</option>
+                        <option value="black">Black</option>
+                      </select>    
+                </form>        
 
-
+                <br>
                 <button class="button button-nav"><a href="checkout1.html">Add To Cart</a></button>
+                <a href="#comment" class="in-text-link">Reviews & Comment</a>
 
             </div>
         </div>
@@ -87,7 +124,7 @@
     <section class="main-body" id="comment">
 
         <div class="comment-input-form">
-            <label for="comment-section" class="body-lato-bold"> Comment </label>
+            <label for="comment-section"><h4> Comment </h4></label>
             <form>
 
                 <!--   <input type="text" id="new_name" name="name_input" value="" tabindex="1" required="required" placeholder="Your Name"> 
@@ -101,22 +138,42 @@
             </form>
         </div>
 
-
-
-
-
     </section>
+
+    <section class="bottom-page">
+        <button class="bottom-page-nav" title="Previous Item"><a href="product_detail.html"><img src="img/arrow-left-icon.png" class="icon-img"></a></button>
+
+        <button class="bottom-page-nav" title="Back to Categories"><a href="product_categories.html"><img src="img/shop-bag-icon.png" class="icon-img"></a></button>
+        
+        <button class="bottom-page-nav" title="Next Item"><a href="product_detail.html"><img src="img/arrow-right-icon.png" class="icon-img"></a></button>
+    </section>
+
+ <!-- ----------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------------------- -->
 
 
 
     <section class="main-body" id="footer">
 
         <div class="footer">
-            <h3 class="body-lato-light"> (Copyright Lisence)Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
+
+             <div class="email-input-form">
+                 <form>
+                     <label for="news_email"><h3> Fear of missing out? </h3></label>
+                     <br>
+                     
+                     <label for="news_info"> Be the first to know about the latest deals, style updates & more!</label>
+                     <label for="news_info"> Sign up and be the first to know!</label>
+                     <br>
+                     <input type="text" id="news-email" name="email_input" placeholder="Email Address">
+                     <input type="submit" value="JOIN">
+                </form>
+            </div>
+
+            <h6> © 2019 Vintage Maze Inc. All rights reserved.</h6>
 
         </div>
-
-
+        
     </section>
 
 

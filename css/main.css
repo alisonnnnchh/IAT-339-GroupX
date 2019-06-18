@@ -101,6 +101,12 @@ nav{
     z-index:500;
 }
 
+a.in-text-link{
+    margin:10px;
+    font-size: 0.8rem;
+    color: #162628;
+}
+
 
 
 /* ICON SETTINGS ------------------- */
@@ -308,6 +314,12 @@ figure.reveal-text:hover figcaption{
     height:200px;
 }
 
+.size-3of4 h4{
+    color:#53929B;
+    padding-bottom: 10px;
+    border-bottom: 3px dotted #53929B;
+}
+
 .product-form-button{
   display: inline-block;
   padding: 0.5em 0.5em;
@@ -332,7 +344,7 @@ figure.reveal-text:hover figcaption{
 
 .image-college figure.reveal-text ,
 .image-college figure.reveal-text button{
-    margin:10px;
+    margin:5px;
 }
 
 
@@ -376,6 +388,7 @@ figure.reveal-text:hover figcaption{
     .image-college figure.reveal-text:hover figcaption{
         top: 30%;
     }  
+
 }
 
 
@@ -384,7 +397,7 @@ figure.reveal-text:hover figcaption{
 .comment-input-form {
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 20px 50px;
+    padding: 2% 50px 5%;
     width: 100%;
     text-align: center;
 }
@@ -552,9 +565,35 @@ textarea {
 /* product detail page///////////////////////////////////////////*/
 
 .static-info {
-    background-color: #FDE9CA;
+    background-color: #B9D2D6; /* add pic in background*/
+    
     padding: 10px;
 }
+
+.static-info-textbox h4,
+.static-info-textbox form{
+    display: inline-block;
+    margin:10px 10px 10px 0px;
+    padding-right:10%;
+}
+
+.static-info-textbox form select,
+.static-info-textbox form option{
+   height:30px;
+   width:150px;
+}
+
+.static-info-textbox form select{
+     position: relative;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8rem;
+    font-weight: lighter;
+
+    /*-- gonna change the style following this link---*/
+    /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_custom_select */
+}
+
 
 .static-info-textbox {
     background: rgba(256, 256, 256, 0.3);
@@ -614,11 +653,26 @@ textarea {
     right: 0;
     left: 0;
     background-color:#162628;
-    z-index:200;
+    z-index:500;
+}
+
+.bottom-page-nav{
+    display: inline-block;
+    margin:20px;
+    background-color: none;
+    border:none;
+}
+
+.bottom-page-nav img{
+    filter:none;
+    width: 40px;
+    height: 40px;
 }
 
 
 /* Dropdown Button Navigation */
+
+
 
 .dropbtn-product {
     background-color: #162628;
@@ -668,6 +722,7 @@ textarea {
     z-index: 1;
 }
 
+
 .size-1of4 .hover-list {
     display: none;
     position: absolute;
@@ -694,6 +749,11 @@ textarea {
 .hover-list a:hover {
     background-color: #fda934;
     color: #F7E5B5;
+    cursor: pointer;
+}
+
+.hover-list a.red{
+    background-color: rgba(256,0,0,0.5);
 }
 
 .dropdown-p:hover .hover-list {
@@ -750,6 +810,7 @@ ul.nav-checkout li {
 button {
     margin-bottom: 0;
 }
+
 
 .button-nav-img{
   border:none;
@@ -913,4 +974,6 @@ body.about-page section.main-body-about div section.neon-logo{
         margin-bottom: 3rem;
     }    
 }
+
+
 

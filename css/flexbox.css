@@ -148,6 +148,13 @@ li {
 /* things that changed////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////*/
 
+.bottom-page{
+    margin:0px 10%;
+    display: flex;
+    flex-wrap: row wrap;
+    flex-direction: row;
+    justify-content: center;
+}
 .slideshow {
     display: flex;
     flex-wrap: row wrap;
@@ -194,12 +201,22 @@ li {
     align-content: flex-start;
 }
 
+
 .size-3of4 .image-college {
 
     justify-content: flex-start;
+    align-items: flex-start;
     align-content: flex-start;
 
     padding: 0px;
+}
+
+
+.size-3of4 h4,
+.size-3of4 button{
+    text-align: center;
+    justify-content: flex-end;
+
 }
 
 .image-college figcaption{
@@ -209,6 +226,10 @@ li {
 
 
 @media all and (max-width: 600px) {
+
+    .bottom-page{
+        justify-content: space-between;
+    }
 
 
     .image-college{
@@ -222,6 +243,15 @@ li {
         flex-direction: column;
         align-items: center;
         align-content:center;
+    }
+
+    .size-3of4 .image-college {
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: center;
+
+        padding: 0px;
     }
 }
 
