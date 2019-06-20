@@ -524,6 +524,17 @@ form .group-2{
     text-align:center;
 }
 
+.order-summary .size-2of3 .group-2{
+
+    background-color:rgba(185,210,214,0.3);
+    padding:2%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
 
 .size-3of5 form{
     padding:1% 10%;

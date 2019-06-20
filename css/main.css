@@ -133,9 +133,7 @@ a.in-text-link{
     padding:10%;
 }
 
-tr{
- 
-}
+
 
 i {
   border: solid black;
@@ -200,7 +198,6 @@ i {
     height: 70px;
 }
 
-
 .img-wire {
     width: 100%;
 }
@@ -246,6 +243,12 @@ i {
 .checkout-item-img{
     width: 50px;
     height: 50px;
+    border-radius:50px;
+}
+
+.checkout-item-img-big{
+    width: 70px;
+    height: 70px;
     border-radius:50px;
 }
 
@@ -500,6 +503,13 @@ select {
     box-sizing: border-box;
 }
 
+.red-submit a{
+    text-decoration: none;
+    font-size: 13px;
+    color:black;
+}
+
+.red-submit,
 input[type=submit] {
     width: 70px;
     background-color: #53929b;
@@ -513,9 +523,10 @@ input[type=submit] {
 }
 
 
-
+.red-submit,
 input[type=submit]:hover {
     background-color: red;
+    width:30%;
 }
 
 textarea {
@@ -1085,20 +1096,15 @@ body.about-page section.main-body-about div section.neon-logo{
     padding:0px 20px;
 }
 
-.order-summary h3{
-    padding:15% 20% 5px 20%;
-    margin: 0px;
-    border-bottom:2px solid black;
-}
-
 .checkout3-border h4{
     padding:20%;
     border-bottom:2px solid black;
 }
 
-.order-summary tr{
-    padding:20px 5px;
-
+.order-summary h3{
+    padding:0 20% 10px 20%;
+    margin: 0px;
+  
 }
 
 .order-summary table{
@@ -1107,6 +1113,11 @@ body.about-page section.main-body-about div section.neon-logo{
     border:1px solid black;
 }
 
+.order-summary tr{
+    padding:20px 5px;
+    border:2px solid rgba(22,38,40,0.5);
+
+}
 
 .order-summary td h4{
     text-align:right;
@@ -1116,6 +1127,12 @@ body.about-page section.main-body-about div section.neon-logo{
 tr .total-border{
     border-top:2px solid rgba(22,38,40,0.5);
 }
+
+table .cart-column{
+    background-color:red;
+}
+
+/* --------- checkout Page form containers --------------*/
 
 .container table tr td{
    
