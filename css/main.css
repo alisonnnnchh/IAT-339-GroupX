@@ -3,6 +3,10 @@ body {
     font-size: 1rem;
     font-weight: lighter;
     margin: 0;
+
+    position:static;
+    left:0;
+    right:0;
 }
 
 h1 {
@@ -114,6 +118,7 @@ nav {
     position: sticky;
     top: 0;
     left: 0;
+    right:0;
     z-index: 500;
 }
 
@@ -477,7 +482,7 @@ select {
 .red-submit a{
     text-decoration: none;
     font-size: 13px;
-    color:black;
+    color:white;
 }
 
 .red-submit,
@@ -1053,7 +1058,6 @@ body.about-page section.main-body-about div section.neon-logo {
     padding: 0px 20px;
 }
 
-<<<<<<< HEAD
 .checkout3-border h4{
     padding:20%;
     border-bottom:2px solid black;
@@ -1063,7 +1067,7 @@ body.about-page section.main-body-about div section.neon-logo {
     padding:0 20% 10px 20%;
     margin: 0px;
   
-=======
+
 .order-summary h3{
     padding:15% 20% 5px 20%;
     margin: 0px;
@@ -1077,11 +1081,10 @@ body.about-page section.main-body-about div section.neon-logo {
 
 .order-summary tr {
     padding: 20px 5px;
->>>>>>> master
 }
 
-.order-summary table{
-    width:80%;
+ table{
+    width:100%;
     padding:5%;
     border:1px solid black;
 }
@@ -1091,6 +1094,8 @@ body.about-page section.main-body-about div section.neon-logo {
     border:2px solid rgba(22,38,40,0.5);
 
 }
+
+
 
 .order-summary td h4{
     text-align:right;
@@ -1104,6 +1109,7 @@ tr .total-border{
 table .cart-column{
     background-color:red;
 }
+
 
 /* --------- checkout Page form containers --------------*/
 

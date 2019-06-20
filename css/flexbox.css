@@ -509,7 +509,8 @@ form .group-2{
 }
 
 .order-summary{
-    background-color: rgba(185,210,214,0.5);
+    background-color:rgba(185,210,214,0.5);
+
     border-radius:5px;
     border-left:1.5px solid #53929B;
 
@@ -520,20 +521,31 @@ form .group-2{
     align-items: flex-start;
     align-content: flex-start;
 
-    padding: 5%;
+    padding: 5% 10%;
     text-align:center;
 }
 
-.order-summary .size-2of3 .group-2{
+.order-summary .group-3{
+    margin:5%;
+}
 
-    background-color:rgba(185,210,214,0.3);
+.order-summary .group-3 .size-2of3 {
+
+    background-color:rgba(185,210,214,0.1);
     padding:2%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-around;
+    align-items: center;
     align-content: flex-start;
+}
+
+.order-summary .group-3 .size-1of3 {
+    padding:5%;
+    border:1px solid black;
+    border-radius:10px;
+
 }
 
 .size-3of5 form{
