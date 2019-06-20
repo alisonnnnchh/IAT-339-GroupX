@@ -24,7 +24,7 @@
 
                 <div class="headline-box-checkout">
                     <br>
-                    <img src="img/vintage-maze-logo.png" class="icon-img-logo-500px">
+                    <img src="img/vintage-maze-logo.png" class="icon-img-logo-checkout">
 
                     <div>
                         <h6>Cart</h6> 
@@ -41,81 +41,92 @@
                 <form action="checkout2-payment.html">
                     <!-- https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link -->
                     <h4>Contact Information</h4>
+
+                    <div class="form-section-container">
                     
-                    <div><input name="email" id="email" type="text" placeholder="Email" required></div>
-                    
-                    <div class="group-2">
-                        <input name="fname" id="fname" type="text" placeholder="First Name" required>
-                        <input name="lname" id="lname" type="text" placeholder="Last Name"required>
+                        <div><input name="email" id="email" type="text" placeholder="Email" required></div>
+                        
+                        <div class="group-2">
+                            <input name="fname" id="fname" type="text" placeholder="First Name" required>
+                            <input name="lname" id="lname" type="text" placeholder="Last Name"required>
+                        </div>
+
+                        <div> <input name="address" id="address" type="text" placeholder="Address" required></div>
+                        <div> <input name="apartment" id="apartment" type="text" placeholder="Apartment, suite, etc. (optional)" optional> </div>
+                        <div> <input name="city" id="city" type="text" placeholder="City" required> </div>
+
+                        <div class="group-3">
+                            <input name="country" id="country" type="text" placeholder="Country/Region" required>
+                            <input name="state" id="state" type="text" placeholder="Province" required>
+                            <input name="zip" id="zip" type="text" placeholder="Postal Code" required>
+                        </div>
+
+                        <div> <input name="phone" id="phone" type="text" placeholder="Phone Number (optional)" optional> </div>
+
                     </div>
-
-                    <div> <input name="address" id="address" type="text" placeholder="Address" required></div>
-                    <div> <input name="apartment" id="apartment" type="text" placeholder="Apartment, suite, etc. (optional)" optional> </div>
-                    <div> <input name="city" id="city" type="text" placeholder="City" required> </div>
-
-                    <div class="group-3">
-                        <input name="country" id="country" type="text" placeholder="Country/Region" required>
-                        <input name="state" id="state" type="text" placeholder="Province" required>
-                        <input name="zip" id="zip" type="text" placeholder="Postal Code" required>
-                    </div>
-
-                    <div> <input name="phone" id="phone" type="text" placeholder="Phone Number (optional)" optional> </div>
 
                     <h4>Delivery Options</h4>
-                    <div class="group-2">
-                        <input name="delivery" id="delivery" type="radio" value="Air Mail - $16.00 CAD"> 
-                        <label for="delivery">Air Mail - $16.00 CAD </label>
+                    <div class="form-section-container">
+                        <div class="group-2">
+                            <input name="delivery-address" id="delivery-address" type="radio" > Air Mail - $16.00 CAD 
+                        </div>
+
+                        <div class="group-2">
+                            <input name="delivery-address" id="delivery-address" type="radio"> In-store Pickup - Free
+                        </div>
                     </div>
 
                     <div class="group-2">
-                        <input name="delivery" id="delivery" type="radio"> 
-                        <label for="delivery">In-store Pickup - Free</label>
-                    </div>
-
-                    <div class="group-2">
-                         <a href="cart.html"> <i class="arrow-left"></i>Return to Cart  </a>
+                        <a href="cart.html"> <i class="arrow-left"></i>Return to Cart  </a>
                         <input type="submit" value="Next">
                     </div>
                     
                 </form>
+
             </div>
 
             <div class='size-2of5 order-summary'>
                 <h3>Order Summary</h3>
                 <table>
                     <tr>
-                        <td>Chair</td>
-                        <td>x1</td>
-                        <td>$18.00</td>
+                        <td colspan="2">Item</td>
+                        <td>Quantity</td>
+                        <td>Price</td>
                     </tr>
                     <tr>
-                        <td>Table</td>
-                        <td>x1</td>
-                        <td>$18.00</td>
+                        <td colspan="2"><img src="img/accessories-sample.jpg" class="checkout-item-img"> Table</td>
+                        <td>1</td>
+                        <td>$18.00 CAD</td>
                     </tr>
                     <tr>
-                        <td colspan="2">
+                        <td colspan="2"><img src="img/accessories-sample.jpg" class="checkout-item-img"> Table</td>
+                        <td>1</td>
+                        <td>$18.00 CAD</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
                             <h4>Subtotal</h4>
                         </td>
-                        <td>$36.00</td>
+                        <td>$36.00 CAD</td>
                     </tr>
                     <tr>
-                        <td colspan="2">
+                        <td colspan="3">
                             <h4>Shipping</h4>
                         </td>
-                        <td>$16.00</td>
+                        <td>$16.00 CAD</td>
                     </tr>
                     <tr>
-                        <td colspan="2">
+                        <td colspan="3">
                             <h4>Taxes</h4>
                         </td>
                         <td>$0.00 CAD</td>
                     </tr>
+
                     <tr>
-                        <td colspan="2">
-                            <h4>Subtotal</h4>
+                        <td colspan="3" class="total-border">
+                            <h4 >Total</h4>
                         </td>
-                        <td>$52.00 CAD</td>
+                        <td class="total-border"><strong>$52.00 CAD</strong></td>
                     </tr>
                 </table>
 

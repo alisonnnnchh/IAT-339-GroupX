@@ -127,8 +127,8 @@ a.in-text-link {
     padding: 10%;
 }
 
-tr {
-    background-color: red;
+tr{
+ 
 }
 
 i {
@@ -185,6 +185,14 @@ i {
     height: 40px;
 }
 
+.icon-img-logo-checkout{
+    width: 100%;
+    position: center;
+    width: 70px;
+    height: 70px;
+}
+
+
 .img-wire {
     width: 100%;
 }
@@ -230,6 +238,11 @@ i {
     height: 150px;
 }
 
+.checkout-item-img{
+    width: 50px;
+    height: 50px;
+    border-radius:50px;
+}
 
 /* ------details on image----*/
 
@@ -470,8 +483,10 @@ input[type=submit] {
     display: inline-block;
 }
 
+
+
 input[type=submit]:hover {
-    background-color: #fddcac;
+    background-color: red;
 }
 
 textarea {
@@ -531,10 +546,11 @@ textarea {
     text-align: center;
 }
 
-.headline-box-checkout {
-    padding: 1em 1em;
-    border-bottom: 1px solid grey;
-    background-color: white;
+
+.headline-box-checkout{
+   padding: 1em 1em; 
+
+   background-color: white;
 }
 
 .headline-box h2,
@@ -552,8 +568,12 @@ textarea {
     width: 100%;
 }
 
-.headline-box-checkout div h6 {
-    padding: 10px;
+.headline-box-checkout h6{
+    font-size:0.8rem;
+}
+
+.headline-box-checkout div h6{
+    padding:10px;
 }
 
 .new-collection {
@@ -1022,11 +1042,10 @@ body.about-page section.main-body-about div section.neon-logo {
     padding: 0px 20px;
 }
 
-.order-summary h3 {
-    padding: 15% 20% 10px 20%;
+.order-summary h3{
+    padding:15% 20% 5px 20%;
     margin: 0px;
-    background-color: blue;
-    border-bottom: 2px solid black;
+    border-bottom:2px solid black;
 }
 
 .checkout3-border h4 {
@@ -1038,6 +1057,52 @@ body.about-page section.main-body-about div section.neon-logo {
     padding: 20px 5px;
 }
 
-input type:["submit"] {
-    background-color: red;
+.order-summary table{
+    width:80%;
+    padding:5%;
+    border:1px solid black;
 }
+
+
+.order-summary td h4{
+    text-align:right;
+    padding:0 10px;
+}
+
+tr .total-border{
+    border-top:2px solid rgba(22,38,40,0.5);
+}
+
+.container table tr td{
+   
+    border:1px solid black;
+    margin:10px;
+}
+
+.container {
+    border:1px solid rgba(200,200,200,0.5);
+    border-radius:5px;
+}
+
+.container td{
+    padding:5% 5% 5% 5%;
+    margin:0;
+}
+
+.container{
+    width:100%;
+}
+
+.size-3of5 form h4,.size-3of5 form table{
+    margin-bottom:15px;
+}
+
+.size-3of5 .form-section-container{
+    /*
+    padding:2%;
+    border-radius:5px;
+    background-color:rgba(200,200,200,0.5);
+    */
+}
+
+
