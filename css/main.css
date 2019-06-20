@@ -20,7 +20,7 @@ h2 {
     color: #484830;
 }
 
-h3 {
+h3{
     font-family: 'Righteous', cursive;
     font-size: 1.6rem;
     margin-bottom: 0;
@@ -75,6 +75,26 @@ form {
     float: center;
 }
 
+form h4,
+form label, 
+form input{
+    display: block;
+}
+
+form div{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    align-items:center;
+    width:100%;
+
+}
+
+form div label,
+form div input{
+    padding:10px;
+}
+
 a {
     text-decoration: none;
     color: #53929b;
@@ -106,6 +126,11 @@ a.in-text-link{
     font-size: 0.8rem;
     color: #162628;
 }
+
+.size-1of2 .main-body{
+    padding:10%;
+}
+
 
 
 
@@ -394,6 +419,7 @@ figure.reveal-text:hover figcaption{
 
 /* FORMS ------------------- ///// /////////*/
 
+
 .comment-input-form {
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -641,13 +667,12 @@ textarea {
 
 .main-nav-bar {
     display: flex;
-    flex-wrap: row wrap;
+    flex-wrap:wrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    flex-basis:max-content;
 
-    padding:0.2rem;
+    padding:0.2rem 1rem;
     position: sticky;
     top: 0;
     right: 0;
@@ -778,7 +803,7 @@ textarea {
 
 .nav-checkout {
     background-color: #FDDCAC;
-    padding: 0.5em;
+    padding: 0.5em 1em;
 }
 
 nav.nav-checkout {
@@ -786,6 +811,8 @@ nav.nav-checkout {
     top: 0;
     left: 0;
     width: 100%;
+
+
 }
 
 ul.nav-checkout {
@@ -975,5 +1002,24 @@ body.about-page section.main-body-about div section.neon-logo{
     }    
 }
 
+/* ---------Order Summary--------------*/
+.checkout3-border{
+    padding:0px 20px;
+}
 
+.order-summary h3,
+.checkout3-border h4{
+    padding:20px;
+
+    border-bottom:2px solid black;
+}
+
+.order-summary tr{
+    padding:20px 5px;
+
+}
+
+input type:["submit"]{
+    background-color:red;
+}
 

@@ -12,89 +12,132 @@
     <link rel="stylesheet" href="css/flexbox.css">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Emilys+Candy|Gugi|Righteous|Stardos+Stencil&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <nav class="nav-checkout">
-        <div class="group-2">
-            <div class="size-1of2">
-                <a href="index.html"><img src="img/vintage-maze-logo.jpeg" alt="Vintage Maze Logo" class="nav-checkout-logo"></a>
-            </div>
-            <div class="size-1of2">
-                <ul class="nav-checkout">
-                    <li><a href="store.html" class="navigation">Continue Shopping</a></li>
-                </ul>
-            </div>
-        </div>
+    <nav class='original-menu'>
+        <section class="main-nav-bar" id="main-nav-bar">
+
+          <div>
+                <button class="dropbtn-product"><a href="product_categories.html">SHOP</a></button>
+                <button class="dropbtn-product"><a href="about.html">ABOUT</a></button>
+                <button class="dropbtn-product"><a href="contact.html">CONTACT</a></button>
+          </div>              
+          
+          <button class="button-nav-img"><a href="index.html"><img src="img/vintage-maze-logo.png" class="icon-img-logo"></a></button>
+
+          <div>
+                <button class="dropbtn-product"><a href="checkout1-address.html"><img src="img/shop_icon.png" class="icon-img"></a></button>
+                <button class="dropbtn-product"><a href="https://www.facebook.com/vintagemaze/"><img src="img/fb-icon.png" class="icon-img"></a></button>
+                <button class="dropbtn-product"><a href="http://instagram.com/vintage_maze"><img src="img/ig-icon.png" class="icon-img"></a></button>
+
+          </div>    
+
+        </section>
     </nav>
 
+    <nav class="new-menu-500px">
+        <section class="main-nav-bar" id="main-nav-bar"> 
+
+           <div class="dropdown-p">
+              <button class="dropbtn-product"> <img src="img/menu-icon.png" class="icon-img"></button>
+                  <div class="hover-list">
+                      <a href="product_categories.html" class="main-service">Whole Collection</a> 
+                      <a href="#" class="main-service">Feature Products</a> 
+                      <a href="about.html" class="main-service">About</a> 
+                      <a href="contact.html" class="main-service">Contact Us</a> 
+
+                  </div>
+
+            </div>
+
+            <div class="dropdown-p">
+                <button class="button-nav-img"><a href="index.html"><img src="img/vintage-maze-logo.png" class="icon-img-logo-500px"></a></button>
+            </div>
+
+            <div class="dropdown-p">
+               <button class="dropbtn-product"><a href="checkout1-address.html"><img src="img/shop_icon.png" class="icon-img"></a></button>
+            </div>
+
+        </section>
+    </nav>
+
+<!-- ----------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------------------- -->
+
+
     <section>
-        <h1>Step 1 of 3: Address and Delivery</h1>
+        <div class="headline-box">
+            <br>
+            <h2>Step 1 of 3: Address and Delivery</h2>
+        </div>
+
         <div class='group-2'>
             <div class='size-1of2'>
                 <form action="checkout2-payment.html">
                     <!-- https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link -->
-                    <h2>Address</h2>
+                    <h4>Address</h4>
                     <label for="email">Email Address</label>
-                    <input name="email" id="email" type="text">
+                    <input name="email" id="email" type="text" required>
                     <label for="fname">First Name</label>
-                    <input name="fname" id="fname" type="text">
+                    <input name="fname" id="fname" type="text" required>
                     <label for="lname">Last Name</label>
-                    <input name="lname" id="lname" type="text">
+                    <input name="lname" id="lname" type="text" required>
                     <label for="address">Address</label>
-                    <input name="address" id="address" type="text">
+                    <input name="address" id="address" type="text" required>
                     <label for="city">City</label>
-                    <input name="city" id="city" type="text">
+                    <input name="city" id="city" type="text" required>
                     <label for="state">Province/State</label>
-                    <input name="state" id="state" type="text">
+                    <input name="state" id="state" type="text" required>
                     <label for="country">Country</label>
-                    <input name="country" id="country" type="text">
+                    <input name="country" id="country" type="text" required>
                     <label for="zip">Zip Code</label>
-                    <input name="zip" id="zip" type="text">
+                    <input name="zip" id="zip" type="text" required>
 
-                    <h2>Delivery Options</h2>
-                    <label for="delivery">Delivery Method</label>
-                    <input name="delivery" id="delivery" type="radio"> Air Mail - $16.00 CAD
+                    <h4>Delivery Options</h4>
+                    <div><input name="delivery" id="delivery" type="radio"> <label for="delivery">Air Mail - $16.00 CAD </label></div>
+                    <div><input name="delivery" id="delivery" type="radio"> <label for="delivery">In-store Pickup - Free</label></div>
 
                     <input type="submit" value="Next">
                 </form>
             </div>
 
             <div class='size-1of2 order-summary'>
-                <h2>Order Summary</h2>
+                <h3>Order Summary</h3>
                 <table>
                     <tr>
                         <td>Chair</td>
                         <td>x1</td>
-                        <td>$18.00 CAD</td>
+                        <td>$18.00</td>
                     </tr>
                     <tr>
                         <td>Table</td>
                         <td>x1</td>
-                        <td>$18.00 CAD</td>
+                        <td>$18.00</td>
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <h3>Subtotal</h3>
+                            <h4>Subtotal</h4>
                         </td>
-                        <td>$36.00 CAD</td>
+                        <td>$36.00</td>
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <h3>Shipping</h3>
+                            <h4>Shipping</h4>
                         </td>
-                        <td>$16.00 CAD</td>
+                        <td>$16.00</td>
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <h3>Taxes</h3>
+                            <h4>Taxes</h4>
                         </td>
                         <td>$0.00 CAD</td>
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <h3>Subtotal</h3>
+                            <h4>Subtotal</h4>
                         </td>
                         <td>$52.00 CAD</td>
                     </tr>
