@@ -134,7 +134,7 @@ a.in-text-link{
 }
 
 tr{
-    background-color: red;
+ 
 }
 
 i {
@@ -234,6 +234,12 @@ i {
 .index-round-img{
     width: 150px;
     height: 150px;
+}
+
+.checkout-item-img{
+    width: 50px;
+    height: 50px;
+    border-radius:50px;
 }
 
 /* ------details on image----*/
@@ -499,8 +505,10 @@ input[type=submit] {
     display: inline-block;
 }
 
+
+
 input[type=submit]:hover {
-    background-color: #fddcac;
+    background-color: red;
 }
 
 textarea {
@@ -1066,9 +1074,8 @@ body.about-page section.main-body-about div section.neon-logo{
 }
 
 .order-summary h3{
-    padding:15% 20% 10px 20%;
+    padding:15% 20% 5px 20%;
     margin: 0px;
-    background-color: blue;
     border-bottom:2px solid black;
 }
 
@@ -1082,7 +1089,52 @@ body.about-page section.main-body-about div section.neon-logo{
 
 }
 
-input type:["submit"]{
-    background-color:red;
+.order-summary table{
+    width:80%;
+    padding:5%;
+    border:1px solid black;
 }
+
+
+.order-summary td h4{
+    text-align:right;
+    padding:0 10px;
+}
+
+tr .total-border{
+    border-top:2px solid rgba(22,38,40,0.5);
+}
+
+.container table tr td{
+   
+    border:1px solid black;
+    margin:10px;
+}
+
+.container {
+    border:1px solid rgba(200,200,200,0.5);
+    border-radius:5px;
+}
+
+.container td{
+    padding:5% 5% 5% 5%;
+    margin:0;
+}
+
+.container{
+    width:100%;
+}
+
+.size-3of5 form h4,.size-3of5 form table{
+    margin-bottom:15px;
+}
+
+.size-3of5 .form-section-container{
+    /*
+    padding:2%;
+    border-radius:5px;
+    background-color:rgba(200,200,200,0.5);
+    */
+}
+
 

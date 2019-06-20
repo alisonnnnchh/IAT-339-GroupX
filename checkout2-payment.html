@@ -16,77 +16,99 @@
 </head>
 
 <body>
-    <nav class='original-menu'>
-        <section class="main-nav-bar" id="main-nav-bar">
 
-          <div>
-                <button class="dropbtn-product"><a href="product_categories.html">SHOP</a></button>
-                <button class="dropbtn-product"><a href="about.html">ABOUT</a></button>
-                <button class="dropbtn-product"><a href="contact.html">CONTACT</a></button>
-          </div>              
-          
-          <button class="button-nav-img"><a href="index.html"><img src="img/vintage-maze-logo.png" class="icon-img-logo"></a></button>
+  <section class='main-body'>
+     <div class='group-5'>
+            <div class='size-3of5'>
 
-          <div>
-                <button class="dropbtn-product"><a href="checkout1-address.html"><img src="img/shop_icon.png" class="icon-img"></a></button>
-                <button class="dropbtn-product"><a href="https://www.facebook.com/vintagemaze/"><img src="img/fb-icon.png" class="icon-img"></a></button>
-                <button class="dropbtn-product"><a href="http://instagram.com/vintage_maze"><img src="img/ig-icon.png" class="icon-img"></a></button>
+                <div class="headline-box-checkout">
+                    <br>
+                    <img src="img/vintage-maze-logo.png" class="icon-img-logo-500px">
 
-          </div>    
+                    <div>
+                        <h6>Cart</h6> 
+                        <i class="arrow-right"></i>
+                        <h6>Information & Shipping</h6>
+                        <i class="arrow-right"></i>
+                        <h6 class="in-here">Payment</h6>
+                        <i class="arrow-right"></i>
+                        <h6>Confirm</h6>
+                    </div>
 
-        </section>
-    </nav>
+                </div>
 
-    <nav class="new-menu-500px">
-        <section class="main-nav-bar" id="main-nav-bar"> 
+                <form action="checkout3-review.html">
+                    <!-- https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link -->
+                        
+                           <h4>Credit Card Information</h4>
+                            <label for="ccnum">All transactions are secure and encrypted.</label>
+                            
+                            <div><input name="ccnum" id="ccnum" type="text" placeholder="Card Number"></div>
+                            <div><input name="chname" id="chname" type="text" placeholder="Name On Card"></div>
+                            
+                            <div class="group-2">
+                                <input name="expiration" id="expiration" type="text" placeholder="Expiration date(MM/YY)">
+                                <input name="cvc" id="cvc" type="text" placeholder="Security Code">
+                            </div>
 
-           <div class="dropdown-p">
-              <button class="dropbtn-product"> <img src="img/menu-icon.png" class="icon-img"></button>
-                  <div class="hover-list">
-                      <a href="product_categories.html" class="main-service">Whole Collection</a> 
-                      <a href="#" class="main-service">Feature Products</a> 
-                      <a href="about.html" class="main-service">About</a> 
-                      <a href="contact.html" class="main-service">Contact Us</a> 
+                        
 
-                  </div>
+                        
+                            <h4>Billing Address</h4>
+                            <div class="group-2">
+                                <div ><input name="delivery" id="delivery" type="radio" > Same as shipping address </div>
+                                <div ><input name="delivery" id="delivery" type="radio"> Use a different billing address</div>
+                            </div>
 
+
+                            <div class="hidden-form">
+                                        <div class="group-2">
+                                            <input name="fname" id="fname" type="text" placeholder="First Name" required>
+                                            <input name="lname" id="lname" type="text" placeholder="Last Name"required>
+                                        </div>
+
+                                        <input name="address" id="address" type="text" placeholder="Address" required>
+                                        <input name="apartment" id="apartment" type="text" placeholder="Apartment, suite, etc. (optional)" optional> 
+                                        <input name="city" id="city" type="text" placeholder="City" required>
+
+                                        <div class="group-3">
+                                            <input name="country" id="country" type="text" placeholder="Country/Region" required>
+                                            <input name="state" id="state" type="text" placeholder="Province" required>
+                                            <input name="zip" id="zip" type="text" placeholder="Postal Code" required>
+                                        </div>
+
+                                        <div> <input name="phone" id="phone" type="text" placeholder="Phone Number (optional)" optional> </div> 
+                            </div>                                  
+                            
+                        
+
+                        <div class="group-2">
+                            <a href="cart.html"> <i class="arrow-left"></i>Return to Customer Information  </a>
+                            <input type="submit" value="Next">
+                        </div>
+
+                </form>
             </div>
 
-            <div class="dropdown-p">
-                <button class="button-nav-img"><a href="index.html"><img src="img/vintage-maze-logo.png" class="icon-img-logo-500px"></a></button>
-            </div>
-
-            <div class="dropdown-p">
-               <button class="dropbtn-product"><a href="checkout1-address.html"><img src="img/shop_icon.png" class="icon-img"></a></button>
-            </div>
-
-        </section>
-    </nav>
-
-<!-- ----------------------------------------------------------------------------------- -->
-<!-- ----------------------------------------------------------------------------------- -->
-
-
-
-    <section>
-        <div class="headline-box">
-            <br>
-            <h2>Step 2/3: Payment</h2>
-        </div>
-     
+<!--     
         <div class='group-2'>
             <div class='size-1of2'>
                 <h4>Credit Card Information</h4>
 
                 <form action="checkout3-review.html">
                     <label for="ccnum">Credit Card Number</label>
-                    <input name="ccnum" id="ccnum" type="text">
-                    <label for="expiration">Expiration(MM/YY)</label>
-                    <input name="expiration" id="expiration" type="text">
-                    <label for="cvc">CVC</label>
-                    <input name="cvc" id="cvc" type="text">
+                    <input name="ccnum" id="ccnum" type="text" placeholder="Card Number">
+
                     <label for="chname">Card Holder Name</label>
-                    <input name="chname" id="chname" type="text">
+                    <input name="chname" id="chname" type="text" placeholder="Name On Card">
+
+                    <label for="expiration">Expiration(MM/YY)</label>
+                    <input name="expiration" id="expiration" type="text" placeholder="Expiration date(MM/YY)">
+
+                    <label for="cvc">CVC</label>
+                    <input name="cvc" id="cvc" type="text" placeholder="Security Code">
+
+
                     <label for="address">Address</label>
                     <input name="address" id="address" type="text">
                     <label for="city">City</label>
@@ -99,51 +121,61 @@
                     <input name="zip" id="zip" type="text">
 
                     <input type="submit" value="Next">
+
+
                 </form>
             </div>
+-->
 
-            <div class='size-1of2 order-summary'>
-                <h2>Order Summary</h2>
+            <div class='size-2of5 order-summary'>
+                <h3>Order Summary</h3>
                 <table>
                     <tr>
-                        <td>Chair</td>
-                        <td>x1</td>
-                        <td>$18.00</td>
+                        <td colspan="2">Item</td>
+                        <td>Quantity</td>
+                        <td>Price</td>
                     </tr>
                     <tr>
-                        <td>Table</td>
-                        <td>x1</td>
-                        <td>$18.00</td>
+                        <td colspan="2"><img src="img/accessories-sample.jpg" class="checkout-item-img"> Table</td>
+                        <td>1</td>
+                        <td>$18.00 CAD</td>
                     </tr>
                     <tr>
-                        <td colspan="2">
+                        <td colspan="2"><img src="img/accessories-sample.jpg" class="checkout-item-img"> Table</td>
+                        <td>1</td>
+                        <td>$18.00 CAD</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
                             <h4>Subtotal</h4>
                         </td>
-                        <td>$36.00</td>
+                        <td>$36.00 CAD</td>
                     </tr>
                     <tr>
-                        <td colspan="2">
+                        <td colspan="3">
                             <h4>Shipping</h4>
                         </td>
-                        <td>$16.00</td>
+                        <td>$16.00 CAD</td>
                     </tr>
                     <tr>
-                        <td colspan="2">
+                        <td colspan="3">
                             <h4>Taxes</h4>
                         </td>
                         <td>$0.00 CAD</td>
                     </tr>
+
                     <tr>
-                        <td colspan="2">
-                            <h4>Subtotal</h4>
+                        <td colspan="3" class="total-border">
+                            <h4 >Total</h4>
                         </td>
-                        <td>$52.00 CAD</td>
+                        <td class="total-border"><strong>$52.00 CAD</strong></td>
                     </tr>
                 </table>
 
             </div>
 
         </div>
+
     </section>
 </body>
 
