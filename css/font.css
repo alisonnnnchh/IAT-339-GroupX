@@ -39,3 +39,18 @@
 	font-style: normal;
 	src: url('../font/DFKai71.ttf') format('truetype');
 }
+
+@font-face {
+        font-family:"Cornerstone";
+        src:url("../font/Cornerstone.eot?#iefix");
+        src:url("../font/Cornerstone.ttf") format("truetype");
+}
+
+@font-face {
+        font-family:"Rega";
+        src:url("../font/Regattia/Regattia/Web/regattia-bold-webfont.eot?#iefix");
+        src:url("../font/Regattia/Regattia/Web/regattia-bold-webfont.woff") format("woff"),
+            url("../font/Regattia/Regattia/Web/regattia-bold-webfont.woff2") format("woff2");
+}
+
+

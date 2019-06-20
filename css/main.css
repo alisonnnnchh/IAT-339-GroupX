@@ -21,7 +21,7 @@ h2 {
 }
 
 h3{
-    font-family: 'Righteous', cursive;
+    font-family: 'Cornerstone', cursive;
     font-size: 1.6rem;
     margin-bottom: 0;
 }
@@ -75,10 +75,12 @@ form {
     float: center;
 }
 
+
 form h4,
 form label, 
 form input{
     display: block;
+
 }
 
 form div{
@@ -131,6 +133,34 @@ a.in-text-link{
     padding:10%;
 }
 
+tr{
+    background-color: red;
+}
+
+i {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 2px;
+}
+
+.arrow-right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  width:9px;
+  height:9px;
+}
+
+.arrow-left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  width:9px;
+  height:9px;
+}
+
+.in-here{
+    text-decoration: underline;
+}
 
 
 
@@ -448,6 +478,7 @@ label {
 input[type=text],
 select {
     width: 90%;
+    max-width: 300px;
     padding: 10px 10px;
     margin: 8px 0;
     display: inline-block;
@@ -481,6 +512,11 @@ textarea {
     box-sizing: border-box;
 }
 
+.size-3of5 input[type=text]{
+    max-width: 100%;
+}
+
+
 
 /* SECTIONS -------------------*/
 
@@ -504,6 +540,7 @@ textarea {
     text-align: center;
 }
 
+.headline-box-checkout,
 .headline-box {
     width: 100%;
     background-color: #53929B;
@@ -511,10 +548,31 @@ textarea {
     text-align: center;
 }
 
+.headline-box-checkout{
+   padding: 1em 1em; 
+   border-bottom: 1px solid grey;
+   background-color: white;
+}
+
 .headline-box h2,
 .headline-box p {
     margin: 10px;
     color:#FDE9CA;
+}
+
+.headline-box-checkout div{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+
+    margin:10px;
+    width:100%;
+
+}
+
+.headline-box-checkout div h6{
+    padding:10px;
 }
 
 
@@ -1007,10 +1065,15 @@ body.about-page section.main-body-about div section.neon-logo{
     padding:0px 20px;
 }
 
-.order-summary h3,
-.checkout3-border h4{
-    padding:20px;
+.order-summary h3{
+    padding:15% 20% 10px 20%;
+    margin: 0px;
+    background-color: blue;
+    border-bottom:2px solid black;
+}
 
+.checkout3-border h4{
+    padding:20%;
     border-bottom:2px solid black;
 }
 
