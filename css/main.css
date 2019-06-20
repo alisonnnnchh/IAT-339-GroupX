@@ -193,6 +193,13 @@ i {
     height: 40px;
 }
 
+.icon-img-logo-checkout{
+    width: 100%;
+    position: center;
+    width: 70px;
+    height: 70px;
+}
+
 
 .img-wire {
     width: 100%;
@@ -556,9 +563,10 @@ textarea {
     text-align: center;
 }
 
+
 .headline-box-checkout{
    padding: 1em 1em; 
-   border-bottom: 1px solid grey;
+
    background-color: white;
 }
 
@@ -577,6 +585,10 @@ textarea {
     margin:10px;
     width:100%;
 
+}
+
+.headline-box-checkout h6{
+    font-size:0.8rem;
 }
 
 .headline-box-checkout div h6{
