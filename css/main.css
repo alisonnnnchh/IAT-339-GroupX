@@ -4,9 +4,9 @@ body {
     font-weight: lighter;
     margin: 0;
 
-    position:static;
-    left:0;
-    right:0;
+    position: static;
+    left: 0;
+    right: 0;
 }
 
 h1 {
@@ -118,7 +118,7 @@ nav {
     position: sticky;
     top: 0;
     left: 0;
-    right:0;
+    right: 0;
     z-index: 500;
 }
 
@@ -168,6 +168,7 @@ i {
     width: 25px;
     height: 25px;
     filter: invert(100%);
+
 }
 
 .icon-img:hover {
@@ -188,7 +189,7 @@ i {
     height: 40px;
 }
 
-.icon-img-logo-checkout{
+.icon-img-logo-checkout {
     width: 100%;
     position: center;
     width: 70px;
@@ -240,16 +241,16 @@ i {
     height: 150px;
 }
 
-.checkout-item-img{
+.checkout-item-img {
     width: 50px;
     height: 50px;
-    border-radius:50px;
+    border-radius: 50px;
 }
 
-.checkout-item-img-big{
+.checkout-item-img-big {
     width: 70px;
     height: 70px;
-    border-radius:50px;
+    border-radius: 50px;
 }
 
 /* ------details on image----*/
@@ -337,21 +338,26 @@ figure.reveal-text:hover figcaption {
     div.figure {
         margin: 30px;
     }
+
     figure.reveal-text img,
     figure.reveal-text figcaption {
         display: flex;
         justify-content: center;
     }
+
     figure.reveal-text img {
         margin: 5px;
         border: 5px solid rgba(253, 233, 202, 0.5);
     }
+
     figure.reveal-text figcaption {
         height: 80%;
     }
+
     figure.reveal-text figcaption a {
         font-size: 15px;
     }
+
     .index-round-img {
         width: 80px;
         height: 80px;
@@ -444,6 +450,29 @@ figure.reveal-text:hover figcaption {
 
 /* FORMS ------------------- ///// /////////*/
 
+label {
+    display: block;
+    font-size: 13px;
+}
+
+/* Email Signup */
+.email-input-form {
+    border-radius: 5px;
+    background-color: #162628;
+    width: 50%;
+    min-width: 400px;
+    margin: 0.5em 30px;
+    padding: 1.5em 0.5em;
+    text-align: center;
+}
+
+.email-input-form p {
+    display: block;
+    font-size: 13px;
+    margin: 0;
+}
+
+
 .comment-input-form {
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -452,37 +481,11 @@ figure.reveal-text:hover figcaption {
     text-align: center;
 }
 
-.email-input-form {
-    border-radius: 5px;
-    background-color: #162628;
-    width: 40%;
-    min-width: 400px;
-    margin: 10px 30px;
-    padding: 10px 0.2%;
-    text-align: center;
-}
 
-label {
-    display: block;
-    font-size: 13px;
-}
-
-input[type=text],
-select {
-    width: 90%;
-    max-width: 300px;
-    padding: 10px 10px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #53929b;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.red-submit a{
+.red-submit a {
     text-decoration: none;
     font-size: 13px;
-    color:white;
+    color: white;
 }
 
 .red-submit,
@@ -502,8 +505,22 @@ input[type=submit] {
 .red-submit,
 input[type=submit]:hover {
     background-color: red;
-    width:30%;
 }
+
+
+
+input[type=text],
+select {
+    width: 90%;
+    max-width: 300px;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #53929b;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
 
 textarea {
     width: 60%;
@@ -563,10 +580,10 @@ textarea {
 }
 
 
-.headline-box-checkout{
-   padding: 1em 1em; 
+.headline-box-checkout {
+    padding: 1em 1em;
 
-   background-color: white;
+    background-color: white;
 }
 
 .headline-box h2,
@@ -584,12 +601,12 @@ textarea {
     width: 100%;
 }
 
-.headline-box-checkout h6{
-    font-size:0.8rem;
+.headline-box-checkout h6 {
+    font-size: 0.8rem;
 }
 
-.headline-box-checkout div h6{
-    padding:10px;
+.headline-box-checkout div h6 {
+    padding: 10px;
 }
 
 .new-collection {
@@ -760,40 +777,24 @@ textarea {
 }
 
 
-/* Dropdown Button Navigation */
+/* Mobile Dropdown Button Navigation 
+Help from https://www.w3schools.com/howto/howto_css_dropdown.asp */
 
 .dropbtn-product {
     background-color: #162628;
-    color: #484830;
+    color: #FDE9CA;
     padding: 0.7rem;
     font-size: 1rem;
     font-family: inherit;
     border: none;
 }
 
-.dropbtn-product a {
-    color: #FDE9CA;
+.dropbtn-product:hover {
     text-decoration: none;
 }
 
-.dropdown-p {
-    display: inline-block;
-    color: #484830;
-}
-
-.size-1of4 .dropdown-p {
-    display: inline-block;
-    position: relative;
-    min-width: 180px;
-    padding: 10px 20px;
-    color: #FDE9CA;
-    background-color: #162628;
-    text-align: center;
-}
-
-.dropdown-p a {
-    color: #FDE9CA;
-    text-decoration: none;
+.dropbtn-product-icon {
+    padding: 0.7rem;
 }
 
 
@@ -1045,6 +1046,7 @@ body.about-page section.main-body-about div section.neon-logo {
         padding: 10px 15%;
         display: inline-block;
     }
+
     .neon-logo h5 {
         font-size: 5rem;
         margin-bottom: 3rem;
@@ -1058,20 +1060,20 @@ body.about-page section.main-body-about div section.neon-logo {
     padding: 0px 20px;
 }
 
-.checkout3-border h4{
-    padding:20%;
-    border-bottom:2px solid black;
+.checkout3-border h4 {
+    padding: 20%;
+    border-bottom: 2px solid black;
 }
 
-.order-summary h3{
-    padding:0 20% 10px 20%;
+.order-summary h3 {
+    padding: 0 20% 10px 20%;
     margin: 0px;
-  
+}
 
-.order-summary h3{
-    padding:15% 20% 5px 20%;
+.order-summary h3 {
+    padding: 15% 20% 5px 20%;
     margin: 0px;
-    border-bottom:2px solid black;
+    border-bottom: 2px solid black;
 }
 
 .checkout3-border h4 {
@@ -1083,66 +1085,65 @@ body.about-page section.main-body-about div section.neon-logo {
     padding: 20px 5px;
 }
 
- table{
-    width:100%;
-    padding:5%;
-    border:1px solid black;
+table {
+    width: 100%;
+    padding: 5%;
+    border: 1px solid black;
 }
 
-.order-summary tr{
-    padding:20px 5px;
-    border:2px solid rgba(22,38,40,0.5);
+.order-summary tr {
+    padding: 20px 5px;
+    border: 2px solid rgba(22, 38, 40, 0.5);
 
 }
 
 
 
-.order-summary td h4{
-    text-align:right;
-    padding:0 10px;
+.order-summary td h4 {
+    text-align: right;
+    padding: 0 10px;
 }
 
-tr .total-border{
-    border-top:2px solid rgba(22,38,40,0.5);
+tr .total-border {
+    border-top: 2px solid rgba(22, 38, 40, 0.5);
 }
 
-table .cart-column{
-    background-color:red;
+table .cart-column {
+    background-color: red;
 }
 
 
 /* --------- checkout Page form containers --------------*/
 
-.container table tr td{
-   
-    border:1px solid black;
-    margin:10px;
+.container table tr td {
+
+    border: 1px solid black;
+    margin: 10px;
 }
 
 .container {
-    border:1px solid rgba(200,200,200,0.5);
-    border-radius:5px;
+    border: 1px solid rgba(200, 200, 200, 0.5);
+    border-radius: 5px;
 }
 
-.container td{
-    padding:5% 5% 5% 5%;
-    margin:0;
+.container td {
+    padding: 5% 5% 5% 5%;
+    margin: 0;
 }
 
-.container{
-    width:100%;
+.container {
+    width: 100%;
 }
 
-.size-3of5 form h4,.size-3of5 form table{
-    margin-bottom:15px;
+.size-3of5 form h4,
+.size-3of5 form table {
+    margin-bottom: 15px;
 }
 
-.size-3of5 .form-section-container{
+.size-3of5 .form-section-container {
     /*
     padding:2%;
     border-radius:5px;
     background-color:rgba(200,200,200,0.5);
     */
 }
-
-
