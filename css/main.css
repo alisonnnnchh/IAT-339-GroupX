@@ -74,7 +74,7 @@ section p {
 }
 
 form {
-    float: center;
+    text-align: center;
 }
 
 form h4,
@@ -101,9 +101,8 @@ a {
     color: #53929b;
 }
 
-a:hover,
-a:focus {
-    text-decoration: underline;
+a:hover {
+    text-decoration: none;
 }
 
 li {
@@ -165,7 +164,7 @@ i {
 
 .icon-img {
     width: 100%;
-    position: center;
+    text-align: center;
     width: 25px;
     height: 25px;
     filter: invert(100%);
@@ -178,21 +177,21 @@ i {
 
 .icon-img-logo {
     width: 100%;
-    position: center;
+    text-align: center;
     width: 70px;
     height: 70px;
 }
 
 .icon-img-logo-500px {
     width: 100%;
-    position: center;
+    text-align: center;
     width: 40px;
     height: 40px;
 }
 
 .icon-img-logo-checkout {
     width: 100%;
-    position: center;
+    text-align: center;
     width: 70px;
     height: 70px;
 }
@@ -261,7 +260,7 @@ i {
 
 div.figures {
     display: flex;
-    flex-wrap: row;
+    flex-wrap: wrap;
 }
 
 figure.reveal-text {
@@ -621,7 +620,7 @@ textarea {
     background-color: black;
     color: white;
     display: flex;
-    flex-wrap: row;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -764,10 +763,13 @@ textarea {
     z-index: 500;
 }
 
+.main-nav-bar a {
+    text-decoration: none;
+}
+
 .bottom-page-nav {
     display: inline-block;
     margin: 20px;
-    background-color: none;
     border: none;
 }
 
@@ -782,16 +784,14 @@ textarea {
 Help from https://www.w3schools.com/howto/howto_css_dropdown.asp */
 
 .dropbtn-product {
-    background-color: #162628;
     color: #FDE9CA;
     padding: 0.7rem;
     font-size: 1rem;
-    font-family: inherit;
-    border: none;
 }
 
-.dropbtn-product:hover {
+.dropbtn-product a {
     text-decoration: none;
+
 }
 
 .dropbtn-product-icon {
@@ -846,18 +846,6 @@ Help from https://www.w3schools.com/howto/howto_css_dropdown.asp */
 
 .dropdown-p:hover .hover-list {
     display: block;
-}
-
-
-/* filter categories----------*/
-
-.
-/* Change the background color of the dropdown button when the dropdown content is shown */
-
-.dropdown-p:hover,
-.dropbtn-product:hover {
-    color: #484830;
-    text-decoration: underline;
 }
 
 
@@ -972,7 +960,6 @@ button {
 .button-icon {
     display: inline-block;
     color: white;
-    border-color: none;
     border-radius: 0.5em;
     text-decoration: none;
     -webkit-transition: background-color 0.5s ease-out;

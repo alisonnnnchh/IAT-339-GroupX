@@ -14,8 +14,8 @@
 
 @font-face {
     font-family: 'Lato';
-    font-weight: italic;
-    font-style: normal;
+    /*font-weight: italic;*/
+    font-style: italic;
     src: url('../fonts/Lato-Italic.ttf') format('truetype');
 }
 
@@ -28,7 +28,7 @@
 
 @font-face {
     font-family: 'Lato';
-    font-weight: lighter;
+    /* font-weight: lighter;*/
     font-style: normal;
     src: url('../fonts/Lato-Light.ttf') format('truetype');
 }
