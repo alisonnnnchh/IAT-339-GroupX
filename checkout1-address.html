@@ -7,27 +7,25 @@
     <title>Checkout - Vintage Maze</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- this one is important-->
 
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/font.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/flexbox.css">
+    <link href="css/flexbox.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Emilys+Candy|Gugi|Righteous|Stardos+Stencil&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
 
     <section class='main-body'>
-     <div class='group-5'>
+        <div class='group-5'>
             <div class='size-3of5'>
 
                 <div class="headline-box-checkout">
-                    <br>
-                    <img src="img/vintage-maze-logo.png" class="icon-img-logo-checkout">
+                    <img src="img/vintage-maze-logo.png" class="icon-img-logo-checkout" alt="Logo">
 
                     <div>
-                        <h6>Cart</h6> 
+                        <h6>Cart</h6>
                         <i class="arrow-right"></i>
                         <h6 class="in-here">Information & Shipping</h6>
                         <i class="arrow-right"></i>
@@ -43,16 +41,16 @@
                     <h4>Contact Information</h4>
 
                     <div class="form-section-container">
-                    
+
                         <div><input name="email" id="email" type="text" placeholder="Email" required></div>
-                        
+
                         <div class="group-2">
                             <input name="fname" id="fname" type="text" placeholder="First Name" required>
-                            <input name="lname" id="lname" type="text" placeholder="Last Name"required>
+                            <input name="lname" id="lname" type="text" placeholder="Last Name" required>
                         </div>
 
                         <div> <input name="address" id="address" type="text" placeholder="Address" required></div>
-                        <div> <input name="apartment" id="apartment" type="text" placeholder="Apartment, suite, etc. (optional)" optional> </div>
+                        <div> <input name="apartment" id="apartment" type="text" placeholder="Apartment, suite, etc. (optional)"> </div>
                         <div> <input name="city" id="city" type="text" placeholder="City" required> </div>
 
                         <div class="group-3">
@@ -61,26 +59,26 @@
                             <input name="zip" id="zip" type="text" placeholder="Postal Code" required>
                         </div>
 
-                        <div> <input name="phone" id="phone" type="text" placeholder="Phone Number (optional)" optional> </div>
+                        <div> <input name="phone" id="phone" type="text" placeholder="Phone Number (optional)"> </div>
 
                     </div>
 
                     <h4>Delivery Options</h4>
                     <div class="form-section-container">
                         <div class="group-2">
-                            <input name="delivery-address" id="delivery-address" type="radio" > Air Mail - $16.00 CAD 
+                            <input name="delivery-address" type="radio"> Air Mail - $16.00 CAD
                         </div>
 
                         <div class="group-2">
-                            <input name="delivery-address" id="delivery-address" type="radio"> In-store Pickup - Free
+                            <input name="delivery-address" type="radio"> In-store Pickup - Free
                         </div>
                     </div>
 
                     <div class="group-2">
-                        <a href="cart.html"> <i class="arrow-left"></i>Return to Cart  </a>
+                        <a href="cart.html"> <i class="arrow-left"></i>Return to Cart </a>
                         <input type="submit" value="Next">
                     </div>
-                    
+
                 </form>
 
             </div>
@@ -89,42 +87,42 @@
                 <h3>Order Summary</h3>
                 <table>
                     <tr>
-                        <td colspan="2">Item</td>
+                        <td>Item</td>
                         <td>Quantity</td>
                         <td>Price</td>
                     </tr>
                     <tr>
-                        <td colspan="2"><img src="img/accessories-sample.jpg" class="checkout-item-img"> Table</td>
+                        <td><img src="img/accessories-sample.jpg" class="checkout-item-img" alt="Table"> Table</td>
                         <td>1</td>
                         <td>$18.00 CAD</td>
                     </tr>
                     <tr>
-                        <td colspan="2"><img src="img/accessories-sample.jpg" class="checkout-item-img"> Table</td>
+                        <td><img src="img/accessories-sample.jpg" class="checkout-item-img" alt="Table"> Table</td>
                         <td>1</td>
                         <td>$18.00 CAD</td>
                     </tr>
                     <tr>
-                        <td colspan="3">
+                        <td colspan="2">
                             <h4>Subtotal</h4>
                         </td>
                         <td>$36.00 CAD</td>
                     </tr>
                     <tr>
-                        <td colspan="3">
+                        <td colspan="2">
                             <h4>Shipping</h4>
                         </td>
                         <td>$16.00 CAD</td>
                     </tr>
                     <tr>
-                        <td colspan="3">
+                        <td colspan="2">
                             <h4>Taxes</h4>
                         </td>
                         <td>$0.00 CAD</td>
                     </tr>
 
                     <tr>
-                        <td colspan="3" class="total-border">
-                            <h4 >Total</h4>
+                        <td colspan="2" class="total-border">
+                            <h4>Total</h4>
                         </td>
                         <td class="total-border"><strong>$52.00 CAD</strong></td>
                     </tr>

@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- this one is important-->
 
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/font.css" rel="stylesheet">
     <link href="css/flexbox.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Emilys+Candy|Gugi|Righteous|Stardos+Stencil&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
 
 </head>
@@ -78,7 +78,7 @@
     <section class="main-body" id="main-info">
 
         <div class="static-info">
-            <img src="img/product-sample2.jpg" class="products-img">
+            <img src="img/product-sample2.jpg" class="products-img" alt="Sample Item">
             <div class="static-info-textbox">
                 <h3>Rose Table Lamp</h3>
 
@@ -97,7 +97,7 @@
                 <p>An elegant table lamp shaped like a rose. The flower on the rose lights up when turned on for a beautiful, glowing effect.</p>
 
                 <form>
-                    <h4> Color: </h4>
+                    <label><strong>Color:</strong> </label>
                     <select name="color-select">
                         <option value="yellow">Yellow</option>
                         <option value="red">Red</option>
@@ -106,8 +106,7 @@
                     </select>
                 </form>
 
-                <br>
-                <button class="button button-nav"><a href="cart.html">Add To Cart</a></button>
+                <a href="cart.html" class="button button-nav">Add To Cart</a>
                 <a href="#comment" class="in-text-link">Reviews & Comment</a>
 
             </div>
@@ -132,14 +131,14 @@
     <section class="main-body" id="comment">
 
         <div class="comment-input-form">
-            <label for="comment-section">
-                <h4> Comment </h4>
+            <label>
+                <strong> Comment </strong>
             </label>
             <form>
 
                 <!--   <input type="text" id="new_name" name="name_input" value="" tabindex="1" required="required" placeholder="Your Name"> 
            -->
-                <textarea name="comment" id="comment" rows="2" tabindex="2" required="required" placeholder="Leave a Comment!"></textarea>
+                <textarea name="comment" rows="2" tabindex="2" required="required" placeholder="Leave a Comment!"></textarea>
 
 
                 <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID">
@@ -151,17 +150,11 @@
     </section>
 
     <section class="bottom-page">
-        <button class="bottom-page-nav" title="Previous Item">
-            <a href="product_detail.html"><img src="img/arrow-left-icon.png" class="icon-img"></a>
-        </button>
+        <a href="product_detail.html" class="bottom-page-nav"><img src="img/arrow-left-icon.png" class="icon-img" alt="Previous Item"></a>
 
-        <button class="bottom-page-nav" title="Back to Categories">
-            <a href="product_categories.html"><img src="img/shop-bag-icon.png" class="icon-img"></a>
-        </button>
+        <a href="product_categories.html" class="bottom-page-nav"><img src="img/shop-bag-icon.png" class="icon-img" alt="Return to Product Categories"></a>
 
-        <button class="bottom-page-nav" title="Next Item">
-            <a href="product_detail.html"><img src="img/arrow-right-icon.png" class="icon-img"></a>
-        </button>
+        <a href="product_detail.html" class="bottom-page-nav"><img src="img/arrow-right-icon.png" class="icon-img" alt="Next Item"></a>
     </section>
 
     <!-- ----------------------------------------------------------------------------------- -->
