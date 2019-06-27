@@ -638,7 +638,7 @@ textarea {
     background-color: white;
     padding: 1em;
     text-align: center;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 .footer {
@@ -668,6 +668,13 @@ textarea {
 
 .header-category {
     position: static;
+}
+
+.header-category img{
+    z-index: -1;
+    background-image: url("img/sample-img.jpg");
+    width: 60%;
+    opacity: 0.5;
 }
 
 .header-img {
