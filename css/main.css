@@ -128,6 +128,10 @@ a.in-text-link {
     color: #162628;
 }
 
+a.in-text-link:hover {
+    text-decoration: underline;
+}
+
 .size-1of2 .main-body {
     padding: 10%;
 }
@@ -157,6 +161,10 @@ i {
 
 .in-here {
     text-decoration: underline;
+}
+
+video{
+    width: 100%;
 }
 
 
@@ -261,6 +269,9 @@ i {
 div.figures {
     display: flex;
     flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: center;
+
 }
 
 figure.reveal-text {
@@ -546,6 +557,7 @@ textarea {
 
 .slide-bg {
     width: 100%;
+    height:auto;
     position: absolute;
     top: 0;
     z-index: -1;
@@ -575,7 +587,7 @@ textarea {
 .headline-box {
     width: 100%;
     background-color: #53929B;
-    padding: 1em 25%;
+    padding: 1em 20%;
     text-align: center;
 }
 
@@ -609,11 +621,15 @@ textarea {
     padding: 10px;
 }
 
+#new-collection{
+    margin:20px;
+}
 .new-collection {
     width: 100%;
     background-color: white;
-    padding: 3em;
+    padding: 1em;
     text-align: center;
+    border: 1px solid black;
 }
 
 .footer {
@@ -677,22 +693,45 @@ textarea {
 /* product detail page///////////////////////////////////////////*/
 
 .static-info {
-    background-color: #B9D2D6;
-    /* add pic in background*/
-    padding: 10px;
+    margin: 5% 20%;
+    display:flex;
+    flex-flow: wrap row;
+    justify-content: stretch;
+    align-items: stretch;
 }
 
-.static-info-textbox h4,
+.static-info .group-2 .size-1of2{
+    padding:0;
+    margin:0;
+}
+
+@media all and (min-width: 900px) {
+    .static-info {
+        flex-flow: wrap column;
+    }
+}
+
+.static-info .group-2 .size-1of2 img{
+    width:100%;
+    height:100%;
+}
+
 .static-info-textbox form {
     display: inline-block;
     margin: 10px 10px 10px 0px;
     padding-right: 10%;
+    text-align:left;
 }
 
 .static-info-textbox form select,
 .static-info-textbox form option {
     height: 30px;
     width: 150px;
+}
+
+.static-info-textbox form input[type=submit] {
+    height: 40px;
+    width: 100%;
 }
 
 .static-info-textbox form select {
@@ -704,17 +743,90 @@ textarea {
     /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_custom_select */
 }
 
-.static-info-textbox {
-    background: rgba(256, 256, 256, 0.3);
-    max-width: 500px;
-    padding: 5em;
+.static-info .size-1of2 .static-info-textbox{
+    padding:10%;
+     min-height:200px;
+     min-width:200px;
+     background-color:#FDE9CA;
 }
 
-.static-info-textbox h3,
+.static-info-textbox {
+    background: rgba(256, 256, 256, 0.3);
+    width:100%;
+    min-height:300px;
+}
+
+
 .static-info-textbox button {
     padding: 0.5em;
     text-align: left;
 }
+
+.static-info-textbox h3{
+      text-align: left; 
+      margin:10px 0px;
+}
+
+
+/* --------- slideshow in detail page --------------*/
+
+.static-info  .slideshow-container {
+  width: 100%;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin:0px 10px;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(256,256,256,0.8);
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
 
 
 /* 
@@ -943,7 +1055,8 @@ button {
 
 .button-nav:hover,
 .button-nav:focus {
-    background-color: #53929B;
+    background-color: #162628;
+    color:#FDE9CA;
 }
 
 .button-nav:hover a,
@@ -1085,10 +1198,15 @@ table {
 
 }
 
+.order-summary td{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8rem;
 
+    margin-bottom: 1rem;
+}
 
 .order-summary td h4 {
-    text-align: right;
+    text-align: center;
     padding: 0 10px;
 }
 
@@ -1135,3 +1253,7 @@ table .cart-column {
     background-color:rgba(200,200,200,0.5);
     */
 }
+
+
+
+
