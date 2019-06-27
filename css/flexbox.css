@@ -485,6 +485,11 @@ form .group-2 {
     padding:2%;
 }
 
+.size-2of5 table.total td{
+
+    text-align:center;
+}
+
 .order-summary-cart table td{
     text-align: left;
     padding:0px 1%;
@@ -533,6 +538,7 @@ form .group-2 {
     flex-direction: row;
     justify-content: flex-start;
 }
+
 .size-3of5 form div,
 .size-3of5 form input {
     width: 100%;
@@ -541,6 +547,7 @@ form .group-2 {
     width: 0;
     background-color: yellow;
 }
+
 .size-3of5 form div.group-2,
 .size-3of5 form div.group-3 {
     display: flex;
@@ -549,6 +556,8 @@ form .group-2 {
     justify-content: space-between;
     align-items: baseline;
 }
+
+
 .group-2-radio {
     display: flex;
     flex-wrap: wrap;
@@ -567,7 +576,7 @@ form .group-2 {
     display: inline-block;
 }
 .size-3of5 form .group-2 .size-3of5 form div label {
-    display: flex
+    display: flex;
 }
 
 @media all and (max-width: 800px) {
