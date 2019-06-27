@@ -438,7 +438,12 @@ form .group-2 {
         flex-direction: column;
         justify-content: center;
     }
-    
+
+/*
+    .group-4{
+        flex-direction: column-reverse;
+    }
+ */   
     .group-2 .size-1of2 .ordersummary {
         order: 1;
     }
@@ -456,7 +461,7 @@ form .group-2 {
     
     #search .size-1of4 {
         position: sticky;
-        top: 48px;
+        top:47px;
     }
     
     .size-3of4 {
