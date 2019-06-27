@@ -58,9 +58,17 @@ h6 {
     margin: 0;
 }
 
+
 section:not([class]) {
-    padding: 3% 19%;
+    padding: 3% 30%;
 }
+
+@media (max-width: 700px) {
+    section:not([class]) {
+        padding: 3% 10%;
+    }
+}
+
 
 section h3 {
     margin: 0;
@@ -402,7 +410,7 @@ figure.reveal-text:hover figcaption {
 
 .product-form-button:hover {
     background-color: #162628;
-    color: #484830;
+    color: white;
 }
 
 .image-college figure.reveal-text:hover img {
@@ -537,7 +545,7 @@ textarea {
     width: 90%;
     max-width: 300px;
     padding: 10px 10px;
-    margin: 0.5em;
+    margin: 0.5em 0em;
     display: inline-block;
     border: 1px solid #53929b;
     border-radius: 4px;
@@ -553,9 +561,8 @@ textarea {
 
 .slideshow {
     width: 100%;
-    width: 100%;
-    height: 550px;
-    padding: 1em 1em;
+    height: auto;
+
 }
 
 .slide-bg {
@@ -590,7 +597,7 @@ textarea {
 .headline-box {
     width: 100%;
     background-color: #53929B;
-    padding: 1em 20%;
+    padding: 5% 20%;
     text-align: center;
 }
 
@@ -635,7 +642,7 @@ textarea {
 }
 
 .footer {
-    background-color: black;
+    background-color: #162628;
     color: white;
     display: flex;
     flex-wrap: wrap;
@@ -663,6 +670,13 @@ textarea {
     position: static;
 }
 
+.header-img {
+    z-index: -1;
+    background-image: url("img/sample-img.jpg");
+    width: 60%;
+    opacity: 0.5;
+}
+
 .header-title {
     background-color: white;
     padding: 5%;
@@ -674,12 +688,6 @@ textarea {
     padding: 10px;
 }
 
-.header-img {
-    z-index: -1;
-    background-image: url("img/sample-img.jpg");
-    width: 60%;
-    opacity: 0.5;
-}
 
 .cover-image {
     width: 100%;
@@ -952,6 +960,12 @@ Help from https://www.w3schools.com/howto/howto_css_dropdown.asp */
     background-color: #162628;
     text-align: center;
 }
+
+.size-1of4 .dropdown-p a{
+    color: #FDE9CA;
+}
+
+
 
 
 /* Dropdown Content (Hidden by Default) */
@@ -1293,15 +1307,6 @@ table .cart-column {
 
 .hidden-form{
     visibility:hidden; 
-
-
     bottom:0;
 }
 
-.size-3of5 .form-section-container {
-    /*
-    padding:2%;
-    border-radius:5px;
-    background-color:rgba(200,200,200,0.5);
-    */
-}

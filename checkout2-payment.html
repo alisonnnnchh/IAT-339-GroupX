@@ -60,6 +60,11 @@
                         <div><input value="1" type="radio" name="formselector" onClick="displayForm(this)"> Same as shipping address </div>
                         <div><input value="2" type="radio" name="formselector" onClick="displayForm(this)"> Use a different billing address</div>
                     </div>
+
+                    <div class="group-2">
+                        <a href="cart.html"> <i class="arrow-left"></i>Return to Customer Information</a>
+                        <input type="submit" value="Next">
+                    </div>
                 
 
                             <script type="text/javascript"> 
@@ -80,28 +85,23 @@
                             <div class="hidden-form" id="ccformContainer">
                                 <form id="ccform">
                                     <div class="group-2">
-                                        <input name="fname" id="fname" type="text" placeholder="First Name" required>
-                                        <input name="lname" id="lname" type="text" placeholder="Last Name" required>
+                                        <input name="fname" id="fname" type="text" placeholder="First Name" >
+                                        <input name="lname" id="lname" type="text" placeholder="Last Name" >
                                     </div>
 
-                                    <input name="address" id="address" type="text" placeholder="Address" required>
+                                    <input name="address" id="address" type="text" placeholder="Address" >
                                     <input name="apartment" id="apartment" type="text" placeholder="Apartment, suite, etc. (optional)">
-                                    <input name="city" id="city" type="text" placeholder="City" required>
+                                    <input name="city" id="city" type="text" placeholder="City">
 
                                     <div class="group-3">
-                                        <input name="country" id="country" type="text" placeholder="Country/Region" required>
-                                        <input name="state" id="state" type="text" placeholder="Province" required>
-                                        <input name="zip" id="zip" type="text" placeholder="Postal Code" required>
+                                        <input name="country" id="country" type="text" placeholder="Country/Region" >
+                                        <input name="state" id="state" type="text" placeholder="Province" >
+                                        <input name="zip" id="zip" type="text" placeholder="Postal Code">
                                     </div>
 
                                     <div> <input name="phone" id="phone" type="text" placeholder="Phone Number (optional)"> </div>
                                 </form>
                             </div>
-
-                    <div class="group-2">
-                        <a href="cart.html"> <i class="arrow-left"></i>Return to Customer Information</a>
-                        <input type="submit" value="Next">
-                    </div>
 
                 </form>
             </div>
