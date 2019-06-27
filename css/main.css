@@ -78,7 +78,7 @@ a {
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 li {
@@ -117,6 +117,7 @@ i {
     border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 2px;
+    margin-right:5px;
 }
 
 .arrow-right {
@@ -229,8 +230,8 @@ video {
 }
 
 .checkout-item-img-big {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     border-radius: 50px;
 }
 
@@ -484,11 +485,6 @@ label {
     text-align: center;
 }
 
-.red-submit a {
-    text-decoration: none;
-    font-size: 13px;
-    color: white;
-}
 
 .red-submit,
 input[type=submit] {
@@ -503,9 +499,17 @@ input[type=submit] {
     display: inline-block;
 }
 
-.red-submit,
+.red-submit{
+    width: 100%;
+    background-color: #53929b;
+    text-align: center;
+}
+
+
+.red-submit:hover,
 input[type=submit]:hover {
     background-color: red;
+    text-decoration: none;
 }
 
 input[type=text],
@@ -638,12 +642,13 @@ textarea {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    padding: 30px 50px;
+    padding: 2% 5%;
 }
 
 .footer h6 {
     margin: 10px;
 }
+
 
 .size-1of3 h3,
 .size-1of3 button {
@@ -1220,11 +1225,13 @@ body.about-page section.main-body-about div section.neon-logo {
 }
 
 table {
-    width: 80%;
+    width: 90%;
     padding: 5%;
-    background: #FFFFFF;
-    box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.10);
-    border-radius: 6px;
+
+  background: #FFFFFF;
+  box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.10);
+  border-radius: 6px;
+
 }
 
 .order-summary td {

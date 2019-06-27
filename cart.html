@@ -74,9 +74,13 @@
     <!-- ----------------------------------------------------------------------------------- -->
     <!-- ---------------------------------------BODY---------------------------------------- -->
 
-    <section class='order-summary'>
-        <a href="product_categories.html"> <i class="arrow-left"></i>Return to Shop </a>
-        <h3>Your Cart</h3>
+    <section class="order-summary-cart">
+
+
+        <span><a href="product_categories.html"> <i class="arrow-left"></i>Return to Shop </a></span>
+         <h3>Your Cart</h3>
+
+
 
 
         <!--        <div class="group-3">
@@ -142,19 +146,14 @@
     -->
         
         <div class="group-3">
+
             <div class="size-2of3">
+               
                 <table>
-                    <tr class="item-blue">
                         <tr>
-                            <td rowspan="3"><img src="img/accessories-sample.jpg" class="checkout-item-img-big" alt="Table"></td>
+                            <td rowspan="2"><img src="img/accessories-sample.jpg" class="checkout-item-img-big" alt="Table"></td>
                             <td colspan="4"> WHITE TIE DYE LIGHTWEIGHT CUFFED BEANIE</td>
-                            <td><img src="img/cancel-icon.png" class="icon-img" alt="Table"></td>
-                        </tr>
-                        <tr>
-                            <td colspan="4"><h4>$60.80</h4></td>
-                        </tr>
-                        <tr>
-                            <td colspan="4"> 
+                            <td rowspan="2">
                                 <div class="quantity">
                                       <button class="plus-btn"><img src="img/plus-icon.png" class="icon-img" alt="add"></button>
                                       <input type="text" name="name" value="1">
@@ -162,11 +161,32 @@
                                 </div>  
                             </td>
                         </tr>
-
-                    </tr>
+                        <tr>
+                            <td colspan="4"><h4>$60.80</h4></td>
+                        </tr>
 
                 </table>
+                 <table>
+                        <tr>
+                            <td rowspan="2"><img src="img/accessories-sample.jpg" class="checkout-item-img-big" alt="Table"></td>
+                            <td colspan="4"> WHITE TIE DYE LIGHTWEIGHT CUFFED BEANIE</td>
+                            <td rowspan="2">
+                                <div class="quantity">
+                                      <button class="plus-btn"><img src="img/plus-icon.png" class="icon-img" alt="add"></button>
+                                      <input type="text" name="name" value="1">
+                                      <button class="minus-btn"><img src="img/minus-icon.png" class="icon-img" alt="sub"></button>
+                                </div>  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><h4>$60.80</h4></td>
+                        </tr>
+
+                </table>
+
             </div>
+
+            <script src="js/cart.js"></script>
         
             <!--
             <tr>
@@ -176,24 +196,21 @@
                 <td>$18.00 CAD</td>
             </tr>
         -->
-        <div class="size-2of3">
+        <div class="size-1of3">
             <table>
                 <tr>
                     <td>
                         <h4>Total</h4>
                     </td>
-                    <td class="total-border"><strong>$52.00 CAD</strong></td>
+                    <td><strong>$52.00 CAD</strong></td>
+                </tr>
+                <tr>
+                    <td colspan="2"> <a href="checkout1-address.html" class="red-submit"><b>Check Out</b></a></td>
                 </tr>
             </table>
 
-            <a href="checkout1-address.html" class="red-submit"><b>Check Out</b></a>
-
-            
         </div>
     </div>
-
-
-
 
     </section>
 
