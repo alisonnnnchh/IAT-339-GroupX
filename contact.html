@@ -75,14 +75,14 @@
     <!-- ---------------------------------------BODY---------------------------------------- -->
     <section class="main-body">
 
-        <div class="headline-box">
-            <h1>Contact Us</h1>
+        <div>
+            <h2>Contact Us</h2>
         </div>
 
         <div class='group-2'>
             <div class='size-1of2'>
                 <section class="main-body">
-                    <h2>Location</h2>
+                    <h4>Location</h4>
                     <p><strong>Address:</strong> 13123 Wayside Way, Burnaby, BC V7X 3S2</p>
 
                     <p><strong>Phone</strong>: 604 604 2709</p>
@@ -96,7 +96,7 @@
 
             <div class='size-1of2'>
                 <section class="main-body">
-                    <h2>Hours</h2>
+                    <h4>Hours</h4>
                     <table>
                         <tr>
                             <td>Sunday</td>
@@ -139,20 +139,33 @@
             </div>
         </div>
 
-        <section>
-            <h2>Contact Form</h2>
 
-            <form>
-                <label for="name">Name</label>
-                <input name="name" id="name" type="text">
-                <label for="email">Email Address</label>
-                <input name="email" id="email" type="text">
-                <label for="message">Message</label>
-                <input name="message" id="message" type="text">
-                <input type="submit" value="Submit" onclick="alert('Email sent!')">
-            </form>
-        </section>
+    </section>
 
+    <section class="main-body" id="header">
+
+        <div class='header-category'>
+            <div class='header-img'>
+                <img src="img/sample-img.jpg" class="cover-image" alt="room view">
+
+            </div>
+
+            <div class='header-title'>
+                <h4>Message Us</h4>
+
+                <p>For any questions or concerns, please email us at info@vintagemaze.com, or use the below contact form:</p>
+
+                <form>
+                    <div class="form-section-container">
+                        <input name="name" id="name" type="text" placeholder="Name" required>
+                        <input name="email" id="email" type="text" placeholder="Email" required>
+                        <textarea name="Message" placeholder="Enter details here" required></textarea>
+                        <input type="submit" value="Submit" class="block-submit" onclick="alert('Email sent!')">
+                    </div>
+                </form>
+
+            </div>
+        </div>
 
     </section>
 

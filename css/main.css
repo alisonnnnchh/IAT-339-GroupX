@@ -3,7 +3,6 @@ body {
     font-size: 1rem;
     font-weight: lighter;
     margin: 0;
-
     position: static;
     left: 0;
     right: 0;
@@ -73,29 +72,6 @@ section p {
     font-size: 15px;
 }
 
-form {
-    text-align: center;
-}
-
-form h4,
-form label,
-form input {
-    display: block;
-}
-
-form div {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-}
-
-form div label,
-form div input {
-    padding: 10px;
-}
-
 a {
     text-decoration: none;
     color: #53929b;
@@ -136,8 +112,6 @@ a.in-text-link:hover {
     padding: 10%;
 }
 
-
-
 i {
     border: solid black;
     border-width: 0 2px 2px 0;
@@ -163,7 +137,7 @@ i {
     text-decoration: underline;
 }
 
-video{
+video {
     width: 100%;
 }
 
@@ -176,7 +150,6 @@ video{
     width: 25px;
     height: 25px;
     filter: invert(100%);
-
 }
 
 .icon-img:hover {
@@ -261,6 +234,7 @@ video{
     border-radius: 50px;
 }
 
+
 /* ------details on image----*/
 
 
@@ -269,9 +243,8 @@ video{
 div.figures {
     display: flex;
     flex-wrap: wrap;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: center;
-
 }
 
 figure.reveal-text {
@@ -349,26 +322,21 @@ figure.reveal-text:hover figcaption {
     div.figure {
         margin: 30px;
     }
-
     figure.reveal-text img,
     figure.reveal-text figcaption {
         display: flex;
         justify-content: center;
     }
-
     figure.reveal-text img {
         margin: 5px;
         border: 5px solid rgba(253, 233, 202, 0.5);
     }
-
     figure.reveal-text figcaption {
         height: 80%;
     }
-
     figure.reveal-text figcaption a {
         font-size: 15px;
     }
-
     .index-round-img {
         width: 80px;
         height: 80px;
@@ -400,7 +368,7 @@ figure.reveal-text:hover figcaption {
 .product-form-button {
     display: inline-block;
     padding: 0.5em 0.5em;
-    width: 100px;
+    /* width: 100px; */
     border: 0px;
     color: #fde9ca;
     background-color: #53929b;
@@ -461,12 +429,37 @@ figure.reveal-text:hover figcaption {
 
 /* FORMS ------------------- ///// /////////*/
 
+form {
+    text-align: center;
+}
+
+form h4,
+form label,
+form input {
+    display: block;
+}
+
+form div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+form div label,
+form div input {
+    padding: 10px;
+}
+
 label {
     display: block;
     font-size: 13px;
 }
 
+
 /* Email Signup */
+
 .email-input-form {
     border-radius: 5px;
     background-color: #162628;
@@ -483,7 +476,6 @@ label {
     margin: 0;
 }
 
-
 .comment-input-form {
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -491,7 +483,6 @@ label {
     width: 100%;
     text-align: center;
 }
-
 
 .red-submit a {
     text-decoration: none;
@@ -512,13 +503,10 @@ input[type=submit] {
     display: inline-block;
 }
 
-
 .red-submit,
 input[type=submit]:hover {
     background-color: red;
 }
-
-
 
 input[type=text],
 select {
@@ -532,11 +520,20 @@ select {
     box-sizing: border-box;
 }
 
-
 textarea {
+    /* 
     width: 60%;
     padding: 10px 10px;
     margin: 8px 0;
+    border: 1px solid #53929b;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    */
+    width: 90%;
+    max-width: 300px;
+    padding: 10px 10px;
+    margin: 0.5em;
+    display: inline-block;
     border: 1px solid #53929b;
     border-radius: 4px;
     box-sizing: border-box;
@@ -558,7 +555,7 @@ textarea {
 
 .slide-bg {
     width: 100%;
-    height:auto;
+    height: auto;
     position: absolute;
     top: 0;
     z-index: -1;
@@ -592,10 +589,8 @@ textarea {
     text-align: center;
 }
 
-
 .headline-box-checkout {
     padding: 1em 1em;
-
     background-color: white;
 }
 
@@ -622,9 +617,10 @@ textarea {
     padding: 10px;
 }
 
-#new-collection{
-    margin:20px;
+#new-collection {
+    margin: 20px;
 }
+
 .new-collection {
     width: 100%;
     background-color: white;
@@ -695,15 +691,15 @@ textarea {
 
 .static-info {
     margin: 5% 20%;
-    display:flex;
+    display: flex;
     flex-flow: wrap row;
     justify-content: stretch;
     align-items: stretch;
 }
 
-.static-info .group-2 .size-1of2{
-    padding:0;
-    margin:0;
+.static-info .group-2 .size-1of2 {
+    padding: 0;
+    margin: 0;
 }
 
 @media all and (min-width: 900px) {
@@ -712,16 +708,16 @@ textarea {
     }
 }
 
-.static-info .group-2 .size-1of2 img{
-    width:100%;
-    height:100%;
+.static-info .group-2 .size-1of2 img {
+    width: 100%;
+    height: 100%;
 }
 
 .static-info-textbox form {
     display: inline-block;
     margin: 10px 10px 10px 0px;
     padding-right: 10%;
-    text-align:left;
+    text-align: left;
 }
 
 .static-info-textbox form select,
@@ -744,90 +740,107 @@ textarea {
     /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_custom_select */
 }
 
-.static-info .size-1of2 .static-info-textbox{
-    padding:10%;
-     min-height:200px;
-     min-width:200px;
-     background-color:#FDE9CA;
+.static-info .size-1of2 .static-info-textbox {
+    padding: 10%;
+    min-height: 200px;
+    min-width: 200px;
+    background-color: #FDE9CA;
 }
 
 .static-info-textbox {
     background: rgba(256, 256, 256, 0.3);
-    width:100%;
-    min-height:300px;
+    width: 100%;
+    min-height: 300px;
 }
-
 
 .static-info-textbox button {
     padding: 0.5em;
     text-align: left;
 }
 
-.static-info-textbox h3{
-      text-align: left; 
-      margin:10px 0px;
+.static-info-textbox h3 {
+    text-align: left;
+    margin: 10px 0px;
 }
 
 
 /* --------- slideshow in detail page --------------*/
 
-.static-info  .slideshow-container {
-  width: 100%;
-  position: relative;
+.static-info .slideshow-container {
+    width: 100%;
+    position: relative;
 }
+
 
 /* Hide the images by default */
+
 .mySlides {
-  display: none;
+    display: none;
 }
+
 
 /* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  margin:0px 10px;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin: 0px 10px;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
+
 
 /* Position the "next button" to the right */
+
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
+
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(256,256,256,0.8);
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(256, 256, 256, 0.8);
 }
 
 
 /* Fading animation */
+
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
-
 
 
 /* 
@@ -893,7 +906,7 @@ textarea {
 }
 
 
-/* Mobile Dropdown Button Navigation 
+/* Mobile Dropdown Button - Main Navigation 
 Help from https://www.w3schools.com/howto/howto_css_dropdown.asp */
 
 .dropbtn-product {
@@ -904,11 +917,34 @@ Help from https://www.w3schools.com/howto/howto_css_dropdown.asp */
 
 .dropbtn-product a {
     text-decoration: none;
-
 }
 
 .dropbtn-product-icon {
     padding: 0.7rem;
+}
+
+
+/* About Page Mini-Navigation */
+
+.about-nav {
+    text-align: center;
+}
+
+
+/* Product Page Dropdown */
+
+.dropdown-p:hover .hover-list {
+    display: block;
+}
+
+.size-1of4 .dropdown-p {
+    display: inline-block;
+    position: relative;
+    min-width: 180px;
+    padding: 10px 20px;
+    color: #FDE9CA;
+    background-color: #162628;
+    text-align: center;
 }
 
 
@@ -955,10 +991,6 @@ Help from https://www.w3schools.com/howto/howto_css_dropdown.asp */
 
 .hover-list a.red {
     background-color: rgba(256, 0, 0, 0.5);
-}
-
-.dropdown-p:hover .hover-list {
-    display: block;
 }
 
 
@@ -1058,7 +1090,7 @@ button {
 .button-nav:hover,
 .button-nav:focus {
     background-color: #162628;
-    color:#FDE9CA;
+    color: #FDE9CA;
 }
 
 .button-nav:hover a,
@@ -1149,7 +1181,6 @@ body.about-page section.main-body-about div section.neon-logo {
         padding: 10px 15%;
         display: inline-block;
     }
-
     .neon-logo h5 {
         font-size: 5rem;
         margin-bottom: 3rem;
@@ -1191,20 +1222,16 @@ body.about-page section.main-body-about div section.neon-logo {
 table {
     width: 80%;
     padding: 5%;
-
-
-  background: #FFFFFF;
-  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
-  border-radius: 6px;
-
+    background: #FFFFFF;
+    box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 6px;
 }
 
-
-.order-summary td{
+.order-summary td {
     font-family: 'Lato', sans-serif;
     font-size: 0.9rem;
     text-align: left;
-    padding:0px 10px;
+    padding: 0px 10px;
 }
 
 .order-summary td h4 {
@@ -1223,7 +1250,6 @@ table .cart-column {
 /* --------- checkout Page form containers --------------*/
 
 .container table tr td {
-
     border: 1px solid black;
     margin: 10px;
 }
@@ -1254,7 +1280,3 @@ table .cart-column {
     background-color:rgba(200,200,200,0.5);
     */
 }
-
-
-
-
