@@ -1189,27 +1189,26 @@ body.about-page section.main-body-about div section.neon-logo {
 }
 
 table {
-    width: 100%;
+    width: 80%;
     padding: 5%;
-    border: 1px solid black;
+
+
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+
 }
 
-.order-summary tr {
-    padding: 20px 5px;
-    border: 2px solid rgba(22, 38, 40, 0.5);
-
-}
 
 .order-summary td{
     font-family: 'Lato', sans-serif;
-    font-size: 0.8rem;
-
-    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    text-align: left;
+    padding:0px 10px;
 }
 
 .order-summary td h4 {
-    text-align: center;
-    padding: 0 10px;
+    text-align: left;
 }
 
 tr .total-border {

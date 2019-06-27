@@ -518,12 +518,13 @@ form .group-2 {
 
     border-radius: 5px;
     border-left: 1.5px solid #53929B;
+    
 
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     align-content: flex-start;
 
     padding: 5% 10%;
@@ -633,27 +634,29 @@ form .group-2 {
 .cart {
   width: 70%;
   height: 360px;
-  margin: 80px auto;
+  margin: 10px auto;
   background: #FFFFFF;
   box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
   border-radius: 6px;
  
   display: flex;
-  flex-direction: column;
+  flex-wrap:wrap;
+  flex-direction:row;
 }
 
 /* Container of Each Item */
 
 .item {
-  padding: 10px 30px;
+  padding: 10px 10px;
   height: 120px;
+  width: 100%;
 
   display: flex;
   flex-wrap:wrap;
   flex-direction:row;
 
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   
 }
  
@@ -665,19 +668,16 @@ form .group-2 {
 /* BUTTON */
 
 .buttons {
-  position: relative;
   padding-top: 30px;
   margin-right: 60px;
 }
+
+
 .delete-btn{
   display: inline-block;
-  Cursor: pointer;
+  cursor: pointer;
 }
-.delete-btn {
-  width: 18px;
-  height: 17px;
-  background: url("cancel-icon.png") no-repeat center;
-}
+
 
 /* BUTTON ANIMATE */
 
@@ -698,15 +698,13 @@ form .group-2 {
 /* BUTTON ANIMATE */
 
 .image {
-   width:15%;
-    padding:10px;
+   padding:10px;
    background-color: blue;
 }
  
 .description {
   padding:10px;
   width: 300px;
-  width:45%;
   background-color: red;
 
   font-size: 14px;
@@ -737,7 +735,7 @@ form .group-2 {
 /* QUANTITY BAR */
 
 .quantity {
-    padding:10px;
+  padding:10px;
 
   display:flex;
   flex-wrap:wrap;
@@ -787,7 +785,6 @@ input:focus {
 
 .total-price {
   background-color: yellow;
-  width:15%;
 
   padding: 10px;
   text-align: center;

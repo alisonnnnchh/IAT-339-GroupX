@@ -74,7 +74,7 @@
     <!-- ----------------------------------------------------------------------------------- -->
     <!-- ---------------------------------------BODY---------------------------------------- -->
 
-    <div class='order-summary'>
+    <section class='order-summary'>
         <a href="product_categories.html"> <i class="arrow-left"></i>Return to Shop </a>
         <h3>Your Cart</h3>
 
@@ -114,6 +114,7 @@
 
         </div>-->
 
+        <!--
         <div class="cart">
             <div class="item">
                     <div class="image">
@@ -121,43 +122,51 @@
                     </div>  
 
                     <div class="description">
-                      <span>WHITE TIE DYE LIGHTWEIGHT CUFFED BEANIE</span>
+                      <span>ROSE TABLE LIGHT</span>
+                      <span>PINK</span>
 
                       <span class="quantity">
                           <button class="plus-btn" type="button" name="button"><img src="img/plus-icon.png" class="icon-img"  alt="add"></button>
                           <input type="text" name="name" value="1">
                           <button class="minus-btn" type="button" name="button"><img src="img/minus-icon.png" class="icon-img" alt="sub"></button>
-                      </div>  
+                    </div>  
 
-                    </div>
-
-                    <div class="total-price">$60</div> 
-                    <div class="buttons"><span class="delete-btn"></span></div>
+                    <div class="total-price"><span>$60</span></div> 
+                    <div class="buttons"><img src="img/cancel-icon.png" class="icon-img delete-btn" alt="Remove Purchase"></div>
             </div>
 
         </div>
 
         <script src="js/cart.js"></script>
 
-        <table>
+    -->
         
-            <tr>
-                <td rowspan="3"><img src="img/accessories-sample.jpg" class="checkout-item-img-big" alt="Table"></td>
-                <td colspan="4"> WHITE TIE DYE LIGHTWEIGHT CUFFED BEANIE</td>
-                <td><img src="img/cancel-icon.png" class="icon-img" alt="Table"></td>
-            </tr>
-            <tr>
-                <td colspan="4"><h4>$60.80</h4></td>
-            </tr>
-            <tr>
-                <td colspan="4"> 
-                    <div class="quantity">
-                          <button class="plus-btn"><img src="img/plus-icon.png" class="icon-img" alt="add"></button>
-                          <input type="text" name="name" value="1">
-                          <button class="minus-btn"><img src="img/minus-icon.png" class="icon-img" alt="sub"></button>
-                    </div>  
-                </td>
-            </tr>
+        <div class="group-3">
+            <div class="size-2of3">
+                <table>
+                    <tr class="item-blue">
+                        <tr>
+                            <td rowspan="3"><img src="img/accessories-sample.jpg" class="checkout-item-img-big" alt="Table"></td>
+                            <td colspan="4"> WHITE TIE DYE LIGHTWEIGHT CUFFED BEANIE</td>
+                            <td><img src="img/cancel-icon.png" class="icon-img" alt="Table"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><h4>$60.80</h4></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"> 
+                                <div class="quantity">
+                                      <button class="plus-btn"><img src="img/plus-icon.png" class="icon-img" alt="add"></button>
+                                      <input type="text" name="name" value="1">
+                                      <button class="minus-btn"><img src="img/minus-icon.png" class="icon-img" alt="sub"></button>
+                                </div>  
+                            </td>
+                        </tr>
+
+                    </tr>
+
+                </table>
+            </div>
         
             <!--
             <tr>
@@ -167,34 +176,21 @@
                 <td>$18.00 CAD</td>
             </tr>
         -->
-            <tr>
-                <td colspan="3">
-                    <h4>Subtotal</h4>
-                </td>
-                <td>$36.00 CAD</td>
-            </tr>
-            <tr>
-                <td colspan="3">
-                    <h4>Shipping</h4>
-                </td>
-                <td>$16.00 CAD</td>
-            </tr>
-            <tr>
-                <td colspan="3">
-                    <h4>Taxes</h4>
-                </td>
-                <td>$0.00 CAD</td>
-            </tr>
+        <div class="size-2of3">
+            <table>
+                <tr>
+                    <td>
+                        <h4>Total</h4>
+                    </td>
+                    <td class="total-border"><strong>$52.00 CAD</strong></td>
+                </tr>
+            </table>
 
-            <tr>
-                <td colspan="3" class="total-border">
-                    <h4>Total</h4>
-                </td>
-                <td class="total-border"><strong>$52.00 CAD</strong></td>
-            </tr>
-        </table>
+            <a href="checkout1-address.html" class="red-submit"><b>Check Out</b></a>
 
-        <a href="checkout1-address.html" class="red-submit"><b>Check Out</b></a>
+            
+        </div>
+    </div>
 
 
 
