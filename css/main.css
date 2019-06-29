@@ -673,7 +673,6 @@ textarea {
 .header-category img{
     z-index: -1;
     background-image: url("img/sample-img.jpg");
-    width: 60%;
     opacity: 0.5;
 }
 
@@ -995,7 +994,7 @@ Help from https://www.w3schools.com/howto/howto_css_dropdown.asp */
     background-color: #162628;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    
+
 }
 
 
