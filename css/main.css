@@ -4,6 +4,7 @@ body {
     font-weight: lighter;
     margin: 0;
     position: static;
+    top:0;
     left: 0;
     right: 0;
 }
@@ -44,7 +45,7 @@ h5 {
     font-size: 1.5rem;
     margin: 0;
     color: #fff;
-    text-shadow: 0 0 5px #fff, 0 0 20px #FDA934, 0 0 30px #FDA934, 0 0 40px #FDA934, 0 0 55px #FDA934, 0 0 75px #FDA934;
+    text-shadow: 0 0 5px #fff, 0 0 20px #FDA934, 0 0 30px #FDA934 /*, 0 0 40px #FDA934, 0 0 55px #FDA934, 0 0 75px #FDA934*/;
     text-align: center;
 }
 
@@ -166,10 +167,16 @@ video {
 }
 
 .icon-img-logo {
-    width: 100%;
     text-align: center;
-    width: 70px;
-    height: 70px;
+    width: 150px;
+    height: auto;
+}
+
+.icon-img-logo-new {
+    text-align: center;
+    position:static;
+    width: 300px;
+    height: auto;
 }
 
 .icon-img-logo-500px {
@@ -358,20 +365,24 @@ figure.reveal-text:hover figcaption {
 
 /*//////////////////////////////////////////////////////////////*/
 
+
+
 .products-img {
     width: 300px;
     height: 300px;
 }
 
 .size-3of4 .products-img {
-    width: 200px;
-    height: 200px;
+    width: 215px;
+    height: 215px;
 }
 
 .size-3of4 h4 {
-    color: #53929B;
+    color: #FDE9CA;
+    
     padding-bottom: 10px;
-    border-bottom: 3px dotted #53929B;
+    padding-top: 0px;
+    border-bottom: 2px dotted #53929B;
 }
 
 .product-form-button {
@@ -390,49 +401,122 @@ figure.reveal-text:hover figcaption {
 
 /*///////////////////////////////////////*/
 
+.image-college figure.reveal-text{
+    padding:0px 1.25% 5% 1.25%;
+}
+
+
 .image-college figure.reveal-text img {
     border: none;
     border-radius: 0px;
+    cursor:pointer;
+    margin:0;
+    padding:0;
 }
+
+.image-college figure.reveal-text div{
+    display:flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding:10px 0px;
+}
+
+.image-college figure.reveal-text div a,
+.image-college figure.reveal-text div p,
+.image-college figure.reveal-text div h4  {
+    color:#FDE9CA;
+    padding:0;
+    text-decoration:none;
+    text-transform: uppercase;
+    border:none;
+    padding:0px 1%;
+    margin:0;
+}
+
 
 .image-college figure.reveal-text,
 .image-college figure.reveal-text button {
     margin: 5px;
 }
 
-.image-college figure.reveal-text figcaption a {
-    font-size: 13px;
-    text-decoration: none;
+
+.image-college figure.reveal-text figcaption{
+    opacity:0;
+    text-align: center;
 }
+
+.image-college figure.reveal-text figcaption p ,
+.image-college figure.reveal-text figcaption a {
+    font-size: 16px;
+    text-decoration: none;
+    padding:5% 20%;
+}
+
+
+
 
 
 /*//////////////////////////////////////*/
 
 .product-form-button:hover {
-    background-color: #162628;
+    background-color: red;
     color: white;
 }
 
-.image-college figure.reveal-text:hover img {
-    transform: none;
-    opacity: 0.2;
-}
-
-.image-college figure.reveal-text:hover figcaption {
-    top: 55%;
-    opacity: 1;
-    -moz-transform: translate3d(0, 100%, 0);
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, -5%, 0);
-    -moz-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-}
-
-@media all and (max-width: 600px) {
-    .image-college figure.reveal-text:hover figcaption {
-        top: 30%;
+@media all and (min-width: 800px) {
+    .image-college figure.reveal-text:hover img {
+        transform: none;
+        opacity:0.4;
     }
+
+    .image-college figure.reveal-text:hover figcaption {
+
+        top: 50%;
+        left:0;
+        opacity: 1;
+        -moz-transform: translate3d(0, 100%, 0);
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, -5%, 0);
+        -moz-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        cursor:pointer;
+    }
+}
+
+@media all and (max-width: 800px) {
+
+    .image-college figure.reveal-text:hover img {
+        transform: none;
+        opacity:0.4;
+    }
+
+    .image-college figure.reveal-text figcaption,
+    .image-college figure.reveal-text:hover figcaption  {
+        opacity: 1;
+        text-decoration: none;
+        transform: none;
+        transition: none;
+    }
+
+
+    .image-college figure.reveal-text{
+        width: 47.5%;
+        height: auto;
+        padding:0px 1% 5% 1%;
+    }
+
+    .image-college figure.reveal-text div p,
+    .image-college figure.reveal-text div h4  {
+        font-size:12px;
+    }
+
+    .image-college figure.reveal-text div{
+    flex-flow: wrap column;
+    }
+
+
 }
 
 
@@ -498,6 +582,7 @@ label {
 .red-submit,
 input[type=submit] {
     width: 70px;
+    background-color: red;
     background-color: #53929b;
     color: white;
     padding: 10px 10px;
@@ -562,14 +647,14 @@ textarea {
 .slideshow {
     width: 100%;
     height: auto;
-
 }
 
 .slide-bg {
     width: 100%;
     height: auto;
-    position: absolute;
+    position: relative;
     top: 0;
+
     z-index: -1;
     opacity: 0.5;
 }
@@ -596,8 +681,8 @@ textarea {
 .headline-box-checkout,
 .headline-box {
     width: 100%;
-    background-color: #53929B;
-    padding: 5% 20%;
+    background-color: #162628;
+    padding: 2% 20%;
     text-align: center;
 }
 
@@ -607,8 +692,9 @@ textarea {
 }
 
 .headline-box h2,
+.headline-box h5,
 .headline-box p {
-    margin: 10px;
+    margin: 1%;
     color: #FDE9CA;
 }
 
@@ -629,12 +715,10 @@ textarea {
     padding: 10px;
 }
 
-#new-collection {
-    margin: 20px;
-}
 
 .new-collection {
     width: 100%;
+
     background-color: white;
     padding: 1em;
     text-align: center;
@@ -642,7 +726,7 @@ textarea {
 }
 
 .footer {
-    background-color: #162628;
+    background-color: black;
     color: white;
     display: flex;
     flex-wrap: wrap;
@@ -657,6 +741,10 @@ textarea {
     margin: 10px;
 }
 
+.footer div{
+    margin-top:2%;
+}
+
 
 .size-1of3 h3,
 .size-1of3 button {
@@ -668,24 +756,39 @@ textarea {
 
 .header-category {
     position: static;
+    width:100%;
+    height:auto;
+    background-image: url("../img/home.jpg") ;
+    filter:grayscale(100%);
+
+    background-color: #53929B; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
 }
 
 .header-category img{
     z-index: -1;
-    background-image: url("img/sample-img.jpg");
+    background-image: url("../img/sample-img.jpg");
     opacity: 0.5;
 }
 
 .header-img {
     z-index: -1;
-    background-image: url("img/sample-img.jpg");
     width: 60%;
     opacity: 0.5;
 }
 
 .header-title {
-    background-color: white;
-    padding: 5%;
+    background-color: rgba(256, 256, 256, 0.8); 
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0, 0.7);
+
+    color:#162628;
+    margin:5% 0%;
+
+    padding: 3% 5%;
     width: 40%;
 }
 
@@ -702,22 +805,29 @@ textarea {
 }
 
 .category-page-columns {
-    padding: 3% 3% 3% 5%;
-    background-color: #FDE9CA;
+    padding: 3% 3% 3% 2%;
+
+
+    background-color: #162628;
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: cover;
 }
 
 
 /* product detail page///////////////////////////////////////////*/
 
 .static-info {
-    margin: 5% 20%;
+    padding: 7% 15%;
+    background-color:#162628;
     display: flex;
     flex-flow: wrap row;
-    justify-content: stretch;
-    align-items: stretch;
+    justify-content: center;
+    align-items: center;
 }
 
-.static-info .group-2 .size-1of2 {
+
+.static-info .group-2 div{
     padding: 0;
     margin: 0;
 }
@@ -746,9 +856,20 @@ textarea {
     width: 150px;
 }
 
+.static-info-textbox form label{
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 .static-info-textbox form input[type=submit] {
     height: 40px;
     width: 100%;
+    background-color: red;
+}
+
+.static-info-textbox form input[type=submit]:hover{
+    background-color: #53929b;   
 }
 
 .static-info-textbox form select {
@@ -762,8 +883,7 @@ textarea {
 
 .static-info .size-1of2 .static-info-textbox {
     padding: 10%;
-    min-height: 200px;
-    min-width: 200px;
+    width:100%;
     background-color: #FDE9CA;
 }
 
@@ -780,15 +900,35 @@ textarea {
 
 .static-info-textbox h3 {
     text-align: left;
-    margin: 10px 0px;
+    margin: 5px 0px;
+}
+
+.static-info-textbox h4,
+.static-info-textbox p {
+    text-align: left;
+    margin: 6% 0px;
 }
 
 
 /* --------- slideshow in detail page --------------*/
+.static-info .size-1of2  .in-text-link,
+.static-info .size-1of2 .slideshow-container {
+   padding:0;
+   margin:0;
+}
+
+.static-info .group-2 .size-1of2 .slideshow-container img {
+    width: 100%;
+    height: auto;
+}
+
 
 .static-info .slideshow-container {
     width: 100%;
+    height:100%;
     position: relative;
+    padding:0;
+    margin:0;
 }
 
 
@@ -796,6 +936,7 @@ textarea {
 
 .mySlides {
     display: none;
+
 }
 
 
@@ -810,6 +951,7 @@ textarea {
     width: auto;
     margin-top: -22px;
     padding: 16px;
+
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -899,19 +1041,31 @@ textarea {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 0.2rem 1rem;
-    position: sticky;
+    align-items: flex-start;
+    align-content: center;
+    padding: 2% 5% 0.5% 2%;
+
+    position: fixed;
+    position: -webkit-sticky;
     top: 0;
     right: 0;
     left: 0;
-    background-color: #162628;
     z-index: 500;
+    /*background-color: #162628;*/
+    /*box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);*/
+    text-shadow: 0 0 3px  #422C0E;
+    transition: all 0.5 ease;
+}
+
+.new-menu-500px .main-nav-bar{
+    background-color: #162628;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
 }
 
 .main-nav-bar a {
     text-decoration: none;
 }
+
 
 .bottom-page-nav {
     display: inline-block;
@@ -943,6 +1097,11 @@ Help from https://www.w3schools.com/howto/howto_css_dropdown.asp */
     padding: 0.7rem;
 }
 
+.dropbtn-product:hover{
+    text-decoration: underline;
+}
+
+
 
 /* About Page Mini-Navigation */
 
@@ -960,11 +1119,16 @@ Help from https://www.w3schools.com/howto/howto_css_dropdown.asp */
 .size-1of4 .dropdown-p {
     display: inline-block;
     position: relative;
-    min-width: 180px;
+    width: 95%;
     padding: 10px 20px;
     color: #FDE9CA;
     background-color: #162628;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
     text-align: center;
+}
+
+.category-page-columns .size-1of4{
+    padding: 0px 4% 0px 0%;
 }
 
 .size-1of4 .dropdown-p a{
@@ -994,6 +1158,22 @@ Help from https://www.w3schools.com/howto/howto_css_dropdown.asp */
     background-color: #162628;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+
+}
+
+@media all and (max-width: 700px) {
+
+    .category-page-columns .size-1of4 .dropdown-p,
+    .category-page-columns .size-1of4 .hover-list {
+        padding:3% 0%;
+    }
+
+    .category-page-columns .size-1of4 {
+        margin:0;
+        padding:0;
+        background-color: #162628;
+        width:100%;
+    }
 
 }
 

@@ -79,65 +79,29 @@
     <div class="static-info">
         <div class="group-2">
             <div class="size-1of2">
-                     <img src="img/product-sample2.jpg" class="products-img" alt="Sample Item"> 
-
-                    <!-- <div class="slideshow-container">
+                    <!-- <img src="img/product-sample2.jpg" class="products-img" alt="Sample Item"> 
+-->
+                     <div class="slideshow-container">
 
                           
                           <div class="mySlides fade">
-                            <img src="img/product-sample2.jpg" class="products-img" alt="Sample Item" style="width:100%">
+                            <img src="img/product-sample2.jpg" class="products-img" alt="Sample Item">
                           </div>
 
                           <div class="mySlides fade">
-                            <img src="img/product-sample3.jpg" class="products-img" alt="Sample Item" style="width:100%">
+                            <img src="img/product-sample3.jpg" class="products-img" alt="Sample Item">
                           </div>
 
                           <div class="mySlides fade">
-                            <img src="img/product-sample4.jpg" class="products-img" alt="Sample Item" style="width:100%">
+                            <img src="img/product-sample4.jpg" class="products-img" alt="Sample Item">
                           </div>
 
                           
                           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                           <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                        </div>
-
-                        <script>
-                                    var slideIndex = 1;
-                                    showSlides(slideIndex);
-
-                                    // Next/previous controls
-                                    function plusSlides(n) {
-                                      showSlides(slideIndex += n);
-                                    }
-
-                                    // Thumbnail image controls
-                                    function currentSlide(n) {
-                                      showSlides(slideIndex = n);
-                                    }
-
-                                    function showSlides(n) {
-                                      var i;
-                                      var slides = document.getElementsByClassName("mySlides");
-                                      var dots = document.getElementsByClassName("dot");
-                                      if (n > slides.length) {slideIndex = 1} 
-                                      if (n < 1) {slideIndex = slides.length}
-                                      for (i = 0; i < slides.length; i++) {
-                                          slides[i].style.display = "none"; 
-                                      }
-                                      for (i = 0; i < dots.length; i++) {
-                                          dots[i].className = dots[i].className.replace(" active", "");
-                                      }
-                                      slides[slideIndex-1].style.display = "block"; 
-                                      dots[slideIndex-1].className += " active";
-                                    }
-
-                         </script>
-
                     </div>
 
-                    -->
-
-
+                    
 
 
             </div>
@@ -145,6 +109,7 @@
             <div class="size-1of2">
                     <div class="static-info-textbox">
                         <h3>Rose Table Lamp</h3>
+                        <h3>$30</h3>
 
                         <!--
                         <div class="blist">
@@ -156,12 +121,19 @@
                             </ul>
                         </div>
         -->
-
-
+                        <div>
+                        <h4>Description:</strong></h4>
                         <p>An elegant table lamp shaped like a rose. The flower on the rose lights up when turned on for a beautiful, glowing effect.</p>
+                        </div>
+
+                        <div>
+                        <h4>Details:</h4>
+                        <p>Sizing: One size.</p>
+                        <p>Origin: Made in Los Angeles, CA.</p>
+                        </div>
 
                         <form action="cart.html">
-                            <label><strong>Color:</strong> </label>
+                            <label>Color:</label>
                             <select name="color-select">
                                 <option value="yellow">Yellow</option>
                                 <option value="red">Red</option>
@@ -173,7 +145,9 @@
 
                         </form>
 
+                        <div>
                         <a href="#comment" class="in-text-link">Reviews & Comment</a>
+                        </div>
 
                      </div>
              </div>
@@ -209,6 +183,38 @@
         <a href="product_detail.html" class="bottom-page-nav"><img src="img/arrow-right-icon.png" class="icon-img" alt="Next Item"></a>
     </section>
 
+
+                        <script>
+                                    var slideIndex = 1;
+                                    showSlides(slideIndex);
+
+                                    // Next/previous controls
+                                    function plusSlides(n) {
+                                      showSlides(slideIndex += n);
+                                    }
+
+                                    // Thumbnail image controls
+                                    function currentSlide(n) {
+                                      showSlides(slideIndex = n);
+                                    }
+
+                                    function showSlides(n) {
+                                      var i;
+                                      var slides = document.getElementsByClassName("mySlides");
+                                      var dots = document.getElementsByClassName("dot");
+                                      if (n > slides.length) {slideIndex = 1} 
+                                      if (n < 1) {slideIndex = slides.length}
+                                      for (i = 0; i < slides.length; i++) {
+                                          slides[i].style.display = "none"; 
+                                      }
+                                      for (i = 0; i < dots.length; i++) {
+                                          dots[i].className = dots[i].className.replace(" active", "");
+                                      }
+                                      slides[slideIndex-1].style.display = "block"; 
+                                      dots[slideIndex-1].className += " active";
+                                    }
+
+                         </script>
     <!-- ----------------------------------------------------------------------------------- -->
     <!-- ----------------------------------------FOOTER------------------------------------- -->
 
@@ -228,6 +234,11 @@
                 </form>
             </div>
 
+            <div>
+                 <a href="https://www.facebook.com/vintagemaze/" class="dropbtn-product-icon"><img src="img/fb-icon.png" class="icon-img" alt="Facebook"></a>
+                 <a href="http://instagram.com/vintage_maze" class="dropbtn-product-icon"><img src="img/ig-icon.png" class="icon-img" alt="Instagram"></a>
+                 <a href="http://instagram.com/vintage_maze" class="dropbtn-product-icon"><img src="img/pinter-icon.png" class="icon-img" alt="Pinterest"></a>
+            </div>
             <h6> © 2019 Vintage Maze Inc. All rights reserved.</h6>
 
         </div>
@@ -237,3 +248,4 @@
 </body>
 
 </html>
+

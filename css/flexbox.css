@@ -16,50 +16,17 @@
     display: none;
 }
 
-@media all and (max-width: 650px) {
+@media all and (max-width: 700px) {
     .original-menu {
         display: none;
     }
     .new-menu-500px {
         display: inline;
         width: 100%;
+
     }
 }
 
-
-/* main sections //////////////////////////////*/
-
-.slideshow {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.slide-textbox {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.headline-box {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
-.new-collection {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
 
 
 /* did not change ////////////////////////////////////////////////
@@ -284,21 +251,18 @@ li {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    flex-grow: 1;
     justify-content: flex-start;
 }
 
 /* details page ////////////////*/
-.static-info {
+.static-info .group-2{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    align-items: stretch;
 }
-.static-info-textbox {
-    flex: 1 1 auto;
-    align-self: flex-end;
-}
+
 .item-img {
     width: 100%;
     max-height: 250px;
@@ -343,7 +307,7 @@ li {
 .group-3,
 .group-2,
 .group-4,
-.group-2of3 {
+.group-2of3{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -416,8 +380,8 @@ form .group-2 {
 }
 #search .size-1of4 {
     position: sticky;
-    top: 82px;
-    background-color: #fde9ca;
+    top: 30%;
+    background-color: none;
     z-index: 200;
 }
 
@@ -429,7 +393,7 @@ form .group-2 {
     min-width: 75%;
     /*background-color: #fde9ca;*/
 }
-@media all and (max-width: 650px) {
+@media all and (max-width: 700px) {
     .group-5,
     .group-3,
     .group-2,
@@ -438,6 +402,15 @@ form .group-2 {
         flex-direction: column;
         justify-content: center;
     }
+
+    .group-4 .image-college {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: space-around;
+    }
+
+
+
 
 /*
     .group-4{
@@ -472,6 +445,8 @@ form .group-2 {
         min-width: 98%;
     }
 }
+
+
 @media all and (max-width: 600px) {
     .size-blist,
     .selected-blist {
