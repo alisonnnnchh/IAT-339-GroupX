@@ -149,6 +149,12 @@ i {
 
 video {
     width: 100%;
+    left:0;
+    right:0;
+}
+
+.checked {
+  color: orange;
 }
 
 
@@ -231,7 +237,7 @@ video {
 /* Home page round intro image------- ///// /////////*/
 
 
-/* ----------FX from https://codepen.io/jhermansen/pen/YqEReZ------------*/
+/* ----------FX from https://codepen.io/jhermansen/pen/YEReZ------------*/
 
 .index-round-img {
     width: 150px;
@@ -507,6 +513,12 @@ figure.reveal-text:hover figcaption {
         padding:0px 1% 5% 1%;
     }
 
+    .new-collection .image-college figure.reveal-text{
+        width: 100%;
+        height: auto;
+        padding:0px;
+    }
+
     .image-college figure.reveal-text div p,
     .image-college figure.reveal-text div h4  {
         font-size:12px;
@@ -557,8 +569,8 @@ label {
 .email-input-form {
     border-radius: 5px;
     background-color: #162628;
-    width: 50%;
-    min-width: 400px;
+    min-width: 50%;
+    
     margin: 0.5em 30px;
     padding: 1.5em 0.5em;
     text-align: center;
@@ -573,9 +585,29 @@ label {
 .comment-input-form {
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 2% 50px 5%;
+    padding: 5% 10%;
     width: 100%;
     text-align: center;
+}
+
+.comment-input-form form{
+    background-color: white;
+}
+
+.comment-input-form h4{
+    margin-top:0;
+    padding-bottom:1%;
+    border-bottom: 0.5px solid black;
+    text-align:left;
+}
+
+.comment-input-form div h4{
+    border:none;
+}
+
+
+.comment-input-form div span{
+    padding:2px;
 }
 
 
@@ -647,6 +679,7 @@ textarea {
 .slideshow {
     width: 100%;
     height: auto;
+
 }
 
 .slide-bg {
@@ -818,12 +851,22 @@ textarea {
 /* product detail page///////////////////////////////////////////*/
 
 .static-info {
-    padding: 7% 15%;
+    padding: 6% 0% 0% 0%;
     background-color:#162628;
     display: flex;
     flex-flow: wrap row;
     justify-content: center;
     align-items: center;
+}
+
+.static-info a{
+    color:#53929B;
+    text-decoration: none;
+}
+
+.static-info a:hover{
+    color:red;
+    text-decoration: none;
 }
 
 
@@ -832,16 +875,34 @@ textarea {
     margin: 0;
 }
 
+.static-info .group-3 {
+    padding: 2% 5%;
+    background-color:#162628 ;
+    color:#53929B;
+}
+.static-info .group-3 div{
+    padding: 5% 5%;
+    text-align:center;
+
+}
+
 @media all and (min-width: 900px) {
     .static-info {
         flex-flow: wrap column;
+
     }
+
+    .static-info .group-2 {
+        margin: 0%;
+    }
+
 }
 
 .static-info .group-2 .size-1of2 img {
     width: 100%;
     height: 100%;
 }
+
 
 .static-info-textbox form {
     display: inline-block;
@@ -863,8 +924,8 @@ textarea {
 }
 
 .static-info-textbox form input[type=submit] {
-    height: 40px;
-    width: 100%;
+    height: 50px;
+    width: 50%;
     background-color: red;
 }
 
@@ -882,8 +943,9 @@ textarea {
 }
 
 .static-info .size-1of2 .static-info-textbox {
-    padding: 10%;
+    padding: 5% 8%;
     width:100%;
+    color:#162628;
     background-color: #FDE9CA;
 }
 
@@ -904,9 +966,17 @@ textarea {
 }
 
 .static-info-textbox h4,
+.static-info-textbox form label{
+    text-align: left;
+    margin: 3% 0px 3% 0px;
+    font-size:15px;
+}
+
 .static-info-textbox p {
     text-align: left;
-    margin: 6% 0px;
+    margin:2% 0px;
+    font-size:15px;
+
 }
 
 
@@ -1044,6 +1114,7 @@ textarea {
     align-items: flex-start;
     align-content: center;
     padding: 2% 5% 0.5% 2%;
+    width:100%;
 
     position: fixed;
     position: -webkit-sticky;

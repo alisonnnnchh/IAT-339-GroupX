@@ -14,6 +14,7 @@
     <link href="css/flexbox.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <!-- ----------------------------------------------------------------------------------- -->
@@ -101,15 +102,23 @@
                           <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     </div>
 
-                    
-
-
             </div>
             
             <div class="size-1of2">
                     <div class="static-info-textbox">
                         <h3>Rose Table Lamp</h3>
                         <h3>$30</h3>
+
+                        <div>
+                            <a href="#comment" class="in-text-link">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                30 Reviews
+                             </a>
+                        </div>
 
                         <!--
                         <div class="blist">
@@ -122,51 +131,83 @@
                         </div>
         -->
                         <div>
-                        <h4>Description:</strong></h4>
-                        <p>An elegant table lamp shaped like a rose. The flower on the rose lights up when turned on for a beautiful, glowing effect.</p>
+                            <h4>DESCRIPTION:</h4>
+                            <p>An elegant table lamp shaped like a rose. The flower on the rose lights up when turned on for a beautiful, glowing effect.</p>
                         </div>
 
                         <div>
-                        <h4>Details:</h4>
-                        <p>Sizing: One size.</p>
-                        <p>Origin: Made in Los Angeles, CA.</p>
+                            <h4>DETAILS:</h4>
+                            <p>Sizing: One size.</p>
+                            <p>Origin: Made in Los Angeles, CA.</p>
                         </div>
 
-                        <form action="cart.html">
-                            <label>Color:</label>
-                            <select name="color-select">
-                                <option value="yellow">Yellow</option>
-                                <option value="red">Red</option>
-                                <option value="skyblue" selected>Sky Blue</option>
-                                <option value="black">Black</option>
-                            </select>
+                        <form>
+                            <label>QUANTITY:</label>
+                            <div class="quantity">
+                                <button class="plus-btn"><img src="img/plus-icon.png" class="icon-img" alt="add"></button>
+                                <input type="text" name="name" value="1">
+                                <button class="minus-btn"><img src="img/minus-icon.png" class="icon-img" alt="sub"></button>
+                            </div> 
 
-                            <input type="submit" value="Add To Cart">
+                            <input type="submit" value="Add To Cart" onclick="alert('Item added into CART!')">
 
                         </form>
-
+                        <!--
                         <div>
                         <a href="#comment" class="in-text-link">Reviews & Comment</a>
                         </div>
+                        -->
 
                      </div>
              </div>
         </div>
 
+        <div class="group-3">
+            <div class="size-1of3">
+                <h4>EASY RETURNS</h4>
+                <p>We are happy to accept returns or exchanges within 30 days of the delivery date if the product is in its original condition.</p>
+            </div>
+            <div class="size-1of3">
+                <h4>HIGH QUALITY MANUFACTURING</h4>
+                <p>We are passionate about giving quality products in its most original state, providing opportunities for local creative artists and emphasizing our art value of community.</p>
+            </div>
+            <div class="size-1of3">
+                <h4>DEDICATED CUSTOMER SERVICE</h4>
+                <p>Customer satisfaction is very important to us and we are committed to making your experience as positive as possible. Contact us with any questions or concerns.</p>
+            </div>
+        </div>
+
+
+        </div>
+
         <div class="comment-input-form" id="comment">
-            <h4> Comment </h4>
+            <h4> COMMENT </h4>
 
-            <form>
+            <!--<form>
 
-                <!--   <input type="text" id="new_name" name="name_input" value="" tabindex="1" required="required" placeholder="Your Name"> 
-           -->
-                <textarea name="comment" rows="2" tabindex="2" required="required" placeholder="Leave a Comment!"></textarea>
+                 <input type="text" id="new_name" name="name_input" value="" tabindex="1" required="required" placeholder="Your Name"> 
+           
+                <textarea name="comment" rows="1" tabindex="2" required="required" placeholder="Leave a Comment!"></textarea>
 
 
                 <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID">
 
                 <input type="submit" value="Submit">
             </form>
+            -->
+            <div >
+                <h4>Alison C.</h4><h6> Verified Buyer</h6>
+            </div>
+
+            <div>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+            </div>
+            
+
         </div>
 
 
