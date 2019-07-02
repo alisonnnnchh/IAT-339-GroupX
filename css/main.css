@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
@@ -8,6 +12,7 @@ body {
     left: 0;
     right: 0;
 }
+
 
 h1 {
     font-family: 'Bungee Shade', cursive;
@@ -59,6 +64,14 @@ h6 {
     margin: 0;
 }
 
+/*the cross in sale product price*/
+s{
+  color:red;
+}
+
+b{
+    font-weight:bold;
+}
 
 section:not([class]) {
     padding: 3% 30%;
@@ -366,23 +379,23 @@ figure.reveal-text:hover figcaption {
 }
 
 
-/* -----------------------------image college-----------------*/
+/* -----------------------------------image college-------------------------------------*/
+/*///////////////////////////////////////////////////////////////////////////////////////*/
 
 
-/*//////////////////////////////////////////////////////////////*/
-
-
-
+/* home page product img*/
 .products-img {
     width: 300px;
     height: 300px;
 }
 
+/* product category page product img*/
 .size-3of4 .products-img {
     width: 215px;
     height: 215px;
 }
 
+/* product category page underline heading*/
 .size-3of4 h4 {
     color: #FDE9CA;
     
@@ -391,27 +404,21 @@ figure.reveal-text:hover figcaption {
     border-bottom: 2px dotted #53929B;
 }
 
-.product-form-button {
-    display: inline-block;
-    padding: 0.5em 0.5em;
-    /* width: 100px; */
-    border: 0px;
-    color: #fde9ca;
-    background-color: #53929b;
-    border-radius: 0.25em;
-    text-decoration: none;
-    -webkit-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out;
-}
 
 
 /*///////////////////////////////////////*/
 
+.image-college figure.reveal-text,
+.image-college figure.reveal-text button {
+    margin: 5px;
+}
+
+/* product category page: each box with image & text */
 .image-college figure.reveal-text{
     padding:0px 1.25% 5% 1.25%;
 }
 
-
+/* product category page: image in the box */
 .image-college figure.reveal-text img {
     border: none;
     border-radius: 0px;
@@ -420,12 +427,14 @@ figure.reveal-text:hover figcaption {
     padding:0;
 }
 
+/* product category page: product description+price in the box */
 .image-college figure.reveal-text div{
     display:flex;
     flex-flow: wrap row;
     justify-content: space-between;
     align-items: baseline;
     padding:10px 0px;
+    position:relative;
 }
 
 .image-college figure.reveal-text div a,
@@ -441,12 +450,16 @@ figure.reveal-text:hover figcaption {
 }
 
 
-.image-college figure.reveal-text,
-.image-college figure.reveal-text button {
-    margin: 5px;
+
+/*the plus sign in small screen category page*/
+.image-college figure.reveal-text div img{
+    position:absolute;
+    right:0;
+    z-index:1;
+    opacity: 0;
 }
 
-
+/*product category page: the hidden "ADD TO CART" */
 .image-college figure.reveal-text figcaption{
     opacity:0;
     text-align: center;
@@ -459,25 +472,25 @@ figure.reveal-text:hover figcaption {
     padding:5% 20%;
 }
 
+/*/////////////////////////////////////////////////////////*/
 
-
-
-
-/*//////////////////////////////////////*/
-
-.product-form-button:hover {
-    background-color: red;
-    color: white;
-}
-
+/*product category page: when page shown in desktop */
 @media all and (min-width: 800px) {
+
+    /*lower image opacity to show "ADD TO CART" */
     .image-college figure.reveal-text:hover img {
         transform: none;
         opacity:0.4;
     }
 
-    .image-college figure.reveal-text:hover figcaption {
+    /*hide the "plus" icon when show "ADD TO CART" */
+    .image-college figure.reveal-text div img.icon-img,
+    .image-college figure.reveal-text div img.icon-img:hover{
+        opacity:0;
+    }
 
+    /*show "ADD TO CART" when HOVER */
+    .image-college figure.reveal-text:hover figcaption {
         top: 50%;
         left:0;
         opacity: 1;
@@ -491,22 +504,37 @@ figure.reveal-text:hover figcaption {
     }
 }
 
+/*product category page: when page shown in size between desktop & small */
 @media all and (max-width: 800px) {
 
-    .image-college figure.reveal-text:hover img {
-        transform: none;
-        opacity:0.4;
+
+    .image-college figure.reveal-text img.products-img {
+        width:100%;
+        height:auto;
     }
 
+    /*show image in full opacity*/
+    .image-college figure.reveal-text:hover img {
+        transform: none;
+        opacity:1;
+    }
+
+    /*show the "plus" icon when hide "ADD TO CART" */
+    .image-college figure.reveal-text div img.icon-img,
+    .image-college figure.reveal-text div img.icon-img:hover{
+        opacity:1;
+    }
+
+    /*hide "ADD TO CART" */
     .image-college figure.reveal-text figcaption,
     .image-college figure.reveal-text:hover figcaption  {
-        opacity: 1;
+        opacity: 0;
         text-decoration: none;
         transform: none;
         transition: none;
     }
 
-
+    /*smaller container*/
     .image-college figure.reveal-text{
         width: 47.5%;
         height: auto;
@@ -528,6 +556,14 @@ figure.reveal-text:hover figcaption {
     flex-flow: wrap column;
     }
 
+}
+
+/*product category page: when page shown in mobile */
+@media all and (max-width: 600px) {
+    .image-college figure.reveal-text div img.icon-img,
+    .image-college figure.reveal-text div img.icon-img:hover{
+        opacity:1;
+    }
 
 }
 
@@ -582,12 +618,14 @@ label {
     margin: 0;
 }
 
+/* ------------------------------------------ Comment ------------------------------------- */
+
 .comment-input-form {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 5% 10%;
     width: 100%;
-    text-align: center;
+    position:relative;
 }
 
 .comment-input-form form{
@@ -601,13 +639,37 @@ label {
     text-align:left;
 }
 
-.comment-input-form div h4{
-    border:none;
+.comment-input-form .comment-item{
+    border-bottom:1px solid #cccccc;
+    padding:1% 0 4% 0;
 }
 
 
-.comment-input-form div span{
-    padding:2px;
+.comment-input-form .comment-item h4{
+    padding-bottom:0%;
+    border:none;
+    margin-right:10px;
+}
+
+.comment-input-form .comment-item h6{
+    color:#a6a6a6;
+    font-size:13px;
+}
+
+.comment-input-form .comment-item h6.comment-date{
+    position:absolute;
+    right:10%;
+}
+
+
+.comment-input-form .comment-item span{
+    padding:0 2px 0 0;
+}
+
+.comment-input-form .comment-item div,
+.comment-input-form .comment-item p,
+.comment-input-form .comment-item p b{
+    padding:1% 0 0 0;
 }
 
 
@@ -668,6 +730,25 @@ textarea {
     border-radius: 4px;
     box-sizing: border-box;
 }
+
+.product-form-button {
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    /* width: 100px; */
+    border: 0px;
+    color: #fde9ca;
+    background-color: #53929b;
+    border-radius: 0.25em;
+    text-decoration: none;
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+
+.product-form-button:hover {
+    background-color: red;
+    color: white;
+}
+
 
 .size-3of5 input[type=text] {
     max-width: 100%;
@@ -761,6 +842,7 @@ textarea {
 .footer {
     background-color: black;
     color: white;
+    bottom:0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -798,6 +880,7 @@ textarea {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    /*background-attachment: fixed;*/
 
 
 }
@@ -823,11 +906,13 @@ textarea {
 
     padding: 3% 5%;
     width: 40%;
+
+    text-align:center;
 }
 
-.header-title h3 {
-    margin: 10px;
-    padding: 10px;
+.header-title h2 {
+    margin: inherit;
+    padding: inherit;
 }
 
 
@@ -848,7 +933,7 @@ textarea {
 }
 
 
-/* product detail page///////////////////////////////////////////*/
+/* ------------------------------product detail page///////////////////////////////////////////*/
 
 .static-info {
     padding: 6% 0% 0% 0%;
@@ -901,6 +986,7 @@ textarea {
 .static-info .group-2 .size-1of2 img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 
@@ -987,26 +1073,29 @@ textarea {
    margin:0;
 }
 
-.static-info .group-2 .size-1of2 .slideshow-container img {
-    width: 100%;
-    height: auto;
-}
-
-
-.static-info .slideshow-container {
+.static-info .size-1of2 .slideshow-container {
     width: 100%;
     height:100%;
     position: relative;
     padding:0;
     margin:0;
+    background-color:red;
 }
+
+
+.static-info .group-2 .size-1of2 .slideshow-container img {
+
+    width: 100%;
+    max-height: auto;
+    object-fit: fill;
+}
+
 
 
 /* Hide the images by default */
 
 .mySlides {
     display: none;
-
 }
 
 
@@ -1205,6 +1294,7 @@ Help from https://www.w3schools.com/howto/howto_css_dropdown.asp */
 .size-1of4 .dropdown-p a{
     color: #FDE9CA;
 }
+
 
 
 

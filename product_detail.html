@@ -16,6 +16,9 @@
     <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- js code from https://designmodo.com/shopping-cart-ui/ -->
+    <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+
 </head>
 <!-- ----------------------------------------------------------------------------------- -->
 <!-- ----------------------------------------NAVIGATION--------------------------------- -->
@@ -183,7 +186,7 @@
         <div class="comment-input-form" id="comment">
             <h4> COMMENT </h4>
 
-            <!--<form>
+            <form>
 
                  <input type="text" id="new_name" name="name_input" value="" tabindex="1" required="required" placeholder="Your Name"> 
            
@@ -192,21 +195,46 @@
 
                 <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID">
 
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" onclick="alert('Your comment is successfully submitted. It will be published after your purchase is verified!')">
             </form>
-            -->
-            <div >
-                <h4>Alison C.</h4><h6> Verified Buyer</h6>
+            
+            <div class="comment-item">
+                <div>
+                    <h4>Alison C.</h4> 
+                    <h6> Verified Buyer</h6> 
+                    <h6 class="comment-date"> 03/31/2019</h6> 
+                </div>
+
+                <span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                </span>
+
+               <p><b>AESTHETIC!!</b></p>
+               It gives the whole beauty and the beast vibe in my room.
             </div>
 
-            <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
+            <div class="comment-item">
+                <div>
+                    <h4>Nicole C.</h4> 
+                    <h6> Verified Buyer</h6> 
+                    <h6 class="comment-date"> 02/03/2019</h6> 
+                </div>
+
+                <span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                </span>
+
+               <p><b>Great Quality and delivery!!</b></p>
+               I thought it would have cracks during delivery since it is glass, fortunately not!
             </div>
-            
 
         </div>
 
@@ -285,6 +313,40 @@
         </div>
 
     </section>
+
+    <script type="text/javascript">
+      $('.minus-btn').on('click', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            var $input = $this.closest('div').find('input');
+            var value = parseInt($input.val());
+
+            if (value > 1) {
+                value = value - 1;
+            } else {
+                value = 0;
+            }
+
+        $input.val(value);
+
+        });
+
+        $('.plus-btn').on('click', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            var $input = $this.closest('div').find('input');
+            var value = parseInt($input.val());
+
+            if (value < 20) {
+            value = value + 1;
+            } else {
+                value =20;
+            }
+
+            $input.val(value);
+        });
+
+    </script>
 
 </body>
 
