@@ -273,7 +273,6 @@ li {
     justify-content: center;
     align-items: stretch;
     align-content: stretch;
-    background-color:purple;
 }
 
 .static-info .group-2 .size-1of2 .static-info-textbox{
@@ -336,7 +335,6 @@ li {
     flex-flow: wrap row;
     justify-content: flex-start;
     align-items: baseline;
-
 }
 
 
@@ -344,7 +342,18 @@ li {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.comment-input-form form div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content:stretch;
+    width:100%;
 }
 
 
@@ -354,11 +363,17 @@ li {
         justify-content: center;
     }
 }
+
 @media all and (max-width: 600px) {
     .size-blist,
     .selected-blist {
         list-style-type: none;
         flex-direction: column;
+    }
+
+    .comment-input-form form div{
+        width:100%;
+
     }
 }
 

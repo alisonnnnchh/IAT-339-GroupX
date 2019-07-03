@@ -14,7 +14,12 @@
     <link href="css/flexbox.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
+
+    <!--star rating reference: https://www.w3schools.com/howto/howto_css_star_rating.asp-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--real-time star rating reference: hhttps://www.youtube.com/watch?v=Ep78KjstQuw-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- js code from https://designmodo.com/shopping-cart-ui/ -->
     <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
@@ -140,7 +145,7 @@
 
                         <div>
                             <h4>DETAILS:</h4>
-                            <p>Sizing: One size.</p>
+                            <p>Sizing: 6 x 10 inch</p>
                             <p>Origin: Made in Los Angeles, CA.</p>
                         </div>
 
@@ -188,14 +193,32 @@
 
             <form>
 
-                 <input type="text" id="new_name" name="name_input" value="" tabindex="1" required="required" placeholder="Your Name"> 
+                <div>
+                    <input type="text" id="new_name" name="name_input" required="required" placeholder="Your Name">
+                    <input type="text" id="title" name="title_input" required="required" placeholder="Title">
+
+                    <div class="rating">
+                            <input type="radio" name="star" id="star1"><label for="star1"></label>
+                            <input type="radio" name="star" id="star2"><label for="star2"></label>
+                            <input type="radio" name="star" id="star3"><label for="star3"></label>
+                            <input type="radio" name="star" id="star4"><label for="star4"></label>
+                            <input type="radio" name="star" id="star5"><label for="star5"></label>
+                    </div>
+
+                </div>  
            
                 <textarea name="comment" rows="1" tabindex="2" required="required" placeholder="Leave a Comment!"></textarea>
 
+                <div>
 
-                <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID">
+                        <label for="date">Purchase Date:</label>
+                        <input type="date" id="date" name="date_input" required="required" placeholder="Purchase Date">
+            
 
-                <input type="submit" value="Submit" onclick="alert('Your comment is successfully submitted. It will be published after your purchase is verified!')">
+                        <input type="submit" value="Submit" onclick="alert('Your comment is successfully submitted. It will be published after your purchase is verified!')">
+                </div>
+
+
             </form>
             
             <div class="comment-item">
@@ -233,7 +256,7 @@
                 </span>
 
                <p><b>Great Quality and delivery!!</b></p>
-               I thought it would have cracks during delivery since it is glass, fortunately not!
+               I thought it would break if on delivery (since it is glass), fortunately not!
             </div>
 
         </div>
