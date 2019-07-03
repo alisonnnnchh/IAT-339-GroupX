@@ -234,7 +234,7 @@ li {
     justify-content: stretch;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 850px) {
 
     .header-category {
         flex-direction: column;
@@ -328,8 +328,8 @@ li {
         align-items: center;
     }
 
-    .static-info .group-2{
-        margin:5% 0 0 0;
+    .static-info .group-2 {
+        margin: 5% 0 0 0;
     }
 }
 
@@ -377,14 +377,14 @@ li {
     width: 100%;
 }
 
-.comment-input-form .space-between-div{
+.comment-input-form .space-between-div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    align-content:stretch;
-    width:100%;
+    align-content: stretch;
+    width: 100%;
 }
 
 
@@ -408,7 +408,7 @@ li {
 
     }
 
-    .comment-input-form .space-between-div{
+    .comment-input-form .space-between-div {
         justify-content: space-between;
     }
 }
@@ -570,7 +570,7 @@ form .group-2 {
         top: 10%;
     }
 
-    #search .size-1of4 .dropdown-p{
+    #search .size-1of4 .dropdown-p {
         padding: 5% 10%;
     }
 
@@ -598,7 +598,7 @@ form .group-2 {
 
 .order-summary {
     background-color: rgba(185, 210, 214, 0.5);
-    
+
     /*border-left: 1.5px solid #53929B;*/
 
     display: flex;
@@ -639,9 +639,9 @@ form .group-2 {
     padding: 2%;
 }
 
-.size-2of5 table.total td{
+.size-2of5 table.total td {
     text-align: center;
-    padding:0 5%;
+    padding: 0 5%;
 
     display: flex;
     flex-wrap: wrap;
@@ -660,16 +660,16 @@ form .group-2 {
     padding: 2% 1%;
 }
 
-.order-summary-cart .size-1of3 table td h4{
-    text-align:center;
-    padding:0% 5%;
+.order-summary-cart .size-1of3 table td h4 {
+    text-align: center;
+    padding: 0% 5%;
 }
 
 
-.order-summary-cart span{
-    margin-right:60%;
-    padding:0.5% 5%;
-    display:inline-block;
+.order-summary-cart span {
+    margin-right: 60%;
+    padding: 0.5% 5%;
+    display: inline-block;
 }
 
 .order-summary-cart h3 {
@@ -718,7 +718,7 @@ form .group-2 {
     background-color: yellow;
 }
 
-.size-3of5 form input[type=radio]:checked{
+.size-3of5 form input[type=radio]:checked {
     background-color: yellow;
 }
 
@@ -774,7 +774,7 @@ form .group-2 {
     }
 
     .order-summary-cart .size-1of3,
-    .order-summary-cart .size-2of3{
+    .order-summary-cart .size-2of3 {
         min-width: 100%;
         max-width: 100%;
     }
@@ -786,40 +786,40 @@ form .group-2 {
         align-content: center;
     }
 
-    .size-2of5 table.total td{
+    .size-2of5 table.total td {
         text-align: center;
     }
 
-    .order-summary-cart{
+    .order-summary-cart {
         flex-direction: column;
         justify-content: center;
-        width:100%;
+        width: 100%;
         padding: 20% 5% 10% 2%;
     }
 
-    .order-summary-cart .size-2of3{
+    .order-summary-cart .size-2of3 {
         flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            align-content: center;
-        width:100%;
-        font-size:13px;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        font-size: 13px;
     }
 
-    .order-summary-cart span{
-        margin-right:0;
-        margin-bottom:5%;
-        width:50%;
+    .order-summary-cart span {
+        margin-right: 0;
+        margin-bottom: 5%;
+        width: 50%;
     }
 
-    .order-summary-cart table td{
+    .order-summary-cart table td {
         text-align: left;
-        padding:0px 1%;
+        padding: 0px 1%;
     }
 
-    .order-summary-cart table{
-        width:100%;
-        padding:0 1%;
+    .order-summary-cart table {
+        width: 100%;
+        padding: 0 1%;
     }
 
 }

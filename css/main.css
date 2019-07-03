@@ -82,9 +82,9 @@ section:not([class]) {
     padding: 3% 30%;
 }
 
-section.top-of-page{
+section.top-of-page {
     padding: 5% 30%;
-    text-align:left;
+    text-align: left;
 }
 
 @media (max-width: 700px) {
@@ -92,9 +92,9 @@ section.top-of-page{
         padding: 3% 10%;
     }
 
-    section.top-of-page{
+    section.top-of-page {
         padding: 12% 12%;
-        text-align:center;
+        text-align: center;
     }
 }
 
@@ -147,7 +147,7 @@ a.in-text-link:hover {
 
 .size-1of2 .main-body {
     padding: 10% 10%;
-    margin-bottom:10%;
+    margin-bottom: 10%;
 }
 
 i {
@@ -345,8 +345,8 @@ textarea {
 }
 
 .checkout-item-img-big {
-    width: 90px;
-    height: 90px;
+    width: 50px;
+    height: 50px;
     border-radius: 50px;
 }
 
@@ -626,7 +626,7 @@ figure.reveal-text:hover figcaption {
     }
 
     /*smaller container*/
-    .image-college figure.reveal-text{
+    .image-college figure.reveal-text {
         width: 47%;
         height: auto;
         padding: 0px 1% 5% 1%;
@@ -790,8 +790,8 @@ label {
     margin-right: 1%;
 }
 
-.comment-input-form form input[type=submit]{
-    width:20%;
+.comment-input-form form input[type=submit] {
+    width: 20%;
 }
 
 
@@ -859,40 +859,40 @@ label {
 }
 
 @media all and (max-width: 600px) {
-    .comment-input-form{
+    .comment-input-form {
         padding: 5% 5%;
-        font-size:12px;
+        font-size: 12px;
     }
 
     .comment-input-form form,
-    .comment-input-form .comment-item{
-        margin:1% 1% 2% 1%;
+    .comment-input-form .comment-item {
+        margin: 1% 1% 2% 1%;
     }
 
-    .comment-input-form p b{
+    .comment-input-form p b {
         padding: 5% 5%;
-        font-size:12px;
+        font-size: 12px;
     }
 
-    .comment-input-form form{
-        margin:1% 0 2% 0;
+    .comment-input-form form {
+        margin: 1% 0 2% 0;
         padding: 1% 2%;
     }
 
-    .comment-input-form form input[type=submit]{
-        width:30%;
+    .comment-input-form form input[type=submit] {
+        width: 30%;
     }
 
-    .rating{
-        position:absolute;
-        right:0;
+    .rating {
+        position: absolute;
+        right: 0;
     }
 
-    .rating label{
-        display:block;
-        cursor:pointer;
-        width:20px;
-        font-size:17px;
+    .rating label {
+        display: block;
+        cursor: pointer;
+        width: 20px;
+        font-size: 17px;
     }
 
 }
@@ -983,14 +983,14 @@ label {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding:1%;
-    padding-top:5%;
+    padding: 1%;
+    padding-top: 5%;
 }
 
 .headline-box-checkout h6 {
     font-size: 0.8rem;
-    padding:1%;
-    
+    padding: 1%;
+
 }
 
 
@@ -999,8 +999,8 @@ label {
 
     .headline-box-checkout {
         padding: 1%;
-    
-        text-align:center;
+
+        text-align: center;
     }
 
     .headline-box-checkout h6 {
@@ -1033,13 +1033,13 @@ label {
     /*border: 1px solid black;*/
 }
 
-.new-collection h4{
-    padding:1%;
+.new-collection h4 {
+    padding: 1%;
 }
 
-.new-collection .image-college figure.reveal-text{
-    margin:0;
-    padding:3%;
+.new-collection .image-college figure.reveal-text {
+    margin: 0;
+    padding: 3%;
 }
 
 .footer {
@@ -1054,8 +1054,8 @@ label {
     width: 100%;
     padding: 2% 5%;
 
-    position:static;
-    bottom:0;
+    position: static;
+    bottom: 0;
 }
 
 .footer h6 {
@@ -1107,12 +1107,12 @@ label {
 
 @media all and (max-width: 600px) {
     .header-title h2 {
-        font-size:2rem;
+        font-size: 2rem;
     }
 
-    .header-title{
+    .header-title {
         width: 100%;
-        margin:10% 0%;
+        margin: 10% 0%;
     }
 
 
@@ -1781,7 +1781,7 @@ body.about-page section.main-body-about div section.neon-logo {
 .order-summary h3 {
     padding: 0% 0% 3% 0%;
 
-    text-align:center;
+    text-align: center;
 }
 
 .checkout3-border h4 {
