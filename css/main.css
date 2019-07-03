@@ -84,6 +84,7 @@ section:not([class]) {
 
 section.top-of-page{
     padding: 5% 30%;
+    text-align:left;
 }
 
 @media (max-width: 700px) {
@@ -93,6 +94,7 @@ section.top-of-page{
 
     section.top-of-page{
         padding: 12% 12%;
+        text-align:center;
     }
 }
 
@@ -1047,6 +1049,9 @@ label {
     align-items: center;
     width: 100%;
     padding: 2% 5%;
+
+    position:static;
+    bottom:0;
 }
 
 .footer h6 {
