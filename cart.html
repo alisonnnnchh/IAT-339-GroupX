@@ -151,7 +151,7 @@
 
             <div class="size-2of3">
                
-                <table>
+                <table id="item-1">
                         <tr>
                             <td rowspan="2"><img src="img/accessories-sample.jpg" class="checkout-item-img-big" alt="Table"></td>
                             <td colspan="4"> WHITE TIE DYE LIGHTWEIGHT CUFFED BEANIE</td>
@@ -168,7 +168,7 @@
                         </tr>
 
                 </table>
-                 <table>
+                <table id="item-2">
                         <tr>
                             <td rowspan="2"><img src="img/accessories-sample.jpg" class="checkout-item-img-big" alt="Table"></td>
                             <td colspan="4"> WHITE TIE DYE LIGHTWEIGHT CUFFED BEANIE</td>
@@ -251,10 +251,12 @@
             var $input = $this.closest('div').find('input');
             var value = parseInt($input.val());
 
+
             if (value > 1) {
                 value = value - 1;
             } else {
                 value = 0;
+                confirm('Are you sure to remove this item from cart?');
             }
 
         $input.val(value);

@@ -200,7 +200,7 @@ input[type=submit]:hover {
 input[type=text],
 input[type=date],
 select {
-    width: 90%;
+    width: 100%;
     padding: 10px 10px;
     margin: 8px 0;
     display: inline-block;
@@ -223,7 +223,6 @@ textarea {
     */
     width: 100%;
     height:65%;
-    max-width: 300px;
     padding: 10px 10px;
     margin: 0.5em 0em;
     display: inline-block;
@@ -671,15 +670,27 @@ label {
     background-color: #162628;
     min-width: 50%;
     
-    margin: 0.5em 30px;
-    padding: 1.5em 0.5em;
+    margin: 0% 5%;
+    padding: 2% 8%;
     text-align: center;
 }
 
 .email-input-form p {
     display: block;
     font-size: 13px;
-    margin: 0;
+    margin: 2% 0;
+}
+
+@media all and (max-width: 600px) {
+    .email-input-form {
+        border-radius: 5px;
+        background-color: #162628;
+        min-width: 50%;
+        
+        margin: 3% 5%;
+        padding: 5% 5%;
+        text-align: center;
+    }
 }
 
 /* ------------------------------------------ Comment ------------------------------------- */
@@ -952,7 +963,7 @@ label {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    padding: 2% 5%;
+    padding: 1% 5%;
 }
 
 .footer h6 {
@@ -988,20 +999,9 @@ label {
 
 }
 
-.header-category img{
-    z-index: -1;
-    background-image: url("../img/sample-img.jpg");
-    opacity: 0.5;
-}
-
-.header-img {
-    z-index: -1;
-    width: 60%;
-    opacity: 0.5;
-}
 
 .header-title {
-    background-color: rgba(256, 256, 256, 0.8); 
+    background-color: rgba(256, 256, 256, 0.9); 
     box-shadow: 0px 0px 10px 0px rgba(0,0,0, 0.7);
 
     color:#162628;
@@ -1011,7 +1011,10 @@ label {
     width: 40%;
 
     text-align:center;
+    filter:grayscale(0%);
 }
+
+
 
 .header-title h2 {
     margin: inherit;

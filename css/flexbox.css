@@ -544,9 +544,9 @@ form .group-2 {
     align-items: center;
     align-content: flex-start;
 
-    padding: 5% 4%;
+    padding: 5% 5%;
 
-    text-align: center;
+    text-align: left;
 }
 
 .order-summary-cart{
