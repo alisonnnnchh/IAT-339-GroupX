@@ -193,8 +193,8 @@
         <form>
 
             <div>
-                <input type="text" id="new_name" name="name_input" required="required" placeholder="Your Name">
-                <input type="text" id="title" name="title_input" required="required" placeholder="Title">
+                <input type="text" id="new_name" name="name_input" required placeholder="Your Name">
+                <input type="text" id="title" name="title_input" required placeholder="Title">
 
                 <div class="rating">
                     <input type="radio" name="star" id="star1"><label for="star1"></label>
@@ -206,9 +206,9 @@
 
             </div>
 
-                <div class="space-between-div">
+            <textarea name="Message" placeholder="Your Message"></textarea>
 
-            <div>
+             <div class="space-between-div">
 
                 <label for="date">Purchase Date:</label>
                 <input type="date" id="date" name="date_input" required="required" placeholder="Purchase Date">
@@ -325,7 +325,7 @@
                 <p>Sign up and be the first to know!</p>
 
                 <input type="text" id="news-email" name="email_input" placeholder="Email Address">
-                <input type="submit" value="JOIN">
+                <input type="submit" value="JOIN" onclick="alert('Thank You for subscribing! Latest Updates will be sent to your email soon!')">
             </form>
         </div>
 

@@ -84,6 +84,7 @@ section:not([class]) {
 
 section.top-of-page{
     padding: 5% 30%;
+    text-align:left;
 }
 
 @media (max-width: 700px) {
@@ -93,6 +94,7 @@ section.top-of-page{
 
     section.top-of-page{
         padding: 12% 12%;
+        text-align:center;
     }
 }
 
@@ -792,13 +794,10 @@ label {
     width:20%;
 }
 
-.comment-input-form form textarea {
-    width: 100%;
-}
 
 .comment-input-form form textarea,
 .comment-input-form form div {
-    margin: 0.2% 0.5%;
+    margin: 0.2% 0%;
 }
 
 .comment-input-form form textarea {
@@ -1028,11 +1027,19 @@ label {
 
 .new-collection {
     width: 100%;
-
     background-color: white;
-    padding: 1%;
+    padding: 2% 10%;
     text-align: center;
     /*border: 1px solid black;*/
+}
+
+.new-collection h4{
+    padding:1%;
+}
+
+.new-collection .image-college figure.reveal-text{
+    margin:0;
+    padding:3%;
 }
 
 .footer {
@@ -1046,6 +1053,9 @@ label {
     align-items: center;
     width: 100%;
     padding: 2% 5%;
+
+    position:static;
+    bottom:0;
 }
 
 .footer h6 {
@@ -1128,7 +1138,7 @@ label {
 /* ------------------------------product detail page///////////////////////////////////////////*/
 
 .static-info {
-    padding: 6% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
     background-color: #162628;
     display: flex;
     flex-flow: wrap row;
@@ -1164,10 +1174,9 @@ label {
 
 }
 
-@media all and (min-width: 900px) {
+@media all and (max-width: 700px) {
     .static-info {
         flex-flow: wrap column;
-
     }
 
     .static-info .group-2 {

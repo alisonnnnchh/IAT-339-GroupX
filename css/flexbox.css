@@ -151,8 +151,8 @@ li {
 .new-collection {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     align-content: center;
 }
@@ -381,7 +381,7 @@ li {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     align-content:stretch;
     width:100%;
@@ -406,6 +406,10 @@ li {
     .comment-input-form form div {
         width: 100%;
 
+    }
+
+    .comment-input-form .space-between-div{
+        justify-content: space-between;
     }
 }
 
