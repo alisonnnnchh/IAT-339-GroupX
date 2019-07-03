@@ -794,13 +794,10 @@ label {
     width:20%;
 }
 
-.comment-input-form form textarea {
-    width: 100%;
-}
 
 .comment-input-form form textarea,
 .comment-input-form form div {
-    margin: 0.2% 0.5%;
+    margin: 0.2% 0%;
 }
 
 .comment-input-form form textarea {
@@ -1134,7 +1131,7 @@ label {
 /* ------------------------------product detail page///////////////////////////////////////////*/
 
 .static-info {
-    padding: 6% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
     background-color: #162628;
     display: flex;
     flex-flow: wrap row;
@@ -1170,10 +1167,9 @@ label {
 
 }
 
-@media all and (min-width: 900px) {
+@media all and (max-width: 700px) {
     .static-info {
         flex-flow: wrap column;
-
     }
 
     .static-info .group-2 {
