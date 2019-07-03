@@ -70,6 +70,7 @@ h6 {
 }
 
 /*the cross in sale product price*/
+
 s {
     color: red;
 }
@@ -189,6 +190,28 @@ video {
     color: #FDA934;
 }
 
+/* generic button */
+
+.button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-align: center;
+    border: 0px;
+    color: #fde9ca;
+    background-color: #53929b;
+    border-radius: 0.25em;
+    text-decoration: none;
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+
+.button:hover {
+    background-color: #fde9ca;
+    color: #53929b;
+}
+
+/* red button */
+
 .red-submit,
 input[type=submit] {
     width: 100%;
@@ -214,41 +237,6 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: red;
     text-decoration: none;
-}
-
-input[type=text],
-input[type=date],
-select {
-    width: 100%;
-    padding: 10px 10px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #53929b;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 13px;
-    color: grey;
-}
-
-
-textarea {
-    /* 
-    width: 60%;
-    padding: 10px 10px;
-    margin: 8px 0;
-    border: 1px solid #53929b;
-    border-radius: 4px;
-    box-sizing: border-box; 
-    */
-    width: 100%;
-    padding: 10px 10px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #53929b;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 13px;
-    color: black;
 }
 
 
@@ -691,6 +679,40 @@ label {
 }
 
 
+input[type=text],
+input[type=date],
+select {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #53929b;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 13px;
+    color: grey;
+}
+
+
+textarea {
+    /* 
+    width: 60%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: 1px solid #53929b;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    */
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #53929b;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 13px;
+    color: black;
+}
 
 
 /* Email Signup */
@@ -897,11 +919,12 @@ label {
 
 }
 
+/*
 
 .product-form-button {
     display: inline-block;
     padding: 0.5em 0.5em;
-    /* width: 100px; */
+     width: 100px; 
     border: 0px;
     color: #fde9ca;
     background-color: #53929b;
@@ -912,9 +935,10 @@ label {
 }
 
 .product-form-button:hover {
-    background-color: red;
-    color: white;
+    background-color: #fde9ca;
+    color: #53929b;
 }
+*/
 
 
 .size-3of5 input[type=text] {
@@ -1681,7 +1705,7 @@ button {
     background-color: #B9D2D6;
 }
 
-.submit-button,
+/*.submit-button,
 .button-icon {
     display: inline-block;
     color: white;
@@ -1713,7 +1737,7 @@ button {
 .button-text:hover a,
 .button-text:focus a {
     color: #422C0E;
-}
+}*/
 
 
 /* Styling for about us page ///////////////////////////*/
