@@ -162,9 +162,11 @@ i {
 
 video {
     width: 100%;
+    position:static;
     left:0;
     right:0;
-    top:0;
+    top:10%;
+    margin:0;
 }
 
 .checked {
@@ -547,6 +549,11 @@ figure.reveal-text:hover figcaption {
         opacity:0.4;
     }
 
+    .new-collection .image-college figure.reveal-text:hover img {
+        transform: scale(1.02);
+        opacity:1;
+    }
+
     /*hide the "plus" icon when show "ADD TO CART" */
     .image-college figure.reveal-text div img.icon-img,
     .image-college figure.reveal-text div img.icon-img:hover{
@@ -910,6 +917,7 @@ label {
     width: 100%;
     background-color: #162628;
     padding: 3% 20%;
+    margin:0;
     text-align: center;
 }
 
@@ -947,7 +955,7 @@ label {
     width: 100%;
 
     background-color: white;
-    padding: 1em;
+    padding: 1%;
     text-align: center;
     /*border: 1px solid black;*/
 }
@@ -1619,7 +1627,7 @@ button {
 
 body.about-page section.main-body-about {
     width: 100%;
-    padding: 10px 25%;
+    padding: 1% 25%;
     display: inline-block;
     background-color: #162628;
     color: white;
@@ -1650,7 +1658,7 @@ body.about-page section.main-body-about div section.neon-logo {
 @media all and (max-width: 750px) {
     body.about-page section.main-body-about {
         width: 100%;
-        padding: 10px 15%;
+        padding: 1% 10%;
         display: inline-block;
     }
     .neon-logo h5 {
