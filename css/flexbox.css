@@ -508,7 +508,7 @@ form .group-2 {
 
 #search .size-1of4 {
     position: sticky;
-    top: 30%;
+    top: 12%;
     background-color: none;
     z-index: 200;
 }
@@ -562,7 +562,11 @@ form .group-2 {
 
     #search .size-1of4 {
         position: sticky;
-        top: 47px;
+        top: 10%;
+    }
+
+    #search .size-1of4 .dropdown-p{
+        padding: 5% 10%;
     }
 
     .size-3of4 {
