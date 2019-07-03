@@ -685,8 +685,9 @@ form div input {
 
 label {
     display: block;
-    font-size: 13px;
+    font-size: 15px;
 }
+
 
 
 
@@ -982,16 +983,46 @@ label {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 10px;
     width: 100%;
+    padding:1%;
+    padding-top:5%;
 }
 
 .headline-box-checkout h6 {
     font-size: 0.8rem;
+    padding:1%;
+    
 }
 
-.headline-box-checkout div h6 {
-    padding: 10px;
+
+
+@media all and (max-width: 800px) {
+
+    .headline-box-checkout {
+        padding: 1%;
+    
+        text-align:center;
+    }
+
+    .headline-box-checkout h6 {
+        font-size: 0.7rem;
+    }
+
+
+    .arrow-right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        width: 7px;
+        height: 7px;
+    }
+
+    .arrow-left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        width: 7px;
+        height: 7px;
+    }
+
 }
 
 
@@ -1739,14 +1770,9 @@ body.about-page section.main-body-about div section.neon-logo {
 }
 
 .order-summary h3 {
-    padding: 0 20% 10px 20%;
-    margin: 0px;
-}
+    padding: 0% 0% 3% 0%;
 
-.order-summary h3 {
-    padding: 15% 20% 5px 20%;
-    margin: 0px;
-    border-bottom: 2px solid black;
+    text-align:center;
 }
 
 .checkout3-border h4 {

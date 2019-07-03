@@ -250,14 +250,12 @@ li {
     }
 }
 
+/* choose delivery method form -----------------*/
 .form-section-container {
-
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
 }
 
 /* category page ////////////////*/
@@ -390,7 +388,7 @@ li {
 }
 
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 600px) {
     .category-page-columns {
         flex-direction: column;
         justify-content: center;
@@ -531,6 +529,7 @@ form .group-2 {
     .group-2of3 {
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .group-4 .image-college {
@@ -545,6 +544,8 @@ form .group-2 {
         flex-direction: column-reverse;
     }
  */
+
+
     .group-2 .size-1of2 .ordersummary {
         order: 1;
     }
@@ -576,6 +577,8 @@ form .group-2 {
         justify-content: space-around;
         min-width: 98%;
     }
+
+
 }
 
 
@@ -586,12 +589,13 @@ form .group-2 {
         flex-direction: column;
         align-content: center;
     }
+
 }
 
 .order-summary {
     background-color: rgba(185, 210, 214, 0.5);
-    border-radius: 5px;
-    border-left: 1.5px solid #53929B;
+    
+    /*border-left: 1.5px solid #53929B;*/
 
     display: flex;
     flex-wrap: wrap;
@@ -631,9 +635,15 @@ form .group-2 {
     padding: 2%;
 }
 
-.size-2of5 table.total td {
-
+.size-2of5 table.total td{
     text-align: center;
+    padding:0 5%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    justify-content: space-between;
 }
 
 .order-summary-cart table td {
@@ -700,7 +710,11 @@ form .group-2 {
 }
 
 .size-3of5 form input[type=radio] {
-    width: 0;
+    width: 5%;
+    background-color: yellow;
+}
+
+.size-3of5 form input[type=radio]:checked{
     background-color: yellow;
 }
 
@@ -744,21 +758,32 @@ form .group-2 {
     .size-3of5 form,
     .size-2of5 form {
         justify-content: center;
+        padding: 1% 5%;
+    }
+
+
+    .size-3of5,
+    .size-2of5 {
+        max-width: 100%;
+        min-width: 100%;
+        padding: 2%;
     }
 
     .order-summary-cart .size-1of3,
-    .order-summary-cart .size-2of3,
-    .size-3of5,
-    .size-2of5 {
+    .order-summary-cart .size-2of3{
         min-width: 100%;
         max-width: 100%;
     }
 
     .order-summary {
-        padding: 1% 1%;
-        justify-content: flex-start;
+        padding: 10% 1%;
+        justify-content: center;
         align-items: stretch;
         align-content: center;
+    }
+
+    .size-2of5 table.total td{
+        text-align: center;
     }
 
     .order-summary-cart{
