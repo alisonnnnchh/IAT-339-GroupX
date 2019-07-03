@@ -176,6 +176,10 @@ li {
     .bottom-page {
         justify-content: space-between;
     }
+
+    .headline-box{
+        padding: 5% 10%;
+    }
     
     .image-college {
         flex-direction: column;

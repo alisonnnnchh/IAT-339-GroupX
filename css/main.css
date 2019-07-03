@@ -164,6 +164,7 @@ video {
     width: 100%;
     left:0;
     right:0;
+    top:0;
 }
 
 .checked {
@@ -873,8 +874,6 @@ label {
 
 .slideshow {
     width: 100%;
-    height: auto;
-
 }
 
 .slide-bg {
@@ -910,7 +909,7 @@ label {
 .headline-box {
     width: 100%;
     background-color: #162628;
-    padding: 2% 20%;
+    padding: 3% 20%;
     text-align: center;
 }
 
