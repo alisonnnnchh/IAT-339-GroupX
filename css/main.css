@@ -127,6 +127,7 @@ a:hover {
     text-decoration: none;
 }
 
+/*
 li {
     color: #fda934;
 }
@@ -135,6 +136,7 @@ ul {
     list-style: none;
     left: 0;
 }
+*/
 
 nav {
     position: sticky;

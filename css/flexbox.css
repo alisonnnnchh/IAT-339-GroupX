@@ -55,7 +55,7 @@
 /* bullet list /////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////*/
 
-ul {
+/*ul {
     display: inline-flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -72,7 +72,7 @@ li {
 
 .nlist {
     list-style-position: outside;
-}
+}*/
 
 
 /* About Us bullet points  */
