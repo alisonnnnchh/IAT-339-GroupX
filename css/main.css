@@ -49,12 +49,6 @@ h4 {
     padding-top: 0px;
     border-bottom: 2px dotted #53929B;
     text-align: center;
-
-    /* third header with underline */
-    /*    font-family: 'Lato', sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 1rem;*/
 }
 
 h5 {
@@ -77,9 +71,8 @@ h6 {
     margin: 0;
 }
 
-/*the cross in sale product price*/
-
 s {
+    /*the cross in sale product price*/
     color: red;
 }
 
@@ -127,17 +120,6 @@ a:hover {
     text-decoration: none;
 }
 
-/*
-li {
-    color: #fda934;
-}
-
-ul {
-    list-style: none;
-    left: 0;
-}
-*/
-
 nav {
     position: sticky;
     top: 0;
@@ -145,18 +127,6 @@ nav {
     right: 0;
     z-index: 500;
 }
-
-/*
-a.in-text-link {
-    margin: 10px;
-    font-size: 0.8rem;
-    color: #162628;
-}
-
-a.in-text-link:hover {
-    text-decoration: underline;
-}
-*/
 
 .size-1of2 .main-body {
     padding: 10% 10%;
@@ -360,7 +330,6 @@ div.figures {
 }
 
 figure.reveal-text {
-    /* display:inline-block; */
     margin: 10px;
     padding: 0px;
     display: block;
@@ -480,9 +449,6 @@ figure.reveal-text:hover figcaption {
 /* product category page underline heading*/
 .size-3of4 h4 {
     color: #FDE9CA;
-    /*    padding-bottom: 10px;
-    padding-top: 0px;
-    border-bottom: 2px dotted #53929B;*/
 }
 
 /* div layer holding all the item boxes */
@@ -498,14 +464,6 @@ figure.reveal-text:hover figcaption {
     align-items: center;
     padding: 0 5% 5% 5%;
 }
-
-/*
-
-.blue-desc{
-    color: #53929B; 
-    
-}
-*/
 
 .image-collage-desc p {
     color: #FDE9CA;
@@ -524,19 +482,6 @@ image-collage-desc a:hover {
     font-weight: bold;
 }
 
-
-/*///////////////////////////////////////*/
-
-/*
-.image-college figure.reveal-text,
-.image-college figure.reveal-text button {
-    margin: 5px;
-
-}
-
-*/
-
-
 /* product category page: each box with image & text */
 .image-college figure.reveal-text {
     padding: 0px 1.25% 5% 1.25%;
@@ -551,38 +496,6 @@ image-collage-desc a:hover {
     padding: 0;
 }
 
-/* product category page: product description+price in the box */
-/*.image-college figure.reveal-text div {
-    display: flex;
-    flex-flow: wrap row;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 10px 0px;
-    position: relative;
-}*/
-
-/*.image-college figure.reveal-text div a,
-.image-college figure.reveal-text div p,
-.image-college figure.reveal-text div h4 {
-    color: #FDE9CA;
-    padding: 0;
-    text-decoration: none;
-    text-transform: uppercase;
-    border: none;
-    padding: 0px 1%;
-    margin: 0;
-}*/
-
-
-
-/*the plus sign in small screen category page*/
-/*.image-college figure.reveal-text div img {
-    position: absolute;
-    right: 0;
-    z-index: 1;
-    opacity: 0;
-}*/
-
 /*product category page: the hidden "ADD TO CART" */
 .image-college figure.reveal-text figcaption {
     opacity: 0;
@@ -596,37 +509,8 @@ image-collage-desc a:hover {
     padding: 5% 20%;
 }
 
-/*/////////////////////////////////////////////////////////*/
-
-/*product category page: when page shown in desktop */
-/*COMMENTED THIS OUT because it's already shown in desktop
-@media all and (min-width: 800px) {*/
-
-/*lower image opacity to show "ADD TO CART" */
-/*.image-college figure.reveal-text:hover img {
-    transform: none;
-    opacity: 0.4;
-}*/
-/*
-.new-collection .image-college figure.reveal-text:hover img {
-    transform: scale(1.02);
-    opacity: 1;
-}*/
-
-/*hide the "plus" icon when show "ADD TO CART" */
-/*.image-college figure.reveal-text div img.icon-img,
-.image-college figure.reveal-text div img.icon-img:hover {
-    opacity: 0;
-}*/
-
-/*.image-college-desc img.icon-img,
-.image-college-desc img.icon-img:hover {
-    display: none;
-}*/
-
-
 /*show "ADD TO CART" when HOVER 
-NOTE: default animation styling already applies above in "actions when hover" section*/
+NOTE: default animation styling already applies above in "actions when hover" section */
 .image-college figure.reveal-text:hover figcaption {
     top: 50%;
     left: 0;
@@ -657,21 +541,6 @@ NOTE: default animation styling already applies above in "actions when hover" se
         opacity: 1;
     }
 
-    /*show the "plus" icon when hide "ADD TO CART" */
-    /*    .image-college figure.reveal-text div img.icon-img,
-    .image-college figure.reveal-text div img.icon-img:hover {
-        opacity: 1;
-    }*/
-
-    /*hide "ADD TO CART" */
-    /*    .image-college figure.reveal-text figcaption,
-    .image-college figure.reveal-text:hover figcaption {
-        opacity: 0;
-        text-decoration: none;
-        transform: none;
-        transition: none;
-    }*/
-
     /*smaller container*/
     .image-college figure.reveal-text {
         /*        width: 47%;*/
@@ -684,15 +553,6 @@ NOTE: default animation styling already applies above in "actions when hover" se
         height: auto;
         padding: 0px;
     }
-
-    /*    .image-college figure.reveal-text div p,
-    .image-college figure.reveal-text div h4 {
-        font-size: 12px;
-    }
-
-    .image-college figure.reveal-text div {
-        flex-flow: wrap column;
-    }*/
 
     .image-college-box {
         justify-content: center;
@@ -763,14 +623,6 @@ select {
 
 
 textarea {
-    /* 
-    width: 60%;
-    padding: 10px 10px;
-    margin: 8px 0;
-    border: 1px solid #53929b;
-    border-radius: 4px;
-    box-sizing: border-box; 
-    */
     width: 100%;
     padding: 10px 10px;
     margin: 8px 0;
@@ -987,28 +839,6 @@ textarea {
 
 }
 
-/*
-
-.product-form-button {
-    display: inline-block;
-    padding: 0.5em 0.5em;
-     width: 100px; 
-    border: 0px;
-    color: #fde9ca;
-    background-color: #53929b;
-    border-radius: 0.25em;
-    text-decoration: none;
-    -webkit-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out;
-}
-
-.product-form-button:hover {
-    background-color: #fde9ca;
-    color: #53929b;
-}
-*/
-
-
 .size-3of5 input[type=text] {
     max-width: 100%;
 }
@@ -1174,7 +1004,6 @@ textarea {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /*background-attachment: fixed;*/
 }
 
 
@@ -1573,7 +1402,6 @@ Help from https://www.w3schools.com/howto/howto_css_dropdown.asp */
 
 
 /* Product Page Dropdown */
-
 .dropdown-p:hover .hover-list {
     display: block;
 }
@@ -1599,7 +1427,6 @@ Help from https://www.w3schools.com/howto/howto_css_dropdown.asp */
 
 
 /* Dropdown Content (Hidden by Default) */
-
 .hover-list {
     display: none;
     position: absolute;
@@ -1639,7 +1466,6 @@ Help from https://www.w3schools.com/howto/howto_css_dropdown.asp */
 
 
 /* Links inside the dropdown */
-
 .hover-list a {
     color: #FDE9CA;
     padding: 0.8em 1em;
@@ -1649,7 +1475,6 @@ Help from https://www.w3schools.com/howto/howto_css_dropdown.asp */
 
 
 /* Change color of dropdown links on hover */
-
 .hover-list a:hover {
     background-color: #fda934;
     color: #F7E5B5;
@@ -1743,7 +1568,6 @@ button {
 /* Styling for the navigation button ///////////////////////////*/
 
 .button-nav,
-/*.head-nav,*/
 .button-text {
     display: inline-block;
     padding: 0.5em 0.75em;
@@ -1769,47 +1593,6 @@ button {
 .button-nav:focus a {
     color: #fde9ca;
 }
-
-/*
-.head-nav:hover,
-.head-nav:focus {
-    background-color: #B9D2D6;
-}*/
-
-/*.submit-button,
-.button-icon {
-    display: inline-block;
-    color: white;
-    border-radius: 0.5em;
-    text-decoration: none;
-    -webkit-transition: background-color 0.5s ease-out;
-    transition: background-color 0.2s ease-out;
-}
-
-.button-text {
-    background-color: #53929B;
-}
-
-.button-text a {
-    color: white;
-}
-
-.button-icon:hover,
-.button-icon:focus {
-    background-color: #fddcac;
-    transform: scale(1.1);
-}
-
-.button-text:hover,
-.button-text:focus {
-    background-color: #fde9ca;
-}
-
-.button-text:hover a,
-.button-text:focus a {
-    color: #422C0E;
-}*/
-
 
 /* Styling for about us page ///////////////////////////*/
 
@@ -1921,8 +1704,6 @@ table {
 table .cart-column {
     background-color: red;
 }
-
-
 
 /* --------- checkout Page form containers --------------*/
 

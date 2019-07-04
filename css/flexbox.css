@@ -46,80 +46,6 @@
     }
 }
 
-
-
-/* did not change ////////////////////////////////////////////////
-///////////////////////////////////////////////////////////*/
-
-
-/* bullet list /////////////////////////////////////////////////
-///////////////////////////////////////////////////////////*/
-
-/*ul {
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-}
-
-li {
-    list-style-type: disc;
-    margin: 0em 1em;
-    padding: 0.1em;
-    color: #fda934;
-}
-
-.nlist {
-    list-style-position: outside;
-}*/
-
-
-/* About Us bullet points  */
-
-/*
-.first-bullet {
-    list-style-type: none;
-}
-
-@media all and (max-width: 700px) {
-    .first-bullet {
-        list-style-type: disc;
-    }
-}
-
-*/
-/*
-
-.blist {
-    list-style-position: inside;
-}
-
-.size-blist a {
-    color: #53929b;
-    font-size: 13px;
-    border-radius: 0.25em;
-    padding: 0.5em;
-    text-decoration: none;
-    -webkit-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out;
-}
-
-.selected-blist a {
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.selected-blist:focus,
-.selected-blist:hover,
-.selected-nlist:focus,
-.selected-nlist:hover {
-    text-decoration: underline;
-}
-*/
-
 /* number list /////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////*/
 .size-nlist a {
@@ -562,14 +488,6 @@ form .group-2 {
         align-content: space-around;
     }
 
-
-    /*
-    .group-4{
-        flex-direction: column-reverse;
-    }
- */
-
-
     .group-2 .size-1of2 .ordersummary {
         order: 1;
     }
@@ -618,9 +536,6 @@ form .group-2 {
 
 .order-summary {
     background-color: rgba(185, 210, 214, 0.5);
-
-    /*border-left: 1.5px solid #53929B;*/
-
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -1014,10 +929,6 @@ input:focus {
         flex-wrap: wrap;
         justify-content: center;
     }
-
-    /*    .image img {
-        width: ;
-    }*/
 
     .image,
     .quantity,
