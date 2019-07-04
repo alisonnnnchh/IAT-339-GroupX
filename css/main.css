@@ -14,7 +14,7 @@ body {
     left: 0;
     right: 0;
     padding-top: 75px;
-    /* pushes down content so navbar doesn't block */
+    /* ^ pushes down content so navbar doesn't block */
 }
 
 h1 {
@@ -58,9 +58,6 @@ h5 {
     ;
     text-align: center;
 }
-
-
-/* cant delete the above part later */
 
 h6 {
     font-family: 'Lato', sans-serif;
@@ -478,14 +475,51 @@ figure.reveal-text:hover figcaption {
     border-bottom: 2px dotted #53929B;
 }
 
+/*////////////// nicole attempt ///////////////*/
+
+/* div layer holding all the item boxes */
+.image-college-box {
+    margin: 5px;
+}
+
+/* individual item box */
+.image-collage-desc {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5% 5% 5%;
+}
+
+.image-collage-desc p {
+    color: #FDE9CA;
+    padding: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    padding: 0px 1%;
+    margin: 0;
+}
+
+.image-collage-desc a,
+image-collage-desc a:hover {
+    color: #FDE9CA;
+    text-decoration: none;
+    font-weight: bold;
+}
 
 
 /*///////////////////////////////////////*/
 
+/*
 .image-college figure.reveal-text,
 .image-college figure.reveal-text button {
     margin: 5px;
+
 }
+
+*/
+
 
 /* product category page: each box with image & text */
 .image-college figure.reveal-text {
@@ -502,16 +536,16 @@ figure.reveal-text:hover figcaption {
 }
 
 /* product category page: product description+price in the box */
-.image-college figure.reveal-text div {
+/*.image-college figure.reveal-text div {
     display: flex;
     flex-flow: wrap row;
     justify-content: space-between;
     align-items: baseline;
     padding: 10px 0px;
     position: relative;
-}
+}*/
 
-.image-college figure.reveal-text div a,
+/*.image-college figure.reveal-text div a,
 .image-college figure.reveal-text div p,
 .image-college figure.reveal-text div h4 {
     color: #FDE9CA;
@@ -521,17 +555,17 @@ figure.reveal-text:hover figcaption {
     border: none;
     padding: 0px 1%;
     margin: 0;
-}
+}*/
 
 
 
 /*the plus sign in small screen category page*/
-.image-college figure.reveal-text div img {
+/*.image-college figure.reveal-text div img {
     position: absolute;
     right: 0;
     z-index: 1;
     opacity: 0;
-}
+}*/
 
 /*product category page: the hidden "ADD TO CART" */
 .image-college figure.reveal-text figcaption {
@@ -549,39 +583,47 @@ figure.reveal-text:hover figcaption {
 /*/////////////////////////////////////////////////////////*/
 
 /*product category page: when page shown in desktop */
-@media all and (min-width: 800px) {
+/*COMMENTED THIS OUT because it's already shown in desktop
+@media all and (min-width: 800px) {*/
 
-    /*lower image opacity to show "ADD TO CART" */
-    .image-college figure.reveal-text:hover img {
-        transform: none;
-        opacity: 0.4;
-    }
-
-    .new-collection .image-college figure.reveal-text:hover img {
-        transform: scale(1.02);
-        opacity: 1;
-    }
-
-    /*hide the "plus" icon when show "ADD TO CART" */
-    .image-college figure.reveal-text div img.icon-img,
-    .image-college figure.reveal-text div img.icon-img:hover {
-        opacity: 0;
-    }
-
-    /*show "ADD TO CART" when HOVER */
-    .image-college figure.reveal-text:hover figcaption {
-        top: 50%;
-        left: 0;
-        opacity: 1;
-        -moz-transform: translate3d(0, 100%, 0);
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, -5%, 0);
-        -moz-transition: all 0.5s;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
-        cursor: pointer;
-    }
+/*lower image opacity to show "ADD TO CART" */
+.image-college figure.reveal-text:hover img {
+    transform: none;
+    opacity: 0.4;
 }
+
+.new-collection .image-college figure.reveal-text:hover img {
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+/*hide the "plus" icon when show "ADD TO CART" */
+.image-college figure.reveal-text div img.icon-img,
+.image-college figure.reveal-text div img.icon-img:hover {
+    opacity: 0;
+}
+
+.image-college-desc img.icon-img,
+.image-college-desc img.icon-img:hover {
+    display: none;
+}
+
+
+/*show "ADD TO CART" when HOVER */
+.image-college figure.reveal-text:hover figcaption {
+    top: 50%;
+    left: 0;
+    opacity: 1;
+    -moz-transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, -5%, 0);
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+/*}*/
 
 /*product category page: when page shown in size between desktop & small */
 @media all and (max-width: 800px) {
@@ -599,23 +641,23 @@ figure.reveal-text:hover figcaption {
     }
 
     /*show the "plus" icon when hide "ADD TO CART" */
-    .image-college figure.reveal-text div img.icon-img,
+    /*    .image-college figure.reveal-text div img.icon-img,
     .image-college figure.reveal-text div img.icon-img:hover {
         opacity: 1;
-    }
+    }*/
 
     /*hide "ADD TO CART" */
-    .image-college figure.reveal-text figcaption,
+    /*    .image-college figure.reveal-text figcaption,
     .image-college figure.reveal-text:hover figcaption {
         opacity: 0;
         text-decoration: none;
         transform: none;
         transition: none;
-    }
+    }*/
 
     /*smaller container*/
     .image-college figure.reveal-text {
-        width: 47%;
+        /*        width: 47%;*/
         height: auto;
         padding: 0px 1% 5% 1%;
     }
@@ -644,7 +686,6 @@ figure.reveal-text:hover figcaption {
     .image-college figure.reveal-text div img.icon-img:hover {
         opacity: 1;
     }
-
 }
 
 
