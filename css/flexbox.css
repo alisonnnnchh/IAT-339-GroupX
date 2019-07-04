@@ -532,7 +532,6 @@ form .group-2 {
 #search .size-1of4 {
     position: sticky;
     top: 12%;
-    background-color: none;
     z-index: 200;
 }
 
@@ -951,7 +950,6 @@ form .group-2 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: none;
 
 }
 
@@ -983,7 +981,7 @@ form .group-2 {
 
 .plus-btn img,
 .minus-btn img {
-    position: center;
+    text-align: center;
     filter: grayscale(1);
 
 }
@@ -1017,9 +1015,9 @@ input:focus {
         justify-content: center;
     }
 
-    .image img {
+    /*    .image img {
         width: ;
-    }
+    }*/
 
     .image,
     .quantity,

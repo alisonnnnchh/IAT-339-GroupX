@@ -114,6 +114,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+    text-decoration: none;
 }
 
 li {
@@ -677,6 +678,11 @@ image-collage-desc a:hover {
         flex-flow: wrap column;
     }
 
+    .image-college-box {
+        justify-content: center;
+        width: 45%;
+    }
+
 }
 
 /*product category page: when page shown in mobile */
@@ -685,6 +691,11 @@ image-collage-desc a:hover {
     .image-college figure.reveal-text div img.icon-img,
     .image-college figure.reveal-text div img.icon-img:hover {
         opacity: 1;
+    }
+
+    .image-college-box {
+        justify-content: center;
+        width: 100%;
     }
 }
 
@@ -1352,7 +1363,7 @@ textarea {
 .static-info .group-2 .size-1of2 .slideshow-container img {
 
     width: 100%;
-    max-height: auto;
+    /*    max-height: auto;*/
     object-fit: fill;
 }
 
@@ -1483,7 +1494,7 @@ textarea {
     background-color: #162628;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
     text-shadow: 0 0 3px #422C0E;
-    transition: all 0.5 ease;
+    transition: all 0.5s ease;
 
     align-items: center;
 }
@@ -1499,7 +1510,7 @@ textarea {
 
 .main-nav-logo {
     width: 100%;
-    position: center;
+    text-align: center;
     width: 70px;
     height: 70px;
 }
