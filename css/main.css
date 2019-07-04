@@ -76,7 +76,7 @@ s {
     color: red;
 }
 
-b {
+strong {
     font-weight: bold;
 }
 
@@ -184,12 +184,16 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
     display: inline-block;
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
 }
 
 .red-submit {
     width: 100%;
     background-color: #53929b;
     text-align: center;
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
 }
 
 
@@ -245,6 +249,8 @@ input[type=submit]:hover {
     width: 100%;
 }
 
+/*
+
 .icon-120 {
     width: 120px;
     height: 120px;
@@ -274,6 +280,7 @@ input[type=submit]:hover {
     height: 20px;
     padding: 0.10em 0.15em;
 }
+*/
 
 /* specific icon styling */
 
@@ -1438,14 +1445,8 @@ Help from https://www.w3schools.com/howto/howto_css_dropdown.asp */
 }
 
 .size-1of4 .hover-list {
-    display: none;
-    position: absolute;
     left: -2%;
     width: 100%;
-    background-color: #162628;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-
 }
 
 @media all and (max-width: 700px) {
@@ -1476,7 +1477,7 @@ Help from https://www.w3schools.com/howto/howto_css_dropdown.asp */
 
 /* Change color of dropdown links on hover */
 .hover-list a:hover {
-    background-color: #fda934;
+    background-color: #53929B;
     color: #F7E5B5;
     cursor: pointer;
 }
@@ -1489,7 +1490,7 @@ Help from https://www.w3schools.com/howto/howto_css_dropdown.asp */
 /* CHECKOUT NAVIGATION -------------------*/
 
 .nav-checkout {
-    background-color: #FDDCAC;
+    background-color: #FDE9CA;
     padding: 0.5em 1em;
 }
 

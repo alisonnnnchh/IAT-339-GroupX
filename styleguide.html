@@ -7,534 +7,437 @@
     <title>Style Guide for Vintage Maze</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- this one is important-->
 
-    <link href="css/styleguide/main.css" rel="stylesheet">
-    <link href="css/styleguide/font.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styleguide/flexbox.css">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/font.css" rel="stylesheet">
+    <link href="css/flexbox.css" rel="stylesheet">
+    <link href="css/styleguide.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Emilys+Candy|Gugi|Righteous|Stardos+Stencil&display=swap" rel="stylesheet">
 
 </head>
 
+<!-- ----------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------NAVIGATION--------------------------------- -->
+
 <body>
-    <img src="img/styleguide/maze-fb-logo.jpeg">
+    <!--- For Desktop --->
+    <nav class='original-menu'>
+        <section class="main-nav-bar">
 
-    <h1 class="heading-bun-48">Vintage Maze Style Guide</h1>
+            <div>
+                <a href="index.html" class="dropbtn-product-icon"><img src="img/vintage-maze-logo.png" class="main-nav-logo" alt="Vintage Maze Logo"></a>
+            </div>
 
-    <p class="heading-rig-25">Brand Defintion:
+            <div>
+                <a href="product_categories.html" class="dropbtn-product">SHOP</a>
+                <a href="about.html" class="dropbtn-product">ABOUT</a>
+                <a href="contact.html" class="dropbtn-product">CONTACT</a>
+                <a href="cart.html" class="dropbtn-product-icon"><img src="img/shop_icon.png" class="icon-img" alt="Cart"></a>
+                <a href="https://www.facebook.com/vintagemaze/" class="dropbtn-product-icon"><img src="img/fb-icon.png" class="icon-img" alt="Facebook"></a>
+                <a href="http://instagram.com/vintage_maze" class="dropbtn-product-icon"><img src="img/ig-icon.png" class="icon-img" alt="Instagram"></a>
+
+            </div>
+
+        </section>
+    </nav>
+
+    <!--- For Mobile --->
+    <nav class="new-menu-500px ">
+        <section class="main-nav-bar">
+
+            <div class="dropdown-p">
+                <img src="img/menu-icon.png" class="icon-img" alt="Menu">
+                <div class="hover-list">
+                    <a href="product_categories.html" class="main-service">SHOP</a>
+                    <a href="about.html" class="main-service">ABOUT</a>
+                    <a href="contact.html" class="main-service">CONTACT</a>
+
+                </div>
+
+            </div>
+
+            <div class="dropdown-p">
+                <a href="index.html"><img src="img/vintage-maze-logo.png" class="icon-img-logo-500px" alt="Vintage Maze Logo"></a>
+            </div>
+
+            <div class="dropdown-p">
+                <a href="cart.html"><img src="img/shop_icon.png" class="icon-img" alt="Cart"></a>
+            </div>
+
+        </section>
+    </nav>
+
+    <!-- ----------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------BODY---------------------------------------- -->
+    <section class="main-body">
+        <div class='header-category'>
+            <div class='header-title'>
+                <h2>Style Guide</h2>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Brand Defintion:</h3>
         <p> Vintage Maze collects the parts and pieces from everyone's memories. To evoke the good childhood, shared memories, Vintage Maze has collections of retro furnishings, second-hand antique accessories, toys, clothes and hand-made designs around the world. </p>
+    </section>
 
-        <nav>
 
-            <p>
-                Go to:
-                <p> <a href="#interactive_elements" class='head-nav'>Interactive Elements</a>
-                    <a href="#text_elements" class='head-nav'>Text Elements</a>
-                    <a href="#combined_elements" class='head-nav'>Combined Elements</a>
-                    <a href="https://ovh3lr.axshare.com/#id=b2aeuu&p=home&c=1" class='head-nav'> Wireframes</a>
-                    <a href="https://o6ly6u.axshare.com/?fbclid=IwAR3FuOdmlC9cjHfEjBs8gCvmZ4HZCtawOFjl1xw7uCyyNU7EWqatiyBP8Eo#id=dihrwk&p=check_out_1" class='head-nav'> Wireframes (Credit Card Payment by Nicole)</a>
-                    <a href="img/styleguide/sitemap.png" class='head-nav'> Sitemap</a>
+    <!--
+    <nav>
+        Go to:
+        <p> <a href="#interactive_elements" class="button">Interactive Elements</a>
+            <a href="#text_elements" class="button">Text Elements</a>
+            <a href="#combined_elements" class="button">Combined Elements</a>
+            <a href="https://ovh3lr.axshare.com/#id=b2aeuu&p=home&c=1" class="button"> Wireframes</a>
+            <a href="https://o6ly6u.axshare.com/?fbclid=IwAR3FuOdmlC9cjHfEjBs8gCvmZ4HZCtawOFjl1xw7uCyyNU7EWqatiyBP8Eo#id=dihrwk&p=check_out_1" class="button"> Wireframes (Credit Card Payment by Nicole)</a>
+            <a href="img/styleguide/sitemap.png" class="button"> Sitemap</a>
+            <a href="http://www.sfu.ca/~hhc26/IAT%20339/PO1%20Vintage/P01%20-%20Step%202%20Vintage%20Maze.html" class="button"> Design Process</a>
+            <a href="citations.html" class="button"> Citations</a>
+    </nav>
 
-                    <a href="http://www.sfu.ca/~hhc26/IAT%20339/PO1%20Vintage/P01%20-%20Step%202%20Vintage%20Maze.html" class='head-nav'> Design Process</a>
-                    <a href="citations.html" class='head-nav'> Citations</a>
-                </p>
+-->
 
-        </nav>
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+        <h3>Interactive Elements</h3>
 
 
 
-        <!-- INTERACTIVE ELEMENTS SECTION // -->
-        <section id="interactive_elements">
+        <h4>Buttons</h4>
+        <p><a href="#" class="button">Default Button</a></p>
 
-            <!-- Default Button styling section -->
-            <section>
+        <p><strong>.button</strong> - Generic multipurpose button</p>
 
-                <h2>Navigation Button (view product)</h2>
+        <textarea><a href="#" class="button">Default Button</a></textarea>
 
-                <h3>CSS selector:</h3>
-                <p>.button-nav</p>
+        <p><a href="#" class="red-submit">Submit Button</a></p>
 
-                <h3>Sample code:</h3>
-                <code>&lt;button class="button button-nav"&gt;&lt;a href="#"&gt;Default Button&lt;/a&gt;&lt;/button&gt;</code>
+        <p><strong>.red-submit</strong> - Submit button: used for important things to catch attention of people</p>
 
-                <h3>Rendered element:</h3>
-                <button class="button button-nav"><a href="#">Default Button</a></button>
+        <textarea><a href="#" class="button">Default Button</a></textarea>
 
-            </section>
 
-            <section>
 
-                <h2>Image Navigation Button (home, cart)</h2>
+        <h4>Icons</h4>
 
-                <h3>CSS selector:</h3>
-                <p>.button-nav-img</p>
+        <a href="#"><img src="img/vintage-maze-logo.png" class="icon-img" alt="logo"></a>
 
-                <h3>Sample code:</h3>
-                <code>&lt;button class="button-nav-img icon-60"&gt;&lt;a href="index.html"&gt;&lt;img src="img/vintage-maze-logo.png" class="icon-img"&gt;&lt;/a&gt;&lt;/button&gt;</code>
+        <p><strong>.icon-img</strong> - formats popping effect</p>
 
-                <h3>Rendered element:</h3>
-                <button class="button-nav-img icon-60"><a href="index.html"><img src="img/vintage-maze-logo.png" class="icon-img"></a></button>
+        <textarea><a href="#"><img src="img/vintage-maze-logo.png" class="icon-img" alt="logo"></a></textarea>
+        <div class="footer"> <a href="#"> <img src="img/shop_icon.png" class="icon-img" alt="shop icon"></a>
+            shop_icon
+            <a href="#"> <img src="img/fb-icon.png" class="icon-img" alt="fb icon"></a> fb-icon
+            <a href="#"> <img src="img/ig-icon.png" class="icon-img" alt="instagram icon"></a> ig-icon
+        </div>
 
-            </section>
 
-            <section>
-                <h2>In-text link</h2>
 
-                <h3>CSS selector:</h3>
-                <p>.in-text-link</p>
+        <h4>Form Input</h4>
+        <p>Note that the entire form is enclosed in a form tag. Below are some sample options used in forms.</p>
+        <form>
+            <div class="form-section-container">
+                <input name="name" id="name" type="text" placeholder="Name" required>
+                <strong>Input type="text"</strong> - for one-line submissions
+                <textarea name="Message" placeholder="Your Message" required></textarea>
+                <strong>Input type="textarea"</strong> - for multi-line submissions
+                <input type="submit" value="Submit" class="block-submit">
+                <strong>Input type="submit"</strong> - to submit the entire form
+            </div>
+        </form>
 
-                <h3>Sample code:</h3>
-                <code>&lt;a class="in-text-link" href="#"&gt;In-text link&lt;/a&gt;</code>
 
-                <h3>Rendered element:</h3>
-                <a class="in-text-link" href="#">In-text link</a>
+        <textarea>
+        <form>
+            <div class="form-section-container">
+                <input name="ID HERE" id="ID HERE" type="text" placeholder="PLACEHOLDER HERE" required>
+                <input name="email" id="email" type="text" placeholder="Email" required>
+                &lt;textarea name="Message" placeholder="Your Message" required>&lt;/textarea&gt;
+        <input type="submit" value="Submit" class="block-submit" onclick="alert('Email sent!')">
+        </div>
+        </form>
+        </textarea>
 
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
 
-            </section>
 
-            <section>
-                <h2>Submit/Checkout Buttons</h2>
-                <h3>CSS selector:</h3>
-                <p>.submit-button, .button-text</p>
 
-                <h3>Sample code:</h3>
-                <code>&lt;button class="submit-button button-text"&gt;&lt;a href="#"&gt;Submit&lt;/a&gt;&lt;/button&gt;</code>
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+        <h3>Text Elements</h3>
 
-                <h3>Rendered element:</h3>
-                <br>
-                <button class="submit-button button-text"> <a href="#"> Submit </a></button>
+        <h4>Headers</h4>
 
-            </section>
+        <h1>Header 1</h1>
+        <p><strong>H1</strong> - used on the front page hero image only. </p>
+        <textarea><h1>text here</h1></textarea>
 
-            <section>
-                <h2>Icons</h2>
-                <h3>CSS selector:</h3>
-                <p>.button-icon, .icon-120, .icon-76, .icon-60, .icon-32, .icon-20, icon-img </p>
+        <h2>Header 2</h2>
+        <p><strong>H2</strong> - used for main banner font. </p>
+        <textarea><h2>text here</h2></textarea>
 
-                <h3>Sample code:</h3>
-                <code>&lt;button class="button-icon icon-120"&gt;&lt;a href="#"&gt;&lt;img src="img/styleguide/shop_icon.png" class="icon-img"&gt;&lt;/a&gt;&lt;/button&gt;</code>
-                <br><code>&lt;button class="button-icon icon-76"&gt;&lt;a href="#"&gt;&lt;img src="img/styleguide/shop_icon.png" class="icon-img"&gt;&lt;/a&gt;&lt;/button&gt;</code>
-                <br><code>&lt;button class="button-icon icon-60"&gt;&lt;a href="#"&gt;&lt;img src="img/styleguide/shop_icon.png" class="icon-img"&gt;&lt;/a&gt;&lt;/button&gt;</code>
-                <br><code>&lt;button class="button-icon icon-32"&gt;&lt;a href="#"&gt;&lt;img src="img/styleguide/shop_icon.png" class="icon-img"&gt;&lt;/a&gt;&lt;/button&gt;</code>
-                <br><code>&lt;button class="button-icon icon-20"&gt;&lt;a href="#"&gt;&lt;img src="img/styleguide/shop_icon.png" class="icon-img"&gt;&lt;/a&gt;&lt;/button&gt;</code>
-
-                <h3>Rendered element:</h3>
-                <br>
-                <button class="button-icon icon-120"> <a href="#"> <img src="img/styleguide/shop_icon.png" class="icon-img"></a></button>
-                <button class="button-icon icon-76"> <a href="#"> <img src="img/styleguide/shop_icon.png" class="icon-img"></a></button>
-                <button class="button-icon icon-60"> <a href="#"> <img src="img/styleguide/shop_icon.png" class="icon-img"></a></button>
-                <button class="button-icon icon-32"> <a href="#"> <img src="img/styleguide/shop_icon.png" class="icon-img"></a></button>
-                <button class="button-icon icon-20"> <a href="#"> <img src="img/styleguide/shop_icon.png" class="icon-img"></a></button>
-
-                <br>
-                <button class="button-icon icon-60"> <a href="#"> <img src="img/styleguide/shop_icon.png" class="icon-img"></a></button>
-                <button class="button-icon icon-60"> <a href="#"> <img src="img/styleguide/contact-icon.png" class="icon-img"></a></button>
-                <button class="button-icon icon-60"> <a href="#"> <img src="img/styleguide/email-icon.png" class="icon-img"></a></button>
-                <button class="button-icon icon-60"> <a href="#"> <img src="img/styleguide/fb-icon.png" class="icon-img"></a></button>
-                <button class="button-icon icon-60"> <a href="#"> <img src="img/styleguide/ig-icon.png" class="icon-img"></a></button>
-                <button class="button-icon icon-60"> <a href="#"> <img src="img/styleguide/map-icon.png" class="icon-img"></a></button>
-                <button class="button-icon icon-60"> <a href="#"> <img src="img/styleguide/max-icon.png" class="icon-img"></a></button>
-                <button class="button-icon icon-60"> <a href="#"> <img src="img/styleguide/min-icon.png" class="icon-img"></a></button>
-                <p class="body-lato-small"> shop_icon, contact-icon, email-icon, fb-icon, ig-icon, map-icon, max-icon, min-icon </p>
-
-
-
-            </section>
-
-            <section>
-                <h2>Text Input Field (Search, email)</h2>
-
-                <h3>CSS selector:</h3>
-                <p>.email-input-form, input type="text", input type="submit",email_input </p>
-
-                <h3>Sample code:</h3>
-                <code>&lt;div class="email-input-form"&gt;
-                    <br>&lt;form&gt;
-                    <br>&lt;abel for="news_email" class="heading-rig-25"&gt;Newsletter&lt;/label&gt;
-                    <br>&lt;abel for="news_info" class="body-lato-regular"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/label&gt;
-                    <br>&lt;input type="text" id="news-email" name="email_input" placeholder="Email Subscribe"&gt;
-                    <br>&lt;input type="submit" value="Submit"&gt;
-                    <br>&lt;/form&gt;
-                    <br>&lt;/div&gt;</code>
-
-
-                <h3>Rendered element:</h3>
-                <div class="email-input-form">
-                    <form>
-                        <label for="news_email" class="heading-rig-25"> Newsletter </label>
-                        <br><br>
-                        <label for="news_info" class="body-lato-light"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </label>
-                        <br>
-                        <input type="text" id="news-email" name="email_input" placeholder="Email Subscribe">
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>
-
-            </section>
-
-        </section>
-        <!-- // INTERACTIVE ELEMENTS SECTION -->
-
-
-
-        <!-- TEXT ELEMENTS SECTION // -->
-        <section id="text_elements">
-
-            <section>
-                <h2>Headings</h2>
-
-                <h3>CSS selector:</h3>
-                <p>.heading-bun-48, .heading-bun-36, .heading-rig-25, .body-lato-bold, .body-lato-regular, .body-lato-small .</p>
-
-                <h3>Sample code:</h3>
-                <code>&lt;h3 class="heading-Rou-48"&gt;Heading One&lt;/h3&gt; Rousseau Deco - Regular (48px)
-                    <br> &lt;h3 class="body-lato-bold"&gt;Body Bold&lt;/h3&gt; Lato - Bold (16px)</code>
-
-                <h3>Rendered element:</h3>
-                <h3 class="heading-bun-48">Heading One</h3> Bungee Shade - Regular (48px)
-                <h3 class="heading-bun-36">Heading Two</h3> Bungee Shade - Regular (36px)
-                <h3 class="heading-rig-25">Heading Three</h3> Righteous - Regular (25px)
-
-                <h3 class="body-lato-bold">Body Bold</h3> Lato - Bold (16px)
-                <h3 class="body-lato-regular">Body</h3> Lato - Regular (16px)
-                <h3 class="body-lato-small">Button</h3> Lato - Bold (14px)
-                <h3 class="body-lato-light">Meta</h3> Lato - Light (14px)
-
-            </section>
-
-            <section>
-                <h2> NEW Headings</h2>
-
-                <h3>CSS selector:</h3>
-                <p>h1, h2, h3, body, b=bold, i=italic, small, h6</p>
-
-                <h3>Sample code:</h3>
-                <code>&lt;h1&gt;Heading One&lt;/h1&gt; Bungee Shade - Regular (48px)
-                    <br> &lt;small&gt;Button&lt;/small&gt; Lato - Bold (14px)</code>
-
-                <h3>Rendered element:</h3>
-                <h1>Heading One</h1> Bungee Shade - Regular (48px)
-                <h2>Heading Two</h2> Bungee Shade - Regular (36px)
-                <h3>Heading Three</h3> Righteous - Regular (25px)
-                <br>
-                <p>
-                <p>Regular Body</p>          <p>Lato - Regular (16px)</p>
-                <p><b>Body Bold</b></p>      <p>Lato - Bold (16px)</p>
-                <p><i>Body Italic</i></p>    <p>Lato - Italic (16px)</p>
-                <p><small>Button</small></p> <p>Lato - Bold (14px)</p>
-                <h6>Meta</h6> Lato - Light (10px)
-
-            </section>
-
-            <section>
-                <h2>Paragraphs</h2>
-
-                <h3>CSS selector:</h3>
-                <p> h3, p , .heading-Rou-36, .heading-Rou-25,.body-lato-regular, .body-lato-light, .body-lato-small</p>
-
-                <h3>Sample code:</h3>
-                <code>&lt;h3 class="heading-bun-36"&gt;Main section title&lt;/h3&gt;
-                    <br>&lt;h3 class="heading-rig-25"&gt;Sub-section title&lt;/h3&gt;
-
-                    <br>&lt;p class="body-lato-regular"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/h3&gt;
-                    <br>&lt;/p &gt;
-
-                    <br>&lt;h3 class="body-lato-small"&gt;Small meta text&lt;/h3&gt;
-                    <br>&lt;p class="body-lato-light"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/h3&gt;
-                    <br>&lt;/p &gt;
-
-                </code>
-
-
-                <h3>Rendered element:</h3>
-                <h3 class="heading-bun-36"> Main section title </h3>
-                <h3 class="heading-rig-25"> Sub-section title </h3>
-                <br>
-                <p class="body-lato-regular"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-
-                <h3 class="body-lato-small"> Small meta text </h3>
-                <br>
-                <p class="body-lato-light"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            </section>
-
-            <section>
-                <h2>Bulleted Lists</h2>
-                <h3>CSS selector:</h3>
-                <p>.size-blist, .blist, .selected-blist, .first-bullet</p>
-
-                <h3>Sample code:</h3>
-                <code>&lt;div class="blist"&gt;
-                    <br>&lt;ul class="size-blist"&gt;
-                    <br>&lt;li class="first-bullet"&gt;&lt;a href="#" class="selected-blist"&gt;Production Collection&lt;/a&gt;&lt;/li&gt;
-                    <br>&lt;li&gt;&lt;a href="#" class="selected-blist"&gt;Toys&lt;/a&gt;&lt;/li&gt;
-                    <br>&lt;li&gt;&lt;a href="#" class="selected-blist"&gt;80' Toys Car&lt;/a&gt;&lt;/li&gt;
-                    <br>&lt;/ul&gt; &lt;/div&gt;
-                </code>
-
-
-                <h3>Rendered element:</h3>
-                <div class="blist">
-                    <ul class="size-blist">
-                        <li class="first-bullet"><a href="#" class="selected-blist">Production Collection</a></li>
-                        <li><a href="#" class="selected-blist">Toys</a></li>
-                        <li><a href="#" class="selected-blist">80' TOY CAR</a></li>
-                    </ul>
-                </div>
-
-            </section>
-
-            <section>
-                <h2>Numbered Lists</h2>
-
-                <h3>CSS selector:</h3>
-                <p>.size-nlist, .nlist, .selected-nlist</p>
-
-                <h3>Sample code:</h3>
-                <code>&lt;div class="nlist"&gt;
-                    <br>&lt;ol class="size-nlist"&gt;
-                    <br>&lt;li&gt;&lt;a href="#" class="selected-nlist"&gt;Clothes&lt;/a&gt;&lt;/li&gt;
-                    <br>&lt;li&gt;&lt;a href="#" class="selected-nlist"&gt;Home Deco&lt;/a&gt;&lt;/li&gt;
-                    <br>&lt;li&gt;&lt;a href="#" class="selected-nlist"&gt;Toys&lt;/a&gt;&lt;/li&gt;
-                    <br>&lt;/ol&gt;&lt;/div&gt;
-                </code>
-
-
-                <h3>Rendered element:</h3>
-                <div class="nlist">
-                    <ol class="size-nlist">
-                        <li><a href="#" class="selected-nlist">Clothes</a></li>
-                        <li><a href="#" class="selected-nlist">Home Deco</a></li>
-                        <li><a href="#" class="selected-nlist">Toys</a></li>
-                    </ol>
-                </div>
-
-            </section>
-
-        </section>
+        <h3>Header 3</h3>
+        <p><strong>H3</strong> - used as secondary header font. </p>
+        <textarea><h3>text here</h3></textarea>
+
+        <h4>Header 4</h4>
+        <p><strong>H4</strong> - used as subsection header font. </p>
+        <textarea><h4>text here</h4></textarea>
+
+        <h5>Header 5</h5>
+        <p><strong>H5</strong> - used for Chinese headers, and only against a dark background.</p>
+        <textarea><h5>text here</h5></textarea>
+
+        <h6>Header 6</h6>
+        <p><strong>H6</strong> - used as sub-subheader font. Used very rarely. </p>
+        <textarea><h6>text here</h6></textarea>
         <!-- // TEXT ELEMENTS SECTION -->
+    </section>
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+        <h3>Combined Elements</h3>
+
+        <h4>Main Navigation</h4>
+
+        <p>.dropdown-p, .hover-list, .dropbtn-product</p>
+        <p>Paste AFTER the body tag begins, and BEFORE the main content area. </p>
+        <textarea>
+<!-- ----------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------NAVIGATION--------------------------------- -->
+
+<!--- For Desktop --->
+<nav class='original-menu'>
+    <section class="main-nav-bar">
+
+        <div>
+            <a href="index.html" class="dropbtn-product-icon"><img src="img/vintage-maze-logo.png" class="main-nav-logo" alt="Vintage Maze Logo"></a>
+        </div>
+
+        <div>
+            <a href="product_categories.html" class="dropbtn-product">SHOP</a>
+            <a href="about.html" class="dropbtn-product">ABOUT</a>
+            <a href="contact.html" class="dropbtn-product">CONTACT</a>
+            <a href="cart.html" class="dropbtn-product-icon"><img src="img/shop_icon.png" class="icon-img" alt="Cart"></a>
+            <a href="https://www.facebook.com/vintagemaze/" class="dropbtn-product-icon"><img src="img/fb-icon.png" class="icon-img" alt="Facebook"></a>
+            <a href="http://instagram.com/vintage_maze" class="dropbtn-product-icon"><img src="img/ig-icon.png" class="icon-img" alt="Instagram"></a>
+
+        </div>
+
+    </section>
+</nav>
+
+<!--- For Mobile --->
+<nav class="new-menu-500px ">
+    <section class="main-nav-bar">
+
+        <div class="dropdown-p">
+            <img src="img/menu-icon.png" class="icon-img" alt="Menu">
+            <div class="hover-list">
+                <a href="product_categories.html" class="main-service">SHOP</a>
+                <a href="about.html" class="main-service">ABOUT</a>
+                <a href="contact.html" class="main-service">CONTACT</a>
+
+            </div>
+
+        </div>
+
+        <div class="dropdown-p">
+            <a href="index.html"><img src="img/vintage-maze-logo.png" class="icon-img-logo-500px" alt="Vintage Maze Logo"></a>
+        </div>
+
+        <div class="dropdown-p">
+            <a href="cart.html"><img src="img/shop_icon.png" class="icon-img" alt="Cart"></a>
+        </div>
+
+    </section>
+</nav>
+        </textarea>
 
 
 
-        <!-- COMBINED ELEMENTS SECTION // -->
-        <section id="combined_elements">
 
-            <section>
-                <h2>Main Navigation</h2>
+        <h4>Product Listing</h4>
 
-                <h3>CSS selector:</h3>
-                <p>.dropdown-p, .hover-list, .dropbtn-product</p>
+        <div class="image-college">
+            <div class="image-college-box">
+                <figure class="reveal-text">
+                    <a href="product_detail.html"><img src="img/product-sample2.jpg" alt="Rose Table Lamp" class="products-img"></a>
+                    <figcaption>
+                        <p class="button" onclick="alert('Item added into CART!')">Add To Cart</p>
+                    </figcaption>
+                </figure>
 
-                <h3>Sample code:</h3>
-                <code>&lt;div class="dropdown-p"&gt;
-                    <br>&lt;button class="dropbtn-product"&gt;Product&lt;/button&gt;
-                    <br>&lt;div class="hover-list"&gt;
-                    <br>&lt;a href="#"&gt;Toys&lt;/a&gt;
-                    <br>&lt;a href="#"&gt;Home Deco&lt;/a&gt;
-                    <br>&lt;a href="#"&gt;Clothes&lt;/a&gt;
-                    <br>&lt;a href="#"&gt;Accessories&lt;/a&gt;
-                    <br>&lt;/div&gt;&lt;/div&gt;
-                </code>
+                <div class="image-collage-desc">
+                    <p><a href="product_detail.html"> Rose Table Lamp</a></p>
+                    <p>$75</p>
+                    <p class="hidden-desktop"><img src="img/plus-icon2.png" alt="add item" class="icon-img" onclick="alert('Item added into CART!')"></p>
+                </div>
+            </div>
+        </div>
+        <p><strong>.image-college</strong> - main box holding all product listings</p>
+        <p><strong>.image-college-box</strong> - individual product listing</p>
+        <p><strong>.reveal-text</strong> - enables the pop up button in the figcaption when hovering over the image</p>
+        <p><strong>.image-collage-desc</strong> - description of product listing</p>
 
-                <h3>Rendered element:</h3>
-                <div class="dropdown-p body-lato-small">
-                    <button class="dropbtn-product body-lato-small">Product</button>
-                    <div class="hover-list">
-                        <a href="#">Toys</a>
-                        <a href="#">Home Deco</a>
-                        <a href="#">Clothes</a>
-                        <a href="#">Accessories</a>
+        <textarea>
+            <div class="image-college">
+
+                <div class="image-college-box">
+                    <figure class="reveal-text">
+                        <a href="product_detail.html"><img src="img/product-sample2.jpg" alt="Rose Table Lamp" class="products-img"></a>
+                        <figcaption>
+                            <p class="button" onclick="alert('Item added into CART!')">Add To Cart</p>
+                        </figcaption>
+                    </figure>
+
+                    <div class="image-collage-desc">
+                        <p><a href="product_detail.html"> Rose Table Lamp</a></p>
+                        <p>$75</p>
+                        <p class="hidden-desktop"><img src="img/plus-icon2.png" alt="add item" class="icon-img" onclick="alert('Item added into CART!')"></p>
                     </div>
                 </div>
 
-            </section>
-
-            <section>
-                <h2>Product Listing</h2>
-
-                <h3>CSS selector:</h3>
-                <p> .product-form, .product-form-item, .form-item-shown, .product-form-img, .form-item-hidden, .product-form-text, .product-form-button</p>
-
-                <h3>Sample code:</h3>
-                <code>&lt;div class="product-form"&gt;
-                    <br>&lt;div class= "product-form-item"&gt;
-                    <br>&lt;img src="img/styleguide/product-sample.png" class="form-item-shown product-form-img"&gt;
-                    <br>&lt;label class="form-item-hidden product-form-text"&gt;&lt;Product Name & Year&gt;&lt;/label&gt;&lt;/div&gt;
-                    <br>&lt;button class="form-item-hidden product-form-button"&gt;&lt;More Info&gt;&lt;/button&gt;&lt;/div&gt;
-                    <br>&lt;/div&gt;&lt;/div&gt;
-                </code>
-
-                <h3>Rendered element:</h3>
-
-                <div class="product-form">
-                    <div class="product-form-item">
-                        <img src="img/styleguide/product-sample.png" class="form-item-shown product-form-img">
-                        <label class="form-item-hidden product-form-text">Product Name & Year </label></div>
-                    <button class="form-item-hidden product-form-button">More Info</button>
-                </div>
-                </div>
-
-                </div>
-                <!--
-          <div class="product-form">
-              <div class= "form-shown">
-                  <img src="img/product-sample.png" class="product-form-item product-form-img">
-              </div>
-
-              <div class="form-hidden">
-                  <label class="product-form-item product-form-text">Product Name & Year </label></div>
-                  <button class="product-form-item product-form-button">More Info</button></div>
-              </div>
-              
-           </div>
-
-            <div class="product-form">
-           <div class="product-form-item product-form-pic"><img src="img/product-sample.png" class="product-form-img">
-                  <div class="product-form-item product-form-text"> 
-                      Product Name & Year 
-                      <br><button class="button button-nav product-form-item product-form-button">More Info</button>
-                  </div>
-              
-           </div>
- !-->
-                </div>
-
-            </section>
-
-            <section>
-                <h2>Website Colour Swatches</h2>
-
-                <h3>CSS selector:</h3>
-                <p>.colour-swatch, .swatch-box ; .swatch-Y, .swatch-R, .swatch-G, .swatch-B, .swatch-D </p>
-
-                <h3>Sample code:</h3>
-                <code>&lt;div class="colour-swatch"&gt;
-                    <br>&lt;div class="swatch-box swatch-Y"&gt;
-                    <br>&lt;p class="body-lato-small"&gt;Splash&lt;/p&gt;
-                    <br>&lt;p class="body-lato-light"&gt;#F0D890&lt;/p&gt;
-                    <br>&lt;p class="body-lato-light"&gt;rgb(253,220,172)&lt;/p&gt;
-                    <br>&lt;/div&gt;&lt;/div&gt;
-                </code>
-
-
-                <h3>Rendered element:</h3>
-                <br>
-                <h3 class="body-lato-regular">Navigations, buttons, grid background</h3>
-                <div class="colour-swatch">
-                    <div class="swatch-box swatch-Y">
-                        <p class="body-lato-small">Navajo White</p>
-                        <p class="body-lato-light">#FDDCAC</p>
-                        <p class="body-lato-light">rgb(253,220,172)</p>
+                <div class="image-college-box">
+                    <figure class="reveal-text">
+                        <a href="product_detail.html"><img src="img/product-sample2.jpg" alt="Rose Table Lamp" class="products-img"></a>
+                        <figcaption>
+                            <p class="button" onclick="alert('Item added into CART!')">Add To Cart</p>
+                        </figcaption>
+                    </figure>
+                    <div class="image-collage-desc">
+                        <p><a href="product_detail.html"> Rose Table Lamp</a></p>
+                        <p>$75</p>
+                        <p class="hidden-desktop"><img src="img/plus-icon2.png" alt="add item" class="icon-img" onclick="alert('Item added into CART!')"></p>
                     </div>
                 </div>
+            </div></textarea>
+    </section>
 
-                <div class="colour-swatch">
-                    <div class="swatch-box swatch-R">
-                        <p class="body-lato-small">Lightning Yellow</p>
-                        <p class="body-lato-light">#FDA934</p>
-                        <p class="body-lato-light">rgb(253,169,52)</p>
-                    </div>
-
-                    <div class="swatch-box swatch-R1">
-                        <p class="body-lato-small">Blanched Almond</p>
-                        <p class="body-lato-light">#FDE9CA</p>
-                        <p class="body-lato-light">rgb(253,233,202)</p>
-                    </div>
-                </div>
-
-                <div class="colour-swatch">
-                    <div class="swatch-box swatch-G">
-                        <p class="body-lato-small">Half Baked</p>
-                        <p class="body-lato-light">#53929B</p>
-                        <p class="body-lato-light">rgb(83,146,155)</p>
-                    </div>
-
-                    <div class="swatch-box swatch-G2">
-                        <p class="body-lato-small">Light Blue</p>
-                        <p class="body-lato-light">#B9D2D6</p>
-                        <p class="body-lato-light">rgb(185,210,214)</p>
-                    </div>
-                </div>
-
-                <h3 class="body-lato-regular">Texts</h3>
-                <div class="colour-swatch">
-                    <div class="swatch-box swatch-B">
-                        <p class="body-lato-small">Bistre</p>
-                        <p class="body-lato-light">#422C0E</p>
-                        <p class="body-lato-light">rgb(66,44,14)</p>
-                    </div>
-
-                    <div class="swatch-box swatch-D">
-                        <p class="body-lato-small">Swamp</p>
-                        <p class="body-lato-light">#162628</p>
-                        <p class="body-lato-light">rgb(22,38,40)</p>
-                    </div>
-                </div>
-
-            </section>
+    <!-- COMBINED SECTION // -->
 
 
-            <section>
-                <h2>Grid System</h2>
+    <!-- WEBSITE COLORS // -->
+    <section>
+        <h3>Website Colour Swatches</h3>
+        <div class="swatch-box swatch-D">
+            <p><strong>Swamp</strong> - Main Color</p>
+            <p>#162628</p>
+            <p>rgb(22,38,40)</p>
+        </div>
+        <div class="swatch-box swatch-R1">
+            <p><strong>Blanched Almond</strong> - Secondary Color</p>
+            <p>#FDE9CA</p>
+            <p>rgb(253,233,202)</p>
+        </div>
+        <div class="swatch-box swatch-G">
+            <p><strong>Half Baked</strong> - Secondary Color</p>
+            <p>#53929B</p>
+            <p>rgb(83,146,155)</p>
+        </div>
+    </section>
+    <!-- WEBSITE COLORS // -->
 
-                <h3>CSS selector:</h3>
-                <p> .grid, .group-3, .size-1of3, .group-2, .size-1of2, .group-2of3, .size-2of3 </p>
 
-                <h3>Sample code:</h3>
-                <code>&lt;div class='grid'&gt;
-                    <br>&lt;div class= 'group-3'&gt;
-                    <br>&lt;div class= 'size-1of3'&gt;1/3&lt;/div&gt;
-                    <br>&lt;div class= 'size-1of3'&gt;1/3&lt;/div&gt;
-                    <br>&lt;div class= 'size-1of3'&gt;1/3&lt;/div&gt;
-                    <br>&lt;/div&gt;
+    <section>
+        <h3>Grid System</h3>
+        <p><strong>.grid</strong> - container holding all grids</p>
 
-                    <br>&lt;div class= 'group-2'&gt;
-                    <br>&lt;div class= 'size-1of2'&gt;1/2&lt;/div&gt;
-                    <br>&lt;div class= 'size-1of2'&gt;1/2&lt;/div&gt;
-                    <br>&lt;/div&gt;
 
-                    <br>&lt;div class= 'group-2of3'&gt;
-                    <br>&lt;div class= 'size-1of3'&gt;1/3&lt;/div&gt;
-                    <br>&lt;div class= 'size-2of3'&gt;2/3&lt;/div&gt;
-                    <br>&lt;/div&gt;
 
-                    <br>&lt;div class= 'group-4'&gt;
-                    <br>&lt;div class= 'size-1of4'&gt;1/4&lt;/div&gt;
-                    <br>&lt;div class= 'size-1of4'&gt;1/4&lt;/div&gt;
-                    <br>&lt;div class= 'size-1of4'&gt;1/4&lt;/div&gt;
-                    <br>&lt;div class= 'size-1of4'&gt;1/4&lt;/div&gt;
-                    <br>&lt;/div&gt;
+        <h4>Group of 2</h4>
+        <div class='group-2'>
+            <div class='size-1of2'> 1/2</div>
+            <div class='size-1of2'> 1/2</div>
+        </div>
 
-                    <br>&lt;/div&gt;
-                </code>
+        <p><strong>.group-2</strong> - container holding both containers</p>
+        <p><strong>.size-1of2</strong> - individual container</p>
 
-                <h3>Rendered element:</h3>
-                <div class='grid'>
-                    <div class='group-3'>
-                        <div class='size-1of3'> 1/3 </div>
-                        <div class='size-1of3'> 1/3 </div>
-                        <div class='size-1of3'> 1/3 </div>
-                    </div>
+        <textarea>      <div class='grid'>
+            <div class='group-2'>
+                <div class='size-1of2'> 1/2</div>
+                <div class='size-1of2'> 1/2</div>
+            </div>
+            </div></textarea>
 
-                    <div class='group-2'>
-                        <div class='size-1of2'> 1/2</div>
-                        <div class='size-1of2'> 1/2</div>
-                    </div>
 
-                    <div class='group-2of3'>
-                        <div class='size-1of3'> 1/3 </div>
-                        <div class='size-2of3'> 2/3 </div>
-                    </div>
 
-                    <div class='group-4'>
-                        <div class='size-1of4'> 1/4 </div>
-                        <div class='size-3of4'> 3/4 </div>
-                    </div>
+        <h4>Group of 3</h4>
 
-                </div>
-            </section>
+        <div class='group-3'>
+            <div class='size-1of3'> 1/3 </div>
+            <div class='size-1of3'> 1/3 </div>
+            <div class='size-1of3'> 1/3 </div>
+        </div>
 
-        </section>
-        <!-- // COMBINED ELEMENTS SECTION -->
+
+        <p><strong>.group-3</strong> - container holding all 3 containers</p>
+        <p><strong>.size-1of3</strong> - individual container</p>
+
+        <textarea>        <div class='grid'>
+            <div class='group-3'>
+                <div class='size-1of3'> 1/3 </div>
+                <div class='size-1of3'> 1/3 </div>
+                <div class='size-1of3'> 1/3 </div>
+            </div>
+        </div></textarea>
+
+
+
+
+        <h4>1/4 and 3/4ths</h4>
+
+        <div class='group-4'>
+            <div class='size-1of4'> 1/4 </div>
+            <div class='size-3of4'> 3/4 </div>
+        </div>
+
+        <p><strong>.group-4</strong> - container holding both containers</p>
+        <p><strong>.size-1of4</strong> - individual container 1/4th size</p>
+        <p><strong>.size-3of4</strong> - individual container 3/4th size</p>
+
+        <textarea>        <div class='grid'>
+            <div class='group-4'>
+                <div class='size-1of4'> 1/4 </div>
+                <div class='size-3of4'> 3/4 </div>
+            </div>
+        </div></textarea>
+
+    </section>
+
+    <!-- ----------------------------------------------------------------------------------- -->
+    <!-- ----------------------------------------FOOTER------------------------------------- -->
+
+    <section class="main-body" id="footer">
+
+        <div class="footer">
+
+            <div class="email-input-form">
+                <form>
+                    <h3> Fear missing out? </h3>
+
+                    <p>Be the first to know about the latest deals, style updates and more!</p>
+                    <p>Sign up and be the first to know!</p>
+
+                    <input type="text" id="news-email" name="email_input" placeholder="Email Address">
+                    <input type="submit" value="JOIN" onclick="alert('Thank You for subscribing! Latest Updates will be sent to your email soon!')">
+                </form>
+            </div>
+
+            <div>
+                <a href="https://www.facebook.com/vintagemaze/" class="dropbtn-product-icon"><img src="img/fb-icon.png" class="icon-img" alt="Facebook"></a>
+                <a href="http://instagram.com/vintage_maze" class="dropbtn-product-icon"><img src="img/ig-icon.png" class="icon-img" alt="Instagram"></a>
+                <a href="http://instagram.com/vintage_maze" class="dropbtn-product-icon"><img src="img/pinter-icon.png" class="icon-img" alt="Pinterest"></a>
+            </div>
+            <p>© 2019 Vintage Maze Inc. All rights reserved.</p>
+            <p><a href="styleguide.html">Style Guide</a> &#8226; <a href="citations.html">Citations</a> &#8226; <a href="https://github.com/alisonnnnchh/IAT-339-GroupX" target="_blank">Github</a></p>
+        </div>
+
+    </section>
 
 </body>
 

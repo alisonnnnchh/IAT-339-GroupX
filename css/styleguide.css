@@ -1,0 +1,24 @@
+/*
+  STYLE GUIDE SPECIFIC STYLING 
+*/
+
+/* color swatches /////////////////////////////*/
+
+.swatch-R1 {
+    background-color: #fde9ca;
+}
+
+.swatch-G {
+    background-color: #53929b;
+}
+
+.swatch-D {
+    background-color: #162628;
+    color: #fde9ca;
+}
+
+.swatch-box {
+    padding: 1em 1em;
+    min-width: 30%;
+    min-height: 70px;
+}
