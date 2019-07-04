@@ -18,6 +18,7 @@ body {
 }
 
 h1 {
+    /* front page header only */
     font-family: 'Bungee Shade', cursive;
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -25,6 +26,7 @@ h1 {
 }
 
 h2 {
+    /* page banner header for most pages */
     font-family: 'Bungee Shade', cursive;
     font-size: 2.25rem;
     margin-bottom: 1rem;
@@ -33,22 +35,30 @@ h2 {
 }
 
 h3 {
+    /* secondary header */
     font-family: 'Cornerstone', cursive;
     font-size: 1.6rem;
     margin-bottom: 0;
 }
 
 h4 {
-    font-family: 'Lato', sans-serif;
+    color: #53929B;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+    padding-top: 0px;
+    border-bottom: 2px dotted #53929B;
+    text-align: center;
+
+    /* third header with underline */
+    /*    font-family: 'Lato', sans-serif;
     font-size: 1rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem;*/
 }
 
-
-/* try chinese font */
-
 h5 {
+    /* try chinese font */
     font-family: 'Canto', sans-serif;
     font-size: 1.5rem;
     margin: 0;
@@ -60,9 +70,10 @@ h5 {
 }
 
 h6 {
+    /* general small header */
     font-family: 'Lato', sans-serif;
-    font-size: 0.625rem;
-    font-weight: lighter;
+    font-size: 1rem;
+    font-weight: bold;
     margin: 0;
 }
 
@@ -95,7 +106,6 @@ section.top-of-page {
         text-align: center;
     }
 }
-
 
 section h3 {
     margin: 0;
@@ -134,6 +144,7 @@ nav {
     z-index: 500;
 }
 
+/*
 a.in-text-link {
     margin: 10px;
     font-size: 0.8rem;
@@ -143,6 +154,7 @@ a.in-text-link {
 a.in-text-link:hover {
     text-decoration: underline;
 }
+*/
 
 .size-1of2 .main-body {
     padding: 10% 10%;
@@ -157,24 +169,6 @@ i {
     margin-right: 5px;
 }
 
-.arrow-right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    width: 9px;
-    height: 9px;
-}
-
-.arrow-left {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    width: 9px;
-    height: 9px;
-}
-
-.in-here {
-    text-decoration: underline;
-}
-
 video {
     width: 100%;
     position: static;
@@ -182,10 +176,6 @@ video {
     right: 0;
     top: 10%;
     margin: 0;
-}
-
-.checked {
-    color: #FDA934;
 }
 
 /* generic button */
@@ -313,10 +303,28 @@ input[type=submit]:hover {
     padding: 0.10em 0.15em;
 }
 
+/* specific icon styling */
+
+.arrow-right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 9px;
+    height: 9px;
+}
+
+.arrow-left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    width: 9px;
+    height: 9px;
+}
+
+.checked {
+    color: #FDA934;
+}
+
 
 /* Home page round intro image------- ///// /////////*/
-
-
 /* ----------FX from https://codepen.io/jhermansen/pen/YEReZ------------*/
 
 .index-round-img {
@@ -470,13 +478,10 @@ figure.reveal-text:hover figcaption {
 /* product category page underline heading*/
 .size-3of4 h4 {
     color: #FDE9CA;
-
-    padding-bottom: 10px;
+    /*    padding-bottom: 10px;
     padding-top: 0px;
-    border-bottom: 2px dotted #53929B;
+    border-bottom: 2px dotted #53929B;*/
 }
-
-/*////////////// nicole attempt ///////////////*/
 
 /* div layer holding all the item boxes */
 .image-college-box {
@@ -491,6 +496,14 @@ figure.reveal-text:hover figcaption {
     align-items: center;
     padding: 0 5% 5% 5%;
 }
+
+/*
+
+.blue-desc{
+    color: #53929B; 
+    
+}
+*/
 
 .image-collage-desc p {
     color: #FDE9CA;
@@ -588,29 +601,30 @@ image-collage-desc a:hover {
 @media all and (min-width: 800px) {*/
 
 /*lower image opacity to show "ADD TO CART" */
-.image-college figure.reveal-text:hover img {
+/*.image-college figure.reveal-text:hover img {
     transform: none;
     opacity: 0.4;
-}
-
+}*/
+/*
 .new-collection .image-college figure.reveal-text:hover img {
     transform: scale(1.02);
     opacity: 1;
-}
+}*/
 
 /*hide the "plus" icon when show "ADD TO CART" */
-.image-college figure.reveal-text div img.icon-img,
+/*.image-college figure.reveal-text div img.icon-img,
 .image-college figure.reveal-text div img.icon-img:hover {
     opacity: 0;
-}
+}*/
 
-.image-college-desc img.icon-img,
+/*.image-college-desc img.icon-img,
 .image-college-desc img.icon-img:hover {
     display: none;
-}
+}*/
 
 
-/*show "ADD TO CART" when HOVER */
+/*show "ADD TO CART" when HOVER 
+NOTE: default animation styling already applies above in "actions when hover" section*/
 .image-college figure.reveal-text:hover figcaption {
     top: 50%;
     left: 0;
@@ -669,14 +683,14 @@ image-collage-desc a:hover {
         padding: 0px;
     }
 
-    .image-college figure.reveal-text div p,
+    /*    .image-college figure.reveal-text div p,
     .image-college figure.reveal-text div h4 {
         font-size: 12px;
     }
 
     .image-college figure.reveal-text div {
         flex-flow: wrap column;
-    }
+    }*/
 
     .image-college-box {
         justify-content: center;
@@ -1134,10 +1148,6 @@ textarea {
     bottom: 0;
 }
 
-.footer h6 {
-    margin: 10px;
-}
-
 .footer div {
     margin-top: 2%;
 }
@@ -1515,6 +1525,7 @@ textarea {
     height: 70px;
 }
 
+/* BOTTOM OF PRODUCT PAGE NAVIGATION -------------------*/
 
 .bottom-page-nav {
     display: inline-block;
@@ -1552,7 +1563,7 @@ Help from https://www.w3schools.com/howto/howto_css_dropdown.asp */
 
 
 
-/* About Page Mini-Navigation */
+/* AOUT PAGE NAVIGATION -------------------*/
 
 .about-nav {
     text-align: center;
@@ -1678,6 +1689,11 @@ ul.nav-checkout li {
     max-height: 3em;
 }
 
+.nav-checkout-here {
+    text-decoration: underline;
+}
+
+
 
 /* ///////////////////////////////////////////*/
 
@@ -1725,7 +1741,7 @@ button {
 /* Styling for the navigation button ///////////////////////////*/
 
 .button-nav,
-.head-nav,
+/*.head-nav,*/
 .button-text {
     display: inline-block;
     padding: 0.5em 0.75em;
@@ -1752,10 +1768,11 @@ button {
     color: #fde9ca;
 }
 
+/*
 .head-nav:hover,
 .head-nav:focus {
     background-color: #B9D2D6;
-}
+}*/
 
 /*.submit-button,
 .button-icon {

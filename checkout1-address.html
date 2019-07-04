@@ -80,7 +80,7 @@
                     <div>
                         <h6>Cart</h6>
                         <i class="arrow-right"></i>
-                        <h6 class="in-here">Information & Shipping</h6>
+                        <h6 class="nav-checkout-here">Information & Shipping</h6>
                         <i class="arrow-right"></i>
                         <h6>Payment</h6>
                         <i class="arrow-right"></i>
@@ -146,7 +146,7 @@
                         <td> WHITE TIE DYE LIGHTWEIGHT CUFFED BEANIE - QTY 2
                         </td>
                         <td>
-                            <h4>$60.80</h4>
+                            $60.80
                         </td>
                     </tr>
                     <tr>
@@ -159,8 +159,8 @@
                 <table class="total">
                     <tr>
                         <td>
-                            <h4>Subtotal</h4>
-                            <h4>$60.80</h4>
+                            <h6>Subtotal</h6>
+                            $60.80
                         </td>
                     </tr>
 
@@ -184,11 +184,25 @@
                 <a href="http://instagram.com/vintage_maze" class="dropbtn-product-icon"><img src="img/ig-icon.png" class="icon-img" alt="Instagram"></a>
                 <a href="http://instagram.com/vintage_maze" class="dropbtn-product-icon"><img src="img/pinter-icon.png" class="icon-img" alt="Pinterest"></a>
             </div>
-            <h6> © 2019 Vintage Maze Inc. All rights reserved.</h6>
+            <p>© 2019 Vintage Maze Inc. All rights reserved.</p>
 
         </div>
 
     </section>
+
+    <script type="text/javascript">
+        $('.minus-btn').on('click', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            var $input = $this.closest('div').find('input');
+            var value = parseInt($input.val());
+
+
+            confirm('Are you sure you want to navigate away? Your transaction is not yet complete!');
+        }
+        });
+
+    </script>
 
 </body>
 
