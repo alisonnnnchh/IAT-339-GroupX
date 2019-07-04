@@ -12,8 +12,9 @@ body {
 
 section:not([id]) {
   margin: 1em 1em;
-  padding: 0.5em 0;
+  padding: 1em 0;
   border-top: 1px solid #333;
+
 }
 
 section h3 {
@@ -21,63 +22,141 @@ section h3 {
 }
 
 section p {
-  margin-top: 0;
+  
 }
 
 section code {
   background-color: #EEE;
-  margin:1em 0em;
   padding: 0.2em 0.75em;
+  display:block;
 }
 
-.icon-img{
-  width:100%;
-  position: center;
+section div{
+  margin:1% 0;
+  padding:1% 0;
+  /*background-color: rgba(150,150,150,0.1);*/
 }
 
 
-a{
-    text-decoration: none;
+
+
+/*---------------------------above is for styleguide only------------------------------------*/
+
+/* GENERAL STYLING ------------------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    margin: 0;
+    position: static;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 75px;
+    /* pushes down content so navbar doesn't block */
+}
+
+
+/*-----------------------------------------FONT---------------------------------------------*/
+h1 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 3rem;
+    margin: 1rem 0;
     color: #484830;
 }
 
-.img-wire{
-  width:100%;
+h2 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 2.25rem;
+    margin: 1rem 0;
+    color: #484830;
 }
 
-.icon-120{
-  width:120px;
-  height:120px;
-  padding: 0.25em 0.5em;
+h3 {
+    font-family: 'Cornerstone', cursive;
+    font-size: 1.6rem;
+    margin: 1rem 0;
 }
 
-.icon-76{
-  width:76px;
-  height:76px;
-    padding: 0.2em 0.4em;
+h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem 0;
 }
 
-.icon-60{
-  width:60px;
-  height:60px;
-    padding: 0.2em 0.3em;
+/* try chinese font */
+h5 {
+    font-family: 'Canto', sans-serif;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 20px #FDA934, 0 0 30px #FDA934
+        /*, 0 0 40px #FDA934, 0 0 55px #FDA934, 0 0 75px #FDA934*/
+    ;
+
 }
 
-.icon-32{
-  width:32px;
-  height:32px;
-    padding: 0.15em 0.2em;
+
+h6 {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.625rem;
+    font-weight: lighter;
+    margin: 1rem 0;
 }
 
-.icon-20{
-  width:20px;
-  height:20px;
-    padding: 0.10em 0.15em;
+/*-----------------------------------------FONT---------------------------------------------*/
+
+.icon-img {
+    width: 100%;
+    text-align: center;
+    width: 40px; /* 25px in company website */
+    height: 40px; /* 25px in company website */
+    /*filter: invert(100%);*/
+    margin:0% 2%; /* no margin in company website */
+    object-fit: center;
 }
 
-form{
-  float:center;
+.icon-img:hover {
+    transform: scale(1.1);
 }
+
+.icon-img-logo {
+    text-align: center;
+    width: 150px;
+    height: auto;
+}
+
+.icon-img-logo-new {
+    text-align: center;
+    position: static;
+    width: 300px;
+    height: auto;
+}
+
+.icon-img-logo-500px {
+    width: 100%;
+    width: 40px;
+    height: 40px;
+    margin:0% 2%; /* no margin in company website */
+}
+
+.icon-img-logo-checkout {
+    width: 100%;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+}
+
+.img-wire {
+    width: 100%;
+}
+
 
 /* 
   INTERACTIVE ELEMENTS -------------------
@@ -182,140 +261,82 @@ button{
     text-align: center;
 }
 
-label{
-  padding:40px 40px;
-  font-size:13px;
+form {
+    text-align: center;
 }
 
 
-input[type=text], select{
+form div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
 
-  width: 90%;
-  padding: 10px 10px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #53929b;
-  border-radius: 4px;
-  box-sizing: border-box;
+form div label,
+form div input {
+    padding: 10px;
+}
+
+form h4,
+form label,
+form input {
+    display: block;
+}
+
+label {
+    display: block;
+    font-size: 15px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #53929b;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 13px;
+    color: #162628;
+}
+
+input[type=text],
+input[type=date],
+select {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #53929b;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 13px;
+    color: #162628;
 }
 
 input[type=submit] {
-
-  width: 70px;
-  background-color: #53929b;
-  color: white;
-  padding: 10px 10px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  display: inline-block;
+    width: 100%;
+    background-color: red;
+    color: white;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
 }
 
 input[type=submit]:hover {
-  background-color: #fddcac;
+    background-color: #53929b;
+    text-decoration: none;
 }
-
 /* //////////////////////////////////////////////*/
 
 /* 
   TEXT ELEMENTS -------------------
 */
-h2{
-  font-family: 'Righteous', cursive;
-}
-
-h3{
-  font-family: 'Lato', sans-serif;
-}
-
-.heading-bun-48 {
-  font-family: 'Bungee Shade', cursive;
-  font-size: 3rem;
-  margin-bottom: 0;
-  color: #484830;
-}
-
-.heading-bun-36 {
-  font-family: 'Bungee Shade', cursive;
-  font-size: 2.25rem;
-  margin-bottom: 0;
-  color: #484830;
-}
-
-.heading-rig-25 {
-  font-family: 'Righteous', cursive;
-  font-size: 1.6rem;
-  margin-bottom: 0;
-}
-
-.body-lato-bold {
-  font-family: 'Lato', sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 0;
-}
-
-.body-lato-regular{
-    font-family: 'Lato', sans-serif;
-    font-size: 1rem;
-    font-weight: lighter;
-    margin-bottom: 0;
-}
-
-.body-lato-light {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.8rem;
-  font-weight : lighter;
-  margin-bottom: 0;
-}
-
-.body-lato-small {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.8rem;
-  font-weight: bold;
-  margin-bottom: 0;
-}
-
-
-body {
-    font-family: 'Lato', sans-serif;
-    font-size: 1rem;
-    font-weight: lighter;
-    margin: 0;
-}
-
-h1 {
-    font-family: 'Bungee Shade', cursive;
-    font-size: 3rem;
-    margin-top: 0;
-    margin-bottom: 0;
-    color: #484830;
-}
-
-h2 {
-    font-family: 'Bungee Shade', cursive;
-    font-size: 2rem;
-    margin-bottom: 0;
-    color: #484830;
-}
-
-
-h3 {
-    font-family: 'Righteous', cursive;
-    font-size: 1.4rem;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-
-h6 {
-    font-family: 'Lato', sans-serif;
-    font-size: 0.625rem;
-    font-weight: lighter;
-    margin: 0;
-}
-
 
 
 /* 
