@@ -109,7 +109,12 @@
 
                     <h4>Billing Address</h4>
                     <div>
-                        <input value="2" type="radio" name="formselector" onclick="SwitchMenu('sub1')"> Billing address different from shipping address
+                        <input value="1" type="radio" name="formselector">
+                        <label for="formselector"> Same as shipping address</label>
+                    </div>
+                    <div>
+                        <input value="2" type="radio" name="formselector" onclick="SwitchMenu('sub1')">
+                        <label for="formselector"> Use a different billing address</label>
                     </div>
 
                     <!-- Keep all menus within masterdiv-->
@@ -136,8 +141,8 @@
 
                     </div>
 
-                    <div class="group-2">
-                        <a href="cart.html"> <i class="arrow-left"></i>Return to Customer Information</a>
+                    <div class="group-2 bottom-page">
+                        <a href="checkout1-address.html"> <i class="arrow-left"></i>Return to Customer Information</a>
                         <input type="submit" value="Next">
                     </div>
 

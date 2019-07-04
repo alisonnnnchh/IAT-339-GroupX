@@ -150,6 +150,10 @@ video {
     margin: 0;
 }
 
+input[type=radio]{
+
+}
+
 /* generic button */
 
 
@@ -392,12 +396,12 @@ figure.reveal-text figcaption {
 
 figure.reveal-text:hover img {
     transform: scale(1.05);
-    opacity: 0.1;
+    opacity: 0.3;
 }
 
 .new-collection figure.reveal-text:hover img {
     transform: scale(1.05);
-    opacity: 1;
+    opacity: 0.5;
 }
 
 figure.reveal-text:hover figcaption {
@@ -550,7 +554,7 @@ NOTE: default animation styling already applies above in "actions when hover" se
     /*show image in full opacity*/
     .image-college figure.reveal-text:hover img {
         transform: none;
-        opacity: 1;
+        opacity: 0.7;
     }
 
     /*smaller container*/
@@ -990,14 +994,25 @@ textarea {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    padding: 2% 5%;
+    padding: 2% 7%;
 
     position: static;
     bottom: 0;
 }
 
 .footer div {
-    margin-top: 2%;
+    margin: 1% 0% 1% 0;
+}
+
+
+@media all and (max-width: 600px) {
+    .footer p{
+        font-size:11px;
+    }
+
+    .footer {
+        padding: 5% 5%;
+    }
 }
 
 
@@ -1376,7 +1391,7 @@ textarea {
 
 .bottom-page-nav {
     display: inline-block;
-    margin: 20px;
+    margin:0px 20px;
     border: none;
 }
 
@@ -1384,6 +1399,10 @@ textarea {
     filter: none;
     width: 40px;
     height: 40px;
+}
+
+.bottom-page-nav img:hover {
+    transform: scale(1.05);
 }
 
 

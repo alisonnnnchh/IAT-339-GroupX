@@ -64,12 +64,18 @@
 /* things that changed////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////*/
 .bottom-page {
-    margin: 0px 10%;
+    margin: 3% 10%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
 }
+
+form .bottom-page{
+    margin: 5% 0 2% 0;
+    flex-wrap: nowrap;
+}
+
 
 .slideshow {
     display: flex;
@@ -135,7 +141,10 @@
 @media all and (max-width: 600px) {
     .bottom-page {
         justify-content: space-between;
+        margin: 5% 10%;
     }
+
+
 
     .headline-box {
         margin: 0;
@@ -392,9 +401,7 @@
     padding: 10px;
 }
 
-form .group-2 {
-    margin-bottom: 10px;
-}
+
 
 .head-nav {
     display: flex;
@@ -614,9 +621,9 @@ form .total h6{
 
 
 .order-summary-cart span {
-    margin-right: 60%;
-    padding: 0.5% 5%;
-    display: inline-block;
+    position:relative;
+    padding: 0% 4% 5% 4%;
+    float:left;
 }
 
 .order-summary-cart h3 {
@@ -661,11 +668,11 @@ form .total h6{
 
 .size-3of5 form input[type=radio] {
     width: 5%;
-    background-color: yellow;
 }
 
+
 .size-3of5 form input[type=radio]:checked {
-    background-color: yellow;
+    border-radius:100%;
 }
 
 .size-3of5 form div.group-2,
@@ -732,6 +739,11 @@ form .total h6{
         align-content: center;
     }
 
+    .order-summary td{
+        font-size: 12px;
+    }
+
+
     .size-2of5 table.total td {
         text-align: center;
     }
@@ -753,9 +765,8 @@ form .total h6{
     }
 
     .order-summary-cart span {
-        margin-right: 0;
-        margin-bottom: 5%;
-        width: 50%;
+        float:none;
+
     }
 
     .order-summary-cart table td {
