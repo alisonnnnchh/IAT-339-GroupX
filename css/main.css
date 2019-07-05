@@ -1,3 +1,4 @@
+/*///////////////////////////////////////////////////////////////////////////////////////*/
 /* GENERAL STYLING ------------------- */
 html {
     scroll-behavior: smooth;
@@ -66,11 +67,6 @@ h6 {
     font-size: 1rem;
     font-weight: bold;
     margin-bottom: 0.5em;
-}
-
-s {
-    /*the cross in sale product price*/
-    color: red;
 }
 
 strong {
@@ -204,12 +200,12 @@ input[type=submit] {
 
 .red-submit:hover,
 input[type=submit]:hover {
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.5);
     text-decoration: none;
 }
 
-
-/* ICON SETTINGS ------------------- */
+/*///////////////////////////////////////////////////////////////////////////////////////*/
+/* ICON SETTINGS ----------------------------------------------------------------------- */
 
 .icon-img {
     width: 100%;
@@ -298,9 +294,6 @@ input[type=submit]:hover {
 
 /* ------details on image----*/
 
-
-/*////////////////////////////*/
-
 div.figures {
     display: flex;
     flex-wrap: wrap;
@@ -332,9 +325,6 @@ figure.reveal-text img {
 
 /* ------details on image caption----*/
 
-
-/*///////////////////////////////////*/
-
 figure.reveal-text figcaption a {
     text-decoration: none;
     color: white;
@@ -357,9 +347,6 @@ figure.reveal-text figcaption {
 
 
 /* ------actions when hover----*/
-
-
-/*///////////////////////////////////*/
 
 figure.reveal-text:hover img {
     transform: scale(1.05);
@@ -413,9 +400,8 @@ figure.reveal-text:hover figcaption {
     }
 }
 
-
-/* -----------------------------------image college-------------------------------------*/
 /*///////////////////////////////////////////////////////////////////////////////////////*/
+/* -----------------------------------image college-------------------------------------*/
 
 
 /* home page product img*/
@@ -431,9 +417,9 @@ figure.reveal-text:hover figcaption {
 }
 
 /* product category page underline heading*/
-.size-3of4 h4 {
+/*.size-3of4 h4 {
     color: #FDE9CA;
-}
+}*/
 
 /* div layer holding all the item boxes */
 .image-college-box {
@@ -450,7 +436,7 @@ figure.reveal-text:hover figcaption {
 }
 
 .image-collage-desc p {
-    color: #FDE9CA;
+    color: #53929b;
     text-decoration: none;
     text-transform: uppercase;
     border: none;
@@ -460,7 +446,7 @@ figure.reveal-text:hover figcaption {
 
 .image-collage-desc a,
 .image-collage-desc a:hover {
-    color: #FDE9CA;
+    /*    color: #FDE9CA;*/
     text-decoration: none;
     font-weight: bold;
 }
@@ -562,8 +548,8 @@ NOTE: default animation styling already applies above in "actions when hover" se
     }
 }
 
-
-/* FORMS ------------------- ///// /////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////*/
+/* FORMS --------------------------------------------------------------------------------*/
 
 form {
     text-align: center;
@@ -652,7 +638,7 @@ textarea {
     }
 }
 
-/* ------------------------------------------ Comment ------------------------------------- */
+/* ------commenting----*/
 
 .comment-input-form {
     border-radius: 5px;
@@ -702,7 +688,7 @@ textarea {
     padding: 1% 0 0 0;
 }
 
-/* ------------------------------------------ Comment Input Form ------------------------------------- */
+/* ------comment input form on product page---*/
 
 .comment-input-form form {
     background-color: white;
@@ -831,8 +817,8 @@ textarea {
 }
 
 
-/* SECTIONS -------------------*/
-
+/*///////////////////////////////////////////////////////////////////////////////////////*/
+/* SECTION SPECIFIC --------------------------------------------------------------------------------*/
 /* ------front page video----*/
 .slideshow {
     width: 100%;
@@ -1025,7 +1011,6 @@ textarea {
 /* ------product category content boxes----*/
 .category-page-columns {
     padding: 3% 3% 3% 2%;
-    background-color: #162628;
     background-repeat: repeat-x;
     background-position: center;
     background-size: cover;
@@ -1260,8 +1245,6 @@ textarea {
 }
 
 /* ///////////////////////////////////////////*/
-
-
 /* MAIN NAVIGATION -------------------*/
 
 .main-nav-bar a:hover {
@@ -1345,7 +1328,7 @@ Used in mobile nav and product category nav*/
 }
 
 .hover-list a.red {
-    background-color: rgba(256, 0, 0, 0.5);
+    background-color: rgba(255, 0, 0, 0.5);
 }
 
 
