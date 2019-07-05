@@ -71,7 +71,7 @@
     justify-content: center;
 }
 
-form .bottom-page{
+form .bottom-page {
     margin: 5% 0 2% 0;
     flex-wrap: nowrap;
 }
@@ -531,7 +531,7 @@ form .bottom-page{
 }
 
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 500px) {
 
     .size-blist,
     .selected-blist {
@@ -580,22 +580,17 @@ form .bottom-page{
     padding: 2%;
 }
 
-form .total{
-    padding:3% 5% 3% 5%;
+form .total {
+    padding: 3% 5% 3% 5%;
 }
 
-form .total h6{
-    margin: 2.5%; 
+form .total h6 {
+    margin: 2.5%;
 }
 
 .total td {
     text-align: center;
     padding: 2.5% 5% 2.5% 5%;
-
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-
     justify-content: space-between;
 }
 
@@ -611,7 +606,7 @@ form .total h6{
 }
 
 .order-summary-cart .size-1of3 table td {
-    width:100%;
+    width: 100%;
 }
 
 .order-summary-cart .size-1of3 table td h4 {
@@ -621,9 +616,9 @@ form .total h6{
 
 
 .order-summary-cart span {
-    position:relative;
+    position: relative;
     padding: 0% 4% 5% 4%;
-    float:left;
+    float: left;
 }
 
 .order-summary-cart h3 {
@@ -672,7 +667,7 @@ form .total h6{
 
 
 .size-3of5 form input[type=radio]:checked {
-    border-radius:100%;
+    border-radius: 100%;
 }
 
 .size-3of5 form div.group-2,
@@ -710,7 +705,7 @@ form .total h6{
     display: flex;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 900px) {
 
     .size-3of5 form,
     .size-2of5 form {
@@ -739,7 +734,7 @@ form .total h6{
         align-content: center;
     }
 
-    .order-summary td{
+    .order-summary td {
         font-size: 12px;
     }
 
@@ -765,7 +760,7 @@ form .total h6{
     }
 
     .order-summary-cart span {
-        float:none;
+        float: none;
 
     }
 
@@ -779,20 +774,20 @@ form .total h6{
         padding: 0 1%;
     }
 
-    form .total{
-        padding:5% 5% 5% 5%;
+    form .total {
+        padding: 5% 5% 5% 5%;
     }
 
     .total td {
         align-items: baseline;
     }
 
-    .total h6{
-       margin: 0 2.5%; 
+    .total h6 {
+        margin: 0 2.5%;
     }
 
-    form .total h6{
-       margin: 2.5%; 
+    form .total h6 {
+        margin: 2.5%;
     }
 
 }
@@ -976,7 +971,7 @@ input:focus {
         margin: 6px 0;
     }
 
-    .quantity{
+    .quantity {
         flex-direction: column-reverse;
     }
 
