@@ -1,33 +1,32 @@
-'use strict';
-
-$('.minus-btn').on('click', function(e) {
+$('.minus-btn').on('click', function (e) {
     e.preventDefault();
     var $this = $(this);
     var $input = $this.closest('div').find('input');
     var value = parseInt($input.val());
- 
-    if (value &amp;gt; 1) {
+
+
+    if (value > 1) {
         value = value - 1;
     } else {
         value = 0;
+        confirm('Are you sure to remove this item from cart?');
     }
- 
-  $input.val(value);
- 
+
+    $input.val(value);
+
 });
- 
-$('.plus-btn').on('click', function(e) {
+
+$('.plus-btn').on('click', function (e) {
     e.preventDefault();
     var $this = $(this);
     var $input = $this.closest('div').find('input');
     var value = parseInt($input.val());
- 
-    if (value &amp;lt; 100) {
+
+    if (value < 20) {
         value = value + 1;
     } else {
-        value =100;
+        value = 20;
     }
- 
+
     $input.val(value);
 });
-
