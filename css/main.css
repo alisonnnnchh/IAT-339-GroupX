@@ -907,7 +907,6 @@ textarea {
 /* ------front page new collection section----*/
 .new-collection {
     width: 100%;
-    background-color: white;
     padding: 2% 10%;
     text-align: center;
 }
@@ -915,15 +914,6 @@ textarea {
 .new-collection .image-college figure.reveal-text {
     margin: 0;
     padding: 3%;
-}
-
-.new-collection p {
-    color: #53929B;
-
-}
-
-.new-collection a {
-    color: #53929B;
 }
 
 .new-collection a:hover {
